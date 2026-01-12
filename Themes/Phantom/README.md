@@ -4,6 +4,8 @@ Ghostly slate theme with translucent cool tones.
 
 ## Preview
 
+<img src="assets/preview/Phantom.png" alt="Phantom Preview">
+
 | Color | Hex |
 |-------|-----|
 | Primary | `#64748b` |

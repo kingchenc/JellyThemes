@@ -4,6 +4,8 @@ Deep space theme with elegant violet/purple accents.
 
 ## Preview
 
+<img src="assets/preview/Obsidian.png" alt="Obsidian Preview">
+
 | Color | Hex |
 |-------|-----|
 | Primary | `#9333ea` |

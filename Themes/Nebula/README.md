@@ -4,6 +4,8 @@ Cosmic cyan theme with cool galactic vibes.
 
 ## Preview
 
+<img src="assets/preview/Nebula.png" alt="Nebula Preview">
+
 | Color | Hex |
 |-------|-----|
 | Primary | `#06b6d4` |

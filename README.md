@@ -7,7 +7,7 @@
 *6 stunning dark themes. One click install. Pure elegance.*
 
 [![GitHub Stars](https://img.shields.io/github/stars/kingchenc/JellyThemes?style=for-the-badge&logo=github&color=9333ea)](https://github.com/kingchenc/JellyThemes/stargazers)
-[![jsDelivr Hits](https://img.shields.io/jsdelivr/gh/hm/kingchenc/JellyThemes?style=for-the-badge&logo=jsdelivr&label=Downloads&color=ff5627)](https://www.jsdelivr.com/package/gh/kingchenc/JellyThemes)
+[![jsDelivr Hits](https://img.shields.io/jsdelivr/gh/hy/kingchenc/JellyThemes?style=for-the-badge&logo=jsdelivr&label=Downloads&color=ff5627)](https://www.jsdelivr.com/package/gh/kingchenc/JellyThemes)
 [![License](https://img.shields.io/badge/License-GPL--2.0-blue?style=for-the-badge)](LICENSE)
 
 </div>
@@ -40,7 +40,7 @@ Go to **Dashboard > General > Custom CSS** and paste one of these:
 <details>
 <summary>📸 Preview</summary>
 <br>
-<img src="https://via.placeholder.com/800x450/9333ea/ffffff?text=Obsidian+Theme+Preview" alt="Obsidian Preview">
+<img src="Themes/Obsidian/assets/preview/Obsidian.png" alt="Obsidian Preview">
 </details>
 
 ---
@@ -54,7 +54,7 @@ Go to **Dashboard > General > Custom CSS** and paste one of these:
 <details>
 <summary>📸 Preview</summary>
 <br>
-<img src="https://via.placeholder.com/800x450/f59e0b/ffffff?text=Solaris+Theme+Preview" alt="Solaris Preview">
+<img src="Themes/Solaris/assets/preview/Solaris.png" alt="Solaris Preview">
 </details>
 
 ---
@@ -68,7 +68,7 @@ Go to **Dashboard > General > Custom CSS** and paste one of these:
 <details>
 <summary>📸 Preview</summary>
 <br>
-<img src="https://via.placeholder.com/800x450/06b6d4/ffffff?text=Nebula+Theme+Preview" alt="Nebula Preview">
+<img src="Themes/Nebula/assets/preview/Nebula.png" alt="Nebula Preview">
 </details>
 
 ---
@@ -82,7 +82,7 @@ Go to **Dashboard > General > Custom CSS** and paste one of these:
 <details>
 <summary>📸 Preview</summary>
 <br>
-<img src="https://via.placeholder.com/800x450/f97316/ffffff?text=Ember+Theme+Preview" alt="Ember Preview">
+<img src="Themes/Ember/assets/preview/Ember.png" alt="Ember Preview">
 </details>
 
 ---
@@ -96,7 +96,7 @@ Go to **Dashboard > General > Custom CSS** and paste one of these:
 <details>
 <summary>📸 Preview</summary>
 <br>
-<img src="https://via.placeholder.com/800x450/1a1a1a/ffffff?text=Void+Theme+Preview" alt="Void Preview">
+<img src="Themes/Void/assets/preview/Void.png" alt="Void Preview">
 </details>
 
 ---
@@ -110,7 +110,7 @@ Go to **Dashboard > General > Custom CSS** and paste one of these:
 <details>
 <summary>📸 Preview</summary>
 <br>
-<img src="https://via.placeholder.com/800x450/64748b/ffffff?text=Phantom+Theme+Preview" alt="Phantom Preview">
+<img src="Themes/Phantom/assets/preview/Phantom.png" alt="Phantom Preview">
 </details>
 
 ---
@@ -170,15 +170,6 @@ Found a bug? Have a feature request? We'd love to hear from you!
 
 - **Issues**: [Open an issue](https://github.com/kingchenc/JellyThemes/issues)
 - **Discussions**: [Start a discussion](https://github.com/kingchenc/JellyThemes/discussions)
-
-## Support the Project
-
-If you enjoy JellyThemes and want to support its development:
-
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/kingchenc)
-[![Buy Me A Beer](https://img.shields.io/badge/Buy%20Me%20A%20Beer-F7A8B8?style=for-the-badge&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/kingchenc)
-
-Your support helps keep this project alive and motivates further development!
 
 ## License
 

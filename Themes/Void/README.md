@@ -4,6 +4,8 @@ Pure black minimal theme with subtle gray accents.
 
 ## Preview
 
+<img src="assets/preview/Void.png" alt="Void Preview">
+
 | Color | Hex |
 |-------|-----|
 | Primary | `#71717a` |

@@ -4,6 +4,8 @@ Fiery orange theme with warm blazing tones.
 
 ## Preview
 
+<img src="assets/preview/Ember.png" alt="Ember Preview">
+
 | Color | Hex |
 |-------|-----|
 | Primary | `#f97316` |
