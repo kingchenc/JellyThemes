@@ -8,7 +8,7 @@
 
 [![GitHub Stars](https://img.shields.io/github/stars/kingchenc/JellyThemes?style=for-the-badge&logo=github&color=9333ea)](https://github.com/kingchenc/JellyThemes/stargazers)
 [![jsDelivr Hits](https://img.shields.io/jsdelivr/gh/hy/kingchenc/JellyThemes?style=for-the-badge&logo=jsdelivr&label=Downloads&color=ff5627)](https://www.jsdelivr.com/package/gh/kingchenc/JellyThemes)
-[![License](https://img.shields.io/badge/License-GPL--2.0-blue?style=for-the-badge)](LICENSE)
+[![License](https://img.shields.io/badge/License-GPL--3.0-blue?style=for-the-badge)](LICENSE)
 
 </div>
 
@@ -173,7 +173,7 @@ Found a bug? Have a feature request? We'd love to hear from you!
 
 ## License
 
-GPL-2.0 - See [LICENSE](LICENSE) for details.
+GPL-3.0 - See [LICENSE](LICENSE) for details.
 
 ## Star History
 
