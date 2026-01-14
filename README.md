@@ -7,7 +7,7 @@
 *6 stunning dark themes. One click install. Pure elegance.*
 
 [![GitHub Stars](https://img.shields.io/github/stars/kingchenc/JellyThemes?style=for-the-badge&logo=github&color=9333ea)](https://github.com/kingchenc/JellyThemes/stargazers)
-[![jsDelivr Hits](https://img.shields.io/jsdelivr/gh/hy/kingchenc/JellyThemes?style=for-the-badge&logo=jsdelivr&label=Req Hits&color=ff5627)](https://www.jsdelivr.com/package/gh/kingchenc/JellyThemes)
+[![jsDelivr Hits](https://img.shields.io/jsdelivr/gh/hm/kingchenc/JellyThemes?style=for-the-badge&logo=jsdelivr&label=jsdelivr%20Hits&color=ff5627)](https://www.jsdelivr.com/package/gh/kingchenc/JellyThemes)
 [![License](https://img.shields.io/badge/License-GPL--3.0-blue?style=for-the-badge)](LICENSE)
 
 </div>
