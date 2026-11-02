@@ -10,7 +10,7 @@
 [![jsDelivr Hits](https://img.shields.io/jsdelivr/gh/hm/kingchenc/JellyThemes?style=for-the-badge&logo=jsdelivr&label=jsdelivr%20Hits&color=ff5627)](https://www.jsdelivr.com/package/gh/kingchenc/JellyThemes)
 [![License](https://img.shields.io/badge/License-GPL--2.0-blue?style=for-the-badge)](LICENSE)
 
-**Version 1.1** · Jellyfin 10.11 and 12 · Based on [ElegantFin](https://github.com/lscambo13/ElegantFin) by lscambo13
+**Version 1.1** · Jellyfin 10.11 and 12
 
 </div>
 
@@ -171,13 +171,9 @@ Found a bug? Have a feature request? We'd love to hear from you!
 
 [Open an issue](https://github.com/kingchenc/JellyThemes/issues)
 
-## Credits
-
-JellyThemes is based on [ElegantFin](https://github.com/lscambo13/ElegantFin) by [lscambo13](https://github.com/lscambo13). The layout and most of the styling come from ElegantFin; JellyThemes adds the color editions, glow effects and accent styling on top.
-
 ## License
 
-GPL-2.0, the same as ElegantFin. See [LICENSE](LICENSE) for details.
+GPL-2.0 - See [LICENSE](LICENSE) for details.
 
 ## Star History
 
