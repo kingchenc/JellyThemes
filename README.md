@@ -133,9 +133,9 @@ On Jellyfin 10.10 and older, Custom CSS is under **Dashboard > General**.
 - Glass top bar with blur, glowing cards and buttons on hover
 - Play button in the middle of cards, accent progress bars, pill tabs
 - Item pages with a fading backdrop and a labelled Play / Resume button in your language
-- Small and fast: one file of about 27 KB, no extra downloads
-- Made for TVs too: on Samsung, LG and Android TV the slow effects (blur, glow, animations) are off, so menus stay smooth
-- Many parts can be switched on and off, see [Settings](#settings)
+- Small and fast: one file of about 28 KB, no extra downloads
+- Works in the browser, the desktop and mobile apps, on iOS and on TVs (Samsung, LG)
+- Everything is on by default; anything can be switched off, see [Settings](#settings)
 
 ## Settings
 
@@ -146,7 +146,7 @@ Add a `:root { ... }` block **under** the `@import` line in Custom CSS and set w
 
 :root {
     --jt-header-backdrop: none;
-    --jt-card-extra-buttons: flex;
+    --jt-footer: none;
 }
 ```
 
@@ -157,25 +157,26 @@ Add a `:root { ... }` block **under** the `@import` line in Custom CSS and set w
 | `--jt-glow-s` | accent glow | Glow of buttons. `none` turns it off |
 | `--jt-motion` | `0.2s` | Speed of hover animations. `0s` turns them off |
 | `--jt-card-radius` | `0.6em` | Corner radius of cards |
-| `--jt-card-extra-buttons` | `none` | Watched and favourite buttons on hovered cards. `flex` shows them |
-| `--jt-library-labels` | `none` | Names under the library cards on the home page. `block` shows them |
+| `--jt-card-extra-buttons` | `flex` | Watched and favourite buttons on hovered cards. `none` hides them |
+| `--jt-card-mini-buttons` | `flex` | Small play button on cards on phones. `none` hides it |
+| `--jt-library-labels` | `block` | Names under the library cards on the home page. `none` hides them |
 | `--jt-original-title` | `block` | Original title on item pages. `none` hides it |
 | `--jt-detail-logo` | `block` | Logo on item pages. `none` hides it |
 | `--jt-item-title` | `block` | Title on item pages. `none` hides it |
-| `--jt-version-text` | `block` | Theme name at the bottom of the settings menu. `none` hides it |
+| `--jt-footer` | `block` | Theme name, version and author at the end of each page. `none` hides it |
 | `--jt-login-text` | `""` | A heading on the login page, e.g. `"Welcome home"` |
 | `--jt-login-bg` | `none` | Background picture of the login page, e.g. `url("https://...")` |
 
-### Effects on TVs
+### Faster on older TVs
 
-On TVs (Jellyfin's TV display mode) blur, glow and animations are off by default, because most TVs draw them slowly. To turn them on:
+All effects are on by default, also on TVs (Jellyfin's TV display mode). If a TV feels slow (older Samsung and LG models), turn blur, glow and animations off there. This only changes the TV display mode:
 
 ```css
 :root {
-    --jt-tv-blur: blur(14px) saturate(140%);
-    --jt-tv-glow: 0 0 0 1px var(--jt-accent), 0 0 18px rgba(var(--jt-accent-rgb), 0.45);
-    --jt-tv-glow-s: 0 0 12px rgba(var(--jt-accent-rgb), 0.4);
-    --jt-tv-motion: 0.2s;
+    --jt-tv-blur: none;
+    --jt-tv-glow: 0 0 0 3px var(--jt-accent);
+    --jt-tv-glow-s: none;
+    --jt-tv-motion: 0s;
 }
 ```
 
