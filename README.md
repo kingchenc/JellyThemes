@@ -8,7 +8,9 @@
 
 [![GitHub Stars](https://img.shields.io/github/stars/kingchenc/JellyThemes?style=for-the-badge&logo=github&color=9333ea)](https://github.com/kingchenc/JellyThemes/stargazers)
 [![jsDelivr Hits](https://img.shields.io/jsdelivr/gh/hm/kingchenc/JellyThemes?style=for-the-badge&logo=jsdelivr&label=jsdelivr%20Hits&color=ff5627)](https://www.jsdelivr.com/package/gh/kingchenc/JellyThemes)
-[![License](https://img.shields.io/badge/License-GPL--3.0-blue?style=for-the-badge)](LICENSE)
+[![License](https://img.shields.io/badge/License-GPL--2.0-blue?style=for-the-badge)](LICENSE)
+
+**Version 1.1** · Jellyfin 10.11 and 12 · Based on [ElegantFin](https://github.com/lscambo13/ElegantFin) by lscambo13
 
 </div>
 
@@ -29,7 +31,11 @@
 
 ## Quick Install
 
-Go to **Dashboard > General > Custom CSS** and paste one of these:
+Go to **Dashboard > Branding > Custom CSS** and paste one of these.
+On Jellyfin 10.10 and older, Custom CSS is under **Dashboard > General**.
+
+> [!NOTE]
+> On Jellyfin 12, set **User Settings > Display > Display Mode** to **Desktop (Legacy)** on desktop or **Mobile (Legacy)** on phones. The new layout is not supported yet.
 
 ### 🟣 Obsidian (Purple)
 
@@ -128,25 +134,20 @@ Go to **Dashboard > General > Custom CSS** and paste one of these:
 
 ## Compatibility
 
-### Platforms
-- Desktop (Windows, macOS, Linux)
-- Mobile (iOS, Android)
-- Smart TVs (WebOS, Tizen, Android TV, Fire TV)
-- Gaming Consoles (Xbox, PlayStation)
+### Jellyfin
+- Jellyfin 10.11
+- Jellyfin 12 with the **Legacy** display mode (see the note under Quick Install)
 
-### Browsers
-- Chrome/Chromium
-- Firefox
-- Safari
-- Edge
+### Apps
+Custom CSS only works in apps that show the Jellyfin web interface:
 
-### Jellyfin Apps
-- Jellyfin Web
-- Jellyfin Media Player
-- Jellyfin for Android/Android TV
+- Jellyfin Web in any modern browser (Chrome, Firefox, Safari, Edge)
+- Jellyfin Media Player / Jellyfin Desktop
+- Jellyfin for Android (phones and tablets)
 - Jellyfin for iOS
-- Swiftfin
-- Any client that supports custom CSS
+- Jellyfin for LG webOS and Samsung Tizen TVs
+
+Native apps draw their own interface and ignore Custom CSS, so the themes do not show up there. This includes Swiftfin, Jellyfin for Android TV / Fire TV, Findroid and Kodi.
 
 ## Contributing
 
@@ -168,12 +169,15 @@ Contributions are welcome! Here's how you can help:
 
 Found a bug? Have a feature request? We'd love to hear from you!
 
-- **Issues**: [Open an issue](https://github.com/kingchenc/JellyThemes/issues)
-- **Discussions**: [Start a discussion](https://github.com/kingchenc/JellyThemes/discussions)
+[Open an issue](https://github.com/kingchenc/JellyThemes/issues)
+
+## Credits
+
+JellyThemes is based on [ElegantFin](https://github.com/lscambo13/ElegantFin) by [lscambo13](https://github.com/lscambo13). The layout and most of the styling come from ElegantFin; JellyThemes adds the color editions, glow effects and accent styling on top.
 
 ## License
 
-GPL-3.0 - See [LICENSE](LICENSE) for details.
+GPL-2.0, the same as ElegantFin. See [LICENSE](LICENSE) for details.
 
 ## Star History
 
