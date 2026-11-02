@@ -8,156 +8,208 @@
    ║  ╚══════╝╚═╝     ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝                              ║
    ║                                                                           ║
    ║   Fire Orange Theme for Jellyfin Media Server                             ║
-   ║   Version 1.0                                                             ║
+   ║   Version 1.1                                                             ║
+   ║   Last update: 02.11.2026                                                 ║
    ║                                                                           ║
    ║   Created by: kingchenc (based on ElegantFin)                             ║
-   ║   Repository: https://github.com/kingchenc/JellyThemes                       ║
+   ║   Repository: https://github.com/kingchenc/JellyThemes                    ║
    ║   License: GPL-2.0                                                        ║
    ║                                                                           ║
    ╚═══════════════════════════════════════════════════════════════════════════╝ */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@font-face {
+    font-family: "Material Symbols Rounded Minimal";
+    font-style: normal;
+    font-weight: 100 700;
+    src: url(https://fonts.gstatic.com/l/font?kit=sykg-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190FjzarESMdAUY9qjb3u1M7e05tMSFFiwiIx7ihGnzWmz-lkbjBJUko54uQNlqhKP2qww7THOuDASqI-hkRJowUB4AMXqmksLbVSypWpZCoCuR4ppEVE-Vm2EBGaEWVT1QQVqin1CJL8x-Ze-xGUuG3wq4dfIUCyyVOwlP0NhUaux0cITqh7BYw&skey=70ddea8fe54d532e&v=v362)
+        format("woff2");
+}
+@font-face {
+    font-family: "Material Symbols Rounded";
+    font-style: normal;
+    font-weight: 100 700;
+    src: url(https://fonts.gstatic.com/s/materialsymbolsrounded/v362/sykg-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190Fjzag.woff2)
+        format("woff2");
+}
 :root {
-    --emberVersion: "Ember v1.0 • github.com/kingchenc/JellyThemes";
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 425;
+    font-style: normal;
+    -webkit-tap-highlight-color: transparent !important;
+    --fill: 1;
+    --wght: 400;
+    --grad: 0;
+    --opsz: 30;
     color-scheme: dark;
-    --darkerGradientPoint: #0f0805;
-    --darkerGradientPointAlpha: rgba(15, 8, 5, 0.95);
-    --lighterGradientPoint: #1a100a;
-    --lighterGradientPointAlpha: rgba(26, 16, 10, 0.9);
-    --gradientPointAlpha: rgba(26, 16, 10, 0.3);
-    --headerColor: rgba(26, 16, 10, 0.9);
-    --drawerColor: rgba(15, 8, 5, 0.95);
-    --borderColor: rgba(249, 115, 22, 0.3);
-    --darkerBorderColor: rgba(249, 115, 22, 0.2);
-    --lighterBorderColor: rgba(251, 146, 60, 0.4);
-    --selectorBackgroundColor: rgba(16, 24, 40, 0.9);
-    --selectorBackgroundColorAlpha: rgba(16, 24, 40, 0.5);
-    --activeColorAlpha: rgba(249, 115, 22, 0.9);
-    --activeColor: #f97316;
-    --osdSeekBarPlayedColor: #fb923c;
-    --osdSeekBarBufferedColorAlpha: rgba(249, 115, 22, 0.3);
-    --osdSeekBarThumbColor: #fdba74;
-    --tableBodyColor: rgba(26, 16, 10, 1);
-    --uiAccentColor: #fb923c;
-    --btnMiniPlayColor: #f97316;
-    --btnMiniPlayBorderColor: #fb923c;
-    --btnDeleteColor: #dc2626;
-    --btnDeleteBorderColor: #f87171;
-    --btnSubmitColor: #f97316;
-    --btnSubmitBorderColor: #fb923c;
-    --checkboxCheckedBgColor: #f97316;
-    --highlightOutlineColor: #fb923c;
-    --defaultBorder: var(--borderWidth) solid var(--borderColor);
-    --defaultLighterBorder: var(--borderWidth) solid var(--lighterBorderColor);
-    --textColor: rgb(209, 213, 219);
-    --dimTextColor: rgb(156, 163, 175);
-    --backgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint) 35%, var(--lighterGradientPoint));
-    --cardBackgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint), 25%, var(--lighterGradientPoint));
-    --headerColorGradient: linear-gradient(180deg, rgba(26, 16, 10, 0.95) 30%, 55%, transparent 90%);
-    --headerColorGradientAlt: linear-gradient(180deg, rgba(26, 16, 10, 1), 70%, transparent);
-    --headerBlurMask: linear-gradient(180deg, white 50%, 85%, transparent);
-    --cardFooterGradient: linear-gradient(0deg, rgb(0 0 0 / 90%), 40%, transparent);
-    --topOSDGradient: linear-gradient(180deg, hsla(0, 0%, 0%, 0.8), 45%, hsla(0, 0%, 0%, 0));
-    --bottomOSDGradient: linear-gradient(0deg, hsla(0, 0%, 0%, 0.8), 45%, hsla(0, 0%, 0%, 0));
-    --hoverGradientV: linear-gradient(
-        0deg,
-        transparent,
-        rgb(255 255 255 / 100%) 45%,
-        rgb(255 255 255 / 100%) 55%,
-        transparent
-    );
-    --hoverGradientH: linear-gradient(
-        90deg,
-        transparent,
-        rgb(255 255 255 / 100%) 45%,
-        rgb(255 255 255 / 100%) 55%,
-        transparent
-    );
-    --itemBackdropMask: linear-gradient(180deg, rgba(0, 0, 0, 0.8), 75%, transparent);
+    color: var(--textColor);
     --largerRadius: 1.25em;
     --largeRadius: 1em;
     --smallRadius: 0.5em;
     --smallerRadius: 0.375em;
     --borderWidth: 0.06em;
     --borderWidthDouble: 0.12em;
+    --defaultBorder: var(--borderWidth) solid var(--borderColor);
+    --defaultLighterBorder: var(--borderWidth) solid var(--lighterBorderColor);
     --sidePadding: 3.3%;
     --itemColumnGap: 1em;
     --minEpisodeCardWidth: 26em;
+    --appBarHeight: 5em;
     --blurSmallest: blur(2px);
     --blurDefault: blur(5px);
     --blurLarge: blur(10px);
     --blurLargest: blur(20px);
+    --darkerGradientPoint: #111827;
+    --darkerGradientPointAlpha: rgba(17, 24, 39, 0.85);
+    --lighterGradientPoint: #1d2635;
+    --lighterGradientPointAlpha: rgba(29, 38, 53, 0.85);
+    --gradientPointAlpha: rgba(29, 38, 53, 0.3);
+    --headerColor: rgba(30, 40, 54, 0.8);
+    --drawerColor: rgba(30, 40, 54, 0.9);
+    --borderColor: hsl(214, 13%, 32%);
+    --darkerBorderColor: hsl(214, 13%, 22%);
+    --lighterBorderColor: hsla(0, 0%, 100%, 0.2);
+    --selectorBackgroundColor: hsl(217, 19%, 27%);
+    --selectorBackgroundColorAlpha: hsla(217, 19%, 27%, 0.5);
+    --textColor: rgb(209, 213, 219);
+    --dimTextColor: rgb(156, 163, 175);
+    --fullContrastColor: #fff;
+    --zeroContrastColor: #000;
+    --svgIconFilter: none;
+    --clearLogoFilter: none;
+    --accentColor: hsl(243, 75%, 62%);
+    --accentHoverColor: rgb(117, 111, 226);
+    --semiTransparentAccentColor: rgba(255, 255, 255, 0.125);
+    --btnPlayColor: var(--textColor);
+    --btnPlayBorderColor: var(--borderColor);
+    --btnMiniPlayColor: rgb(41, 154, 93);
+    --btnMiniPlayBorderColor: rgb(50, 167, 105);
+    --btnDeleteColor: rgb(169, 29, 29);
+    --btnDeleteBorderColor: rgb(217, 84, 84);
+    --btnSubmitColor: rgb(61, 54, 178);
+    --btnSubmitBorderColor: rgb(117, 111, 226);
+    --checkboxCheckedBgColor: rgb(79, 70, 229);
+    --highlightOutlineColor: rgb(37, 99, 235);
+    --hoverBackgroundColor: var(--textColor);
+    --hoverTabBackgroundColor: rgba(255, 255, 255, 0.9);
+    --hoverTextColor: #fff;
+    --activeBackgroundColor: var(--semiTransparentAccentColor);
+    --activeTextColor: #fff;
+    --cardHoverBorderColor: #fff;
+    --cardResumeProgressColor: var(--textColor);
+    --multiSelectOverlayColor: rgba(0, 0, 0, 0.8);
+    --dividerColor: rgba(255, 255, 255, 0.05);
+    --textareaBackgroundColor: var(--selectorBackgroundColor);
+    --tableBodyColor: rgb(31, 41, 55);
+    --osdSeekBarPlayedColor: var(--textColor);
+    --osdSeekBarBufferedColorAlpha: rgba(128, 128, 128, 0.5);
+    --osdSeekBarThumbColor: #fff;
+    --backgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint) 35%, var(--lighterGradientPoint));
+    --cardBackgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint), 25%, var(--lighterGradientPoint));
+    --backgroundAlphaOverlay: linear-gradient(180deg, var(--darkerGradientPointAlpha) 80%, transparent);
+    --headerColorGradient: linear-gradient(180deg, rgba(30, 40, 54, 0.95) 30%, 55%, transparent 90%);
+    --headerColorGradientAlt: linear-gradient(180deg, rgba(30, 40, 54, 1), 70%, transparent);
+    --headerBlurMask: linear-gradient(180deg, #fff 50%, 85%, transparent);
+    --cardFooterGradient: linear-gradient(0deg, hsla(0, 0%, 5%, 0.95), 40%, transparent);
+    --topOSDGradient: linear-gradient(180deg, hsla(0, 0%, 0%, 0.8), 45%, hsla(0, 0%, 0%, 0));
+    --bottomOSDGradient: linear-gradient(0deg, hsla(0, 0%, 0%, 0.8), 45%, hsla(0, 0%, 0%, 0));
+    --hoverGradientV: linear-gradient(
+        0deg,
+        transparent,
+        hsla(0, 0%, 100%, 0.35) 45%,
+        hsla(0, 0%, 100%, 0.35) 55%,
+        transparent
+    );
+    --hoverGradientH: linear-gradient(
+        90deg,
+        transparent,
+        hsla(0, 0%, 100%, 0.35) 45%,
+        hsla(0, 0%, 100%, 0.35) 55%,
+        transparent
+    );
+    --itemBackdropMask: linear-gradient(180deg, rgba(0, 0, 0, 0.8), 75%, transparent);
     --shadow: 0.1em 0.1em 0.15em hsla(0, 0%, 0%, 0.3);
-    --headerBlurLayerVisibility: "";
+    --cardShadow: 0 1px 6px 0px hsla(0, 0%, 0%, 0.3);
+    --iconShadow: 0px 0px 2px hsla(0, 0%, 0%, 0.8), 1px 1px 0px hsla(0, 0%, 0%, 0.5);
     --headerBackground: var(--headerColorGradient);
     --loginPageBgUrl: url("");
     --loginPageText: "Sign in to continue";
-    --overlayPlayButtonPosition: 50%;
-    --iconPack: "Material Icons Round", Material Icons;
+    --overlayPlayButtonPosition: 2.8em;
+    --iconPack: "Material Symbols Rounded";
     --extraCardButtonsVisibility: none;
+    --menuButtonVisibility: block;
     --itemOriginalTitleVisibility: block;
     --libraryLabelVisibility: none;
     --clearLogoVisibility: block;
     --itemTitleVisibility: none;
+    --artistClearLogoVisibility: block;
+    --artistTitleVisibility: none;
+    --artistPageBackground: unset;
     --miniOverlayButtonVisibility: block;
+    --endsAtVisibility: block;
+    --criticsRatingVisibility: none;
     --cardHoverEffect: "";
-    --appBarHeight: 5em;
     --backdropTrimFromTop: 10%;
+    --resumeCardScale: 1;
 }
-html {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 425;
-    font-style: normal;
-    -webkit-tap-highlight-color: transparent !important;
+:root.layout-mobile {
+    --headerColorGradient: var(--headerColorGradientAlt);
+    --blurLargest: blur(12px);
+    --headerBlurMask: linear-gradient(180deg, #fff 60%, 90%, transparent);
+    --itemColumnGap: 0.4em;
 }
 body {
     --primaryItemPageNegativeSpace: 14vh;
     --secondaryItemPageNegativeSpace: 60vh;
     --clearLogoBottomSpace: 11em;
 }
+select {
+    text-overflow: ellipsis;
+}
 .layout-desktop > body:has(> audio[src]) {
     --primaryItemPageNegativeSpace: calc(14vh + 5em);
     --secondaryItemPageNegativeSpace: calc(60vh + 5em);
 }
-.layout-mobile {
-    --itemColumnGap: 0;
-    --headerColorGradient: var(--headerColorGradientAlt);
-    --blurLargest: blur(12px);
-    --headerBlurMask: linear-gradient(180deg, white 60%, 90%, transparent);
-}
 .layout-mobile > body {
     --secondaryItemPageNegativeSpace: 45vh;
 }
-@font-face {
-    font-family: "Material Icons Round";
-    font-style: normal;
-    font-weight: 100 700;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/materialsymbolsrounded/v267/sykg-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190Fjzag.woff2)
-        format("woff2");
-}
 .material-icons {
-    font-family: var(--iconPack) !important;
+    font-family:
+        var(--iconPack),
+        Material Icons !important;
     font-weight: normal;
     font-style: normal;
-    display: inline-block;
     line-height: 1;
-    text-transform: none;
     letter-spacing: normal;
-    word-wrap: normal;
+    text-transform: none;
+    display: inline-block;
     white-space: nowrap;
+    word-wrap: normal;
     direction: ltr;
-    line-height: 1;
     vertical-align: middle;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
+    text-rendering: geometricPrecision;
     font-feature-settings: "liga";
-    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-variation-settings:
+        "FILL" var(--fill),
+        "wght" var(--wght),
+        "GRAD" var(--grad),
+        "opsz" var(--opsz);
+    transition: font-variation-settings 0.25s;
 }
 .material-icons.info_outline:before {
     content: "\e88e";
-    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+.detailButton-icon {
+    --fill: 0;
+}
+.ratingbutton-icon-withrating,
+.starIcon,
+.cardOverlayButtonIcon,
+.indicatorIcon,
+.cardImageIcon {
+    --fill: 1;
 }
 .dashboardFooter {
     font-family: "Noto Sans", serif;
@@ -165,25 +217,17 @@ body {
 }
 #myPreferencesMenuPage > div:after,
 .dashboardFooter::after {
-    content: var(--obsidianVersion);
+    content: var(--elegantFinFooterText);
     font-size: 0.8em;
-    color: var(--activeColor);
-    text-shadow: 0 0 10px rgba(249, 115, 22, 0.5);
+    color: var(--borderColor);
     display: inline-grid;
     width: 100%;
     width: -webkit-fill-available;
     justify-content: center;
     font-weight: 600;
 }
-.headerRight button:hover,
-.headerLeft button:hover,
-.headerRight .paper-icon-button-light:hover,
-.headerLeft .paper-icon-button-light:hover {
-    color: var(--activeColor) !important;
-    text-shadow: 0 0 10px rgba(249, 115, 22, 0.6);
-}
 ::selection {
-    background: var(--activeColorAlpha);
+    background: var(--accentHoverColor);
 }
 .cardImageIcon {
     color: var(--borderColor);
@@ -193,19 +237,22 @@ body {
 }
 .card:focus .cardBox.visualCardBox,
 .card:focus .cardBox:not(.visualCardBox) .cardScalable {
-    border-color: white !important;
+    border-color: var(--fullContrastColor) !important;
 }
 .mdl-radio__focus-circle,
 .mdl-radio.show-focus .mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__outer-circle,
 .mdl-radio.show-focus .mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__inner-circle {
-    background: var(--uiAccentColor);
-    color: var(--uiAccentColor);
+    background: var(--accentColor);
+    color: var(--accentColor);
+}
+.emby-button {
+    gap: 1ch;
 }
 .emby-button.show-focus:focus,
 .paper-icon-button-light.show-focus:focus,
 .emby-tabs .emby-button.show-focus:focus {
     background-color: var(--highlightOutlineColor) !important;
-    color: #fff !important;
+    color: var(--fullContrastColor) !important;
 }
 .emby-tabs .emby-button.show-focus:focus {
     outline: none !important;
@@ -222,20 +269,33 @@ body {
         margin-bottom: 0.25em !important;
     }
 }
-.vertical-wrap:not(.centered) {
+.vertical-wrap:not(.centered),
+.vertical-wrap.padded-right-withalphapicker,
+.padded-right-withalphapicker > .vertical-wrap {
     justify-content: flex-start !important;
+}
+#episodesTab > .vertical-wrap,
+#studiosTab > .vertical-wrap,
+#channelsTab > .vertical-wrap,
+#recordingsTab > .vertical-wrap,
+#genresTab > .vertical-wrap {
+    justify-content: center !important;
 }
 .countIndicator,
 .fullSyncIndicator,
 .mediaSourceIndicator {
     background: rgb(31, 80, 189);
     border: var(--defaultLighterBorder);
+    color: #fff;
+}
+.layout-mobile .indicator {
+    font-size: 70%;
 }
 .cardScalable {
     border-radius: var(--largeRadius);
     border: var(--darkerBorderColor) solid var(--borderWidthDouble) !important;
     overflow: hidden !important;
-    box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.4);
+    box-shadow: var(--cardShadow);
     transition: transform 125ms;
 }
 @supports (aspect-ratio: 1 / 1) {
@@ -286,8 +346,7 @@ body {
 }
 .card-hoverable:hover .cardScalable,
 .card-hoverable:hover .visualCardBox {
-    border-color: var(--activeColor) !important;
-    box-shadow: 0 0 15px rgba(249, 115, 22, 0.6), 0 0 30px rgba(249, 115, 22, 0.3) !important;
+    border-color: var(--cardHoverBorderColor) !important;
 }
 .card-hoverable:hover .visualCardBox .cardScalable {
     border-color: var(--darkerBorderColor) !important;
@@ -315,34 +374,32 @@ body {
 }
 .cardOverlayContainer:after {
     content: var(--cardHoverEffect);
-    transition: 0.5s;
+    transition: 0.65s;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    transform: translateY(-50%) translateX(0);
+    transform: translateY(-100%) translateX(0);
     background: var(--hoverGradientV);
 }
 .card-hoverable:hover .cardOverlayContainer:after {
-    transform: translateY(50%) translateX(0);
-    opacity: 0;
+    transform: translateY(100%) translateX(0);
 }
 .backdropCard.card-hoverable .cardOverlayContainer:after,
 .overflowBackdropCard.card-hoverable .cardOverlayContainer:after {
-    transform: translateY(0) translateX(-50%);
+    transform: translateY(0) translateX(-100%);
     background: var(--hoverGradientH);
 }
 .backdropCard.card-hoverable:hover .cardOverlayContainer:after,
 .overflowBackdropCard.card-hoverable:hover .cardOverlayContainer:after {
-    transform: translateY(0) translateX(50%);
-    opacity: 0;
+    transform: translateY(0) translateX(100%);
 }
 .cardBox:not(.visualCardBox) .cardPadder {
     background-color: var(--lighterGradientPoint);
+    box-shadow: none;
 }
 .cardOverlayContainer > .cardOverlayFab-primary {
-    left: unset;
     margin-left: unset;
     margin-top: unset;
     top: unset;
@@ -352,31 +409,32 @@ body {
 .cardOverlayContainer > .cardOverlayFab-primary,
 .listItemImageButton,
 .layout-mobile .cardOverlayButton-br:not([data-action="menu"]) > .cardOverlayButtonIcon {
-    background: linear-gradient(135deg, #f97316, #f97316) !important;
-    color: white;
-    border: 2px solid rgba(251, 146, 60, 0.6);
+    background-color: var(--btnMiniPlayColor) !important;
+    color: #fff !important;
+    border: var(--defaultLighterBorder);
+    border-color: var(--btnMiniPlayBorderColor);
     font-size: 75%;
-    box-shadow: 0 0 12px rgba(249, 115, 22, 0.6);
     z-index: 2;
 }
 .cardOverlayContainer > .cardOverlayFab-primary:hover,
 .listItemImageButton:hover {
-    color: white;
+    color: #fff;
+}
+[dir="ltr"] .layout-desktop .cardOverlayButton-br,
+.layout-desktop .cardOverlayButton-br {
+    bottom: 1.2em;
+    right: 0.7em;
+    z-index: 1;
+    font-size: 0.8em;
+}
+.layout-desktop .cardOverlayButton-br > button {
+    color: #fff;
+    display: var(--extraCardButtonsVisibility);
+    text-shadow: var(--iconShadow);
 }
 .cardOverlayButton-br .cardOverlayButton-hover[data-action="menu"],
 .layout-desktop .listItemButton[data-action="menu"] {
-    display: none;
-}
-.layout-desktop .cardOverlayButton-br,
-[dir="ltr"].layout-desktop .cardOverlayButton-br {
-    bottom: 0.75em;
-    right: 0.5em;
-    display: var(--extraCardButtonsVisibility);
-    z-index: 1;
-}
-.layout-desktop .cardOverlayButton-br button {
-    color: white;
-    text-shadow: var(--shadow);
+    display: var(--menuButtonVisibility);
 }
 .layout-mobile .cardOverlayButton {
     padding: 1em;
@@ -384,8 +442,6 @@ body {
 }
 .layout-mobile .cardOverlayButton-br,
 [dir="ltr"] .layout-mobile .cardOverlayButton-br {
-    bottom: 0.25em;
-    right: 0.25em;
     display: var(--miniOverlayButtonVisibility);
 }
 .layout-mobile .portraitCard .cardOverlayButton-br:not([data-action="menu"]),
@@ -394,10 +450,9 @@ body {
 }
 .layout-mobile .cardOverlayButton-br[data-action="menu"] > .cardOverlayButtonIcon {
     background-color: transparent !important;
-    color: white;
     border: none;
-    text-shadow: 1px 1px 0.1em black;
-    color: white;
+    text-shadow: var(--iconShadow);
+    color: #fff;
 }
 .cardOverlayContainer:has(> button:hover) {
     backdrop-filter: var(--blurDefault);
@@ -545,11 +600,9 @@ body {
     .squareCard:has(.cardFooter) {
         --cardCount: 9;
     }
-    .backdropCard {
-        --cardCount: 9;
-    }
+    .backdropCard,
     .overflowBackdropCard {
-        --cardCount: 8;
+        --cardCount: 7;
     }
 }
 @media (max-width: 200em) {
@@ -564,12 +617,6 @@ body {
     .squareCard:has(.cardFooter) {
         --cardCount: 9;
     }
-    .backdropCard {
-        --cardCount: 9;
-    }
-    .overflowBackdropCard {
-        --cardCount: 8;
-    }
 }
 @media (max-width: 170em) {
     .portraitCard,
@@ -583,11 +630,9 @@ body {
     .squareCard:has(.cardFooter) {
         --cardCount: 9;
     }
-    .backdropCard {
-        --cardCount: 8;
-    }
+    .backdropCard,
     .overflowBackdropCard {
-        --cardCount: 7;
+        --cardCount: 6;
     }
 }
 @media (max-width: 140em) {
@@ -602,11 +647,9 @@ body {
     .squareCard:has(.cardFooter) {
         --cardCount: 7;
     }
-    .backdropCard {
-        --cardCount: 7;
-    }
+    .backdropCard,
     .overflowBackdropCard {
-        --cardCount: 6;
+        --cardCount: 5;
     }
 }
 @media (max-width: 120em) {
@@ -618,24 +661,20 @@ body {
     .overflowSquareCard {
         --cardCount: 7;
     }
-    .layout-tv .portraitCard,
-    .layout-tv .squareCard,
-    .layout-tv .overflowPortraitCard,
-    .layout-tv .overflowSquareCard {
-        --cardCount: 6;
-    }
     .squareCard:has(.cardFooter) {
         --cardCount: 6;
     }
-    .backdropCard {
-        --cardCount: 6;
-    }
+    .backdropCard,
+    .layout-tv .portraitCard,
+    .layout-tv .squareCard,
+    .layout-tv .overflowPortraitCard,
+    .layout-tv .overflowSquareCard,
     .overflowBackdropCard {
         --cardCount: 5;
     }
     .layout-tv .backdropCard,
     .layout-tv .overflowBackdropCard {
-        --cardCount: 4;
+        --cardCount: 3;
     }
 }
 @media (max-width: 100em) {
@@ -648,11 +687,9 @@ body {
     .squareCard:has(.cardFooter) {
         --cardCount: 6;
     }
-    .backdropCard {
-        --cardCount: 6;
-    }
+    .backdropCard,
     .overflowBackdropCard {
-        --cardCount: 5;
+        --cardCount: 4;
     }
 }
 @media (max-width: 80em) {
@@ -719,14 +756,15 @@ body {
         --cardCount: 2;
     }
 }
-.layout-mobile .card {
-    --sidePadding: 5%;
+.cardBox {
+    margin-top: 0;
 }
 .card {
-    --effectiveWidth: calc((99vw - (var(--sidePadding) * 2)));
+    --padding: 0.375em;
+    --effectiveWidth: calc(((100vw - (var(--padding) * 2)) - (var(--sidePadding) * 2)));
     --cardWidth: calc(var(--effectiveWidth) / var(--cardCount) - var(--itemColumnGap));
     width: var(--cardWidth) !important;
-    padding: 0.375em;
+    padding: var(--padding);
     transition: width 0.5s;
     box-sizing: content-box;
 }
@@ -736,27 +774,33 @@ body {
     }
 }
 .layout-mobile .card {
-    --cardWidth: calc(var(--effectiveWidth) / var(--cardCount));
+    --padding: 1px;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 @media (orientation: landscape) and (max-height: 40em) {
     .layout-mobile .card {
         --effectiveWidth: calc((65vw - (var(--sidePadding) * 2)));
     }
 }
+#homeTab .overflowBackdropCard[data-positionticks],
+.nextUpItems > .card,
+#resumableItems > .card {
+    width: calc(var(--cardWidth) * var(--resumeCardScale)) !important;
+}
+.card .cardTextCentered {
+    text-shadow: var(--shadow);
+}
 .detailPageWrapperContainer {
     padding-top: unset;
     margin-top: unset;
 }
 .layout-desktop .detailPageWrapperContainer {
-    background: transparent;
     min-height: 46vh;
-    background: linear-gradient(180deg, transparent, 17vh, rgba(249, 115, 22, 0.08) 50vh);
-    border: 1px solid rgba(249, 115, 22, 0.1);
-    border-radius: var(--largeRadius);
+    background: linear-gradient(180deg, transparent, 17vh, var(--darkerGradientPointAlpha) 50vh);
 }
 .layout-tv .detailPageWrapperContainer {
     padding-left: 30vw;
-    background: transparent;
     min-height: 46vh;
     background: linear-gradient(0deg, var(--darkerGradientPointAlpha) 70%, 85%, transparent);
 }
@@ -803,12 +847,8 @@ body {
 .layout-mobile:has(#itemDetailPage:not(.hide)) .headerHomeButton {
     display: block;
 }
-.pageTitle,
-.pageTitleWithLogo,
-.pageTitleWithDefaultLogo {
+.pageTitle {
     height: 1.5em;
-    color: var(--activeColor) !important;
-    text-shadow: 0 0 10px rgba(249, 115, 22, 0.5);
 }
 .headerLeft .pageTitle {
     display: -webkit-box;
@@ -816,18 +856,17 @@ body {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+.paper-icon-button-light {
+    transition: none;
+}
 .paper-icon-button-light > .material-icons {
     font-size: 1.25em;
-}
-.verticalSection.emby-scroller-container > h2.sectionTitle.sectionTitle-cards {
-    padding-top: 1.25em !important;
-    margin: 0 0 -0.5em 0;
 }
 #itemDetailPage .emby-scroller-container,
 #itemDetailPage .emby-scroller,
 #itemDetailPage .scrollX {
     margin: 0 calc(-1 * var(--sidePadding));
-    padding-left: calc(var(--sidePadding) - 0.375em);
+    padding-left: var(--sidePadding);
 }
 .layout-desktop .emby-scroller-container,
 .layout-desktop .emby-scroller,
@@ -836,52 +875,29 @@ body {
 }
 .emby-scroller,
 .scrollX {
-    padding-left: calc(var(--sidePadding) - 0.375em);
+    padding-left: var(--sidePadding);
+    scroll-snap-type: x proximity;
+    scroll-padding-inline: var(--sidePadding);
 }
 .sectionTabs .scrollX {
     padding-left: 0;
 }
-.itemsContainer:not(.editorsChoiceItemsContainer) {
+.itemsContainer:not(.editorsChoiceItemsContainer, .vertical-list) {
     column-gap: var(--itemColumnGap);
+    row-gap: 1em;
 }
-.layout-desktop .sectionTitle,
-.layout-tv .sectionTitle {
+.layout-mobile .itemsContainer:not(.editorsChoiceItemsContainer, .vertical-wrap, .vertical-list)::after {
+    content: "13";
+    color: transparent;
+}
+.sectionTitle {
     font-size: 1.5rem !important;
 }
-.sectionTitle,
-.sectionTitle-cards,
-.sectionTitleTextButton {
-    color: var(--activeColor) !important;
+.layout-mobile .sectionTitle {
+    font-size: 1.35rem !important;
 }
-.itemsViewSettingsContainer button:hover,
-.itemsViewSettingsContainer .paper-icon-button-light:hover {
-    color: var(--activeColor) !important;
-    background: rgba(249, 115, 22, 0.2) !important;
-    box-shadow: 0 0 10px rgba(249, 115, 22, 0.4);
-}
-.focuscontainer-x button:hover,
-.focuscontainer-x .paper-icon-button-light:hover,
-.focuscontainer-x .emby-button:hover {
-    color: var(--activeColor) !important;
-    background: rgba(249, 115, 22, 0.2) !important;
-    box-shadow: 0 0 10px rgba(249, 115, 22, 0.4);
-}
-.card:hover .cardText,
-.card:hover .cardFooter,
-.card:hover .innerCardFooter,
-.card:hover .textActionButton {
-    color: var(--activeColor) !important;
-}
-.emby-scrollbuttons,
-.emby-scrollbuttons-button,
-.sectionTitleTextButton > .material-icons.chevron_right {
-    display: none !important;
-}
-.emby-scrollbuttons,
-[dir="ltr"] .emby-scrollbuttons {
-    padding-top: 1.25em;
-}
-.sectionTitleContainer + .emby-scrollbuttons {
+[dir="ltr"] .emby-scrollbuttons,
+.emby-scrollbuttons {
     padding-top: 0;
 }
 .emby-scrollbuttons-button.paper-icon-button-light > .material-icons {
@@ -911,7 +927,10 @@ body {
     color: var(--textColor);
 }
 .starIcon {
-    background: linear-gradient(to right, #90cea1, #01b4e4);
+    --tmdb: linear-gradient(to right, #90cea1, #01b4e4);
+    --imdb: linear-gradient(to right, #f2db83, #dba506);
+    --colors: var(--tmdb);
+    background: var(--colors);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: -0.125em;
@@ -924,8 +943,20 @@ body {
 [dir="ltr"] .mediaInfoCriticRating::after {
     content: "%";
 }
+@media (max-width: 31.25em) {
+    .itemMiscInfo .endsAt {
+        display: var(--endsAtVisibility);
+    }
+    .mediaInfoCriticRating {
+        display: var(--criticsRatingVisibility);
+    }
+}
 .detailRibbon:has(.portraitCard .folder) {
     min-height: 32vh;
+    align-content: flex-end;
+}
+.layout-desktop .detailRibbon:has(.person) {
+    min-height: 15vh;
     align-content: flex-end;
 }
 .layout-desktop .detailRibbon {
@@ -963,6 +994,19 @@ body {
         opacity: 1;
     }
 }
+body:not(.hide-scroll) > .videoPlayerContainer {
+    position: relative !important;
+    -webkit-mask: var(--headerBlurMask);
+    mask: var(--headerBlurMask);
+    height: 80vh;
+}
+.layout-mobile body:not(.hide-scroll) > .videoPlayerContainer {
+    height: 40vh;
+    z-index: 1;
+}
+.layout-desktop > body:not(.hide-scroll) > .videoPlayerContainer ~ #reactRoot > .backgroundContainer.withBackdrop {
+    opacity: 0.25;
+}
 .itemBackdrop {
     display: block !important;
 }
@@ -970,7 +1014,7 @@ body {
     height: calc(100vh - 27vh - var(--primaryItemPageNegativeSpace));
 }
 .layout-mobile .itemBackdrop {
-    margin-top: 0;
+    margin-top: 0 !important;
     position: sticky;
     top: -30%;
     -webkit-mask: var(--itemBackdropMask);
@@ -984,14 +1028,15 @@ body {
 #itemDetailPage:has(.subtitle) .itemBackdrop,
 #itemDetailPage:has(.musicParentName) .itemBackdrop,
 #itemDetailPage:has(.detailImageContainer .backdropCard) .itemBackdrop,
+#itemDetailPage:has(.detailImageContainer .squareCard) .itemBackdrop,
 #itemDetailPage:has(.detailImageContainer .person) .itemBackdrop,
 #itemDetailPage:has(.detailImageContainer .queue) .itemBackdrop,
 #itemDetailPage:has(.detailImageContainer .book) .itemBackdrop,
 #itemDetailPage:has(.detailImageContainer .live_tv) .itemBackdrop {
     height: calc(100vh - 27vh - var(--secondaryItemPageNegativeSpace));
 }
-#itemDetailPage:has(.detailImageContainer .cardPadder-square:not(.person)) .itemBackdrop {
-    height: calc(100vh - 20vh - var(--secondaryItemPageNegativeSpace));
+#itemDetailPage:has(.detailImageContainer .cardPadder-square > .person) .itemBackdrop {
+    height: calc(100vh - 4vh - var(--secondaryItemPageNegativeSpace));
 }
 .detailLogo {
     display: var(--clearLogoVisibility);
@@ -1001,6 +1046,7 @@ body {
     transform: translateY(-100%);
     margin: auto 30%;
     height: 25vh;
+    filter: var(--clearLogoFilter);
     background-position: bottom;
 }
 .layout-mobile .detailLogo {
@@ -1024,6 +1070,9 @@ body {
 }
 #itemDetailPage:has(.subtitle) .detailLogo {
     top: calc(100vh - 6em - var(--secondaryItemPageNegativeSpace));
+}
+.layout-desktop #itemDetailPage:has(.detailImageContainer .person) .detailLogo {
+    top: calc(100vh - var(--secondaryItemPageNegativeSpace));
 }
 .layout-mobile #itemDetailPage:has(.subtitle) .detailLogo {
     top: calc(100vh - 11em - var(--secondaryItemPageNegativeSpace));
@@ -1058,7 +1107,6 @@ body {
     transform: none;
 }
 .layout-mobile .detailImageContainer .card {
-    -webkit-filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.25));
     filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.25));
 }
 .layout-mobile [dir="ltr"] .infoWrapper,
@@ -1070,6 +1118,7 @@ body {
     place-items: center;
     display: grid;
     text-align: center;
+    color: var(--textColor);
 }
 .layout-mobile .detailImageContainer {
     display: flex;
@@ -1090,20 +1139,26 @@ body {
     margin-top: 0.5em;
 }
 #itemDetailPage:has(.detailImageContainer .backdropCard) .detailLogo,
-#itemDetailPage:has(.detailImageContainer .album) .detailLogo,
-#itemDetailPage:has(.detailImageContainer .person) .detailLogo {
+#itemDetailPage:has(.detailImageContainer .album) .detailLogo {
     z-index: 2;
     display: none;
+}
+#itemDetailPage:has(.detailImageContainer .person) .detailLogo {
+    z-index: 2;
+    display: var(--artistClearLogoVisibility);
 }
 .detailLogo:not(.hide) ~ .detailPageWrapperContainer .nameContainer h1 {
     z-index: 2;
     display: var(--itemTitleVisibility);
 }
+.detailImageContainer:has(.squareCard .person) ~ .nameContainer h1 {
+    display: var(--artistTitleVisibility);
+}
 .detailLogo.hide ~ .detailPageWrapperContainer .nameContainer h1 {
     display: block !important;
 }
-.detailImageContainer:has(.backdropCard, .squareCard) ~ .nameContainer h1,
-.detailImageContainer:has(.cardImageIcon.person) ~ .nameContainer h1 {
+.detailImageContainer:has(.backdropCard) ~ .nameContainer h1,
+.detailImageContainer:has(.album) ~ .nameContainer h1 {
     display: block !important;
 }
 .detailImageContainer .card.backdropCard:has(.cardImageIcon.album) {
@@ -1133,7 +1188,10 @@ body {
 }
 #itemDetailPage:has(.subtitle),
 #itemDetailPage:has(.musicParentName) {
-    background: linear-gradient(180deg, var(--darkerGradientPointAlpha) 80%, transparent);
+    background: var(--backgroundAlphaOverlay);
+}
+#itemDetailPage:has(.detailImageContainer .cardPadder-square > .person) {
+    background: var(--artistPageBackground, var(--backgroundAlphaOverlay));
 }
 .layout-mobile #itemDetailPage:has(.detailImageContainer .backdropCard) .itemBackdrop,
 .layout-mobile #itemDetailPage:has(.subtitle) .itemBackdrop,
@@ -1143,14 +1201,15 @@ body {
 .layout-mobile .cardImageIcon {
     font-size: 3.5em;
 }
+.homeLibraryButton {
+    width: min(45%, 12rem);
+    min-width: 15%;
+    margin: 0 !important;
+}
 @media (max-width: 50em) {
     .homeLibraryButton {
-        width: 45.6% !important;
+        width: 47.6% !important;
     }
-}
-.homeLibraryButton {
-    padding-inline-start: 0.25em;
-    min-width: 15%;
 }
 @media (orientation: portrait) and (max-width: 40em) {
     [data-type="Movie"] .listItemImage,
@@ -1259,6 +1318,7 @@ html,
 .appfooter {
     background-color: var(--headerColor) !important;
     backdrop-filter: var(--blurLargest) !important;
+    color: var(--textColor);
 }
 .lyricPage {
     padding: 0 var(--sidePadding);
@@ -1281,7 +1341,7 @@ html,
     opacity: 0.45;
 }
 .buttonActive {
-    color: var(--uiAccentColor) !important;
+    color: var(--accentColor) !important;
 }
 #divRunningTasks progress {
     width: calc(100% - 7em);
@@ -1312,23 +1372,21 @@ html,
 }
 .itemProgressBarForeground {
     border-radius: 0 var(--largeRadius) var(--largeRadius) 0;
-    background: linear-gradient(90deg, #f97316, #fb923c) !important;
-    box-shadow: 0 0 8px rgba(249, 115, 22, 0.8);
+    background-color: var(--cardResumeProgressColor);
+    opacity: 0.75;
 }
 .backgroundProgress > div,
 .backgroundProgress {
     background-color: var(--darkerGradientPoint);
 }
 .playbackProgress > div {
-    background-color: var(--uiAccentColor);
+    background-color: var(--accentColor);
 }
 ::-moz-progress-bar {
-    background: var(--uiAccentColor) !important;
-    border-radius: var(--smallRadius) inherit var(--smallRadius) 0;
+    background: var(--accentColor) !important;
 }
 ::-webkit-progress-value {
-    background: var(--uiAccentColor) !important;
-    border-radius: var(--smallRadius) inherit var(--smallRadius) 0;
+    background: var(--accentColor) !important;
 }
 progress,
 ::-webkit-progress-bar {
@@ -1338,12 +1396,15 @@ progress,
     overflow: hidden;
 }
 progress + span {
-    color: var(--uiAccentColor) !important;
+    color: var(--accentColor) !important;
 }
 .mdl-spinner__circle {
     border-color: var(--textColor);
     border-style: inset;
     border-width: 0.25em;
+}
+.sliderContainer {
+    --thumb: 0.4em;
 }
 .mdl-slider-container {
     height: 1em;
@@ -1352,18 +1413,26 @@ progress + span {
     height: unset;
 }
 .mdl-slider-background-flex-container {
-    padding: 0;
+    padding: 0 calc(var(--thumb) / 2);
+}
+.sliderBubbleTrack {
+    margin: 0 calc(var(--thumb) / 2);
+}
+.sliderBubbleText {
+    font-size: 1.5em;
 }
 .mdl-slider-background-flex {
-    border-radius: var(--smallRadius);
-    height: 0.4em;
-    margin-top: -0.2em;
+    border-radius: var(--thumb);
+    height: var(--thumb);
+    margin-top: calc(var(--thumb) / -2);
     background: var(--osdSeekBarBufferedColorAlpha);
     transition: 0.2s linear;
 }
 .sliderContainer:active .mdl-slider-background-flex {
-    height: 0.6em;
-    margin-top: -0.3em;
+    --h: calc(var(--thumb) * 1.5);
+    height: var(--h);
+    border-radius: var(--h);
+    margin-top: calc(var(--h) / -2);
 }
 .mdl-slider-background-lower {
     background-color: var(--osdSeekBarPlayedColor);
@@ -1373,25 +1442,32 @@ progress + span {
 }
 .mdl-slider::-webkit-slider-thumb {
     background: var(--osdSeekBarThumbColor);
-    width: 4px !important;
-    height: 0.4em !important;
-    border-radius: 0em;
+    width: var(--thumb) !important;
+    height: var(--thumb) !important;
+    border-radius: var(--thumb);
+    transition: 0.2s linear;
 }
-.sliderContainer:hover .mdl-slider::-webkit-slider-thumb {
-    width: 0.2em !important;
-    height: 0.8em !important;
-    border-radius: 0.2em;
-    transform: scale(1);
-}
-.sliderContainer:active .mdl-slider::-webkit-slider-thumb,
+.mdl-slider:hover::-webkit-slider-thumb,
+.layout-mobile .mdl-slider::-webkit-slider-thumb,
 .mdl-slider.show-focus:focus::-webkit-slider-thumb {
-    width: 0.2em !important;
-    height: 0.8em !important;
-    border-radius: 0.2em;
-    transform: scale(1) scaleY(1.25);
+    width: calc(var(--thumb) * 1.25) !important;
+    height: calc(var(--thumb) * 5) !important;
+    border-radius: var(--thumb);
+    transform: scale(0.5);
 }
 .mdl-slider::-moz-range-thumb {
     background: var(--osdSeekBarThumbColor);
+    width: var(--thumb) !important;
+    height: var(--thumb) !important;
+    border-radius: var(--thumb);
+    transition: 0.2s linear;
+}
+.mdl-slider:hover::-moz-range-thumb,
+.mdl-slider.show-focus:focus::-moz-range-thumb {
+    width: calc(var(--thumb) * 1.25) !important;
+    height: calc(var(--thumb) * 5) !important;
+    border-radius: var(--thumb);
+    transform: scale(0.5);
 }
 .sliderMarkerContainer {
     margin: 0 0.1em;
@@ -1408,16 +1484,23 @@ progress + span {
 }
 .selectLabel {
     max-height: 2em;
+    color: var(--textColor);
+}
+.inputLabelUnfocused {
+    color: var(--textColor);
+}
+.inputLabelFocused {
+    color: var(--fullContrastColor);
 }
 .button-link {
-    color: rgb(200, 200, 200);
+    color: var(--dimTextColor);
 }
 .button-link:hover {
     color: unset !important;
     text-decoration: none;
 }
 .button-link:active {
-    color: rgb(243, 243, 243) !important;
+    color: var(--fullContrastColor) !important;
     text-decoration: none;
 }
 .mainDrawer,
@@ -1429,8 +1512,11 @@ progress + span {
 .mainDrawer-scrollContainer {
     padding-bottom: 5vh;
 }
+.mainDrawer-scrollContainer > div:first-child {
+    margin-bottom: 1em;
+}
 .btnHeaderSave.button-flat {
-    color: var(--uiAccentColor) !important;
+    color: var(--accentColor) !important;
     gap: 0.3em;
     border-radius: var(--smallRadius);
 }
@@ -1447,66 +1533,77 @@ progress + span {
 .videoOsdBottom.videoOsdBottom-maincontrols .btnPause {
     font-size: 2em;
 }
-.nowPlayingBar .playPauseButton {
-    font-size: 2em;
-}
-.nowPlayingInfoContainer .btnPlayPause {
-    font-size: 3em;
-}
 .osdControls {
     display: flex;
     flex-direction: column-reverse;
 }
 .itemExternalLinks {
-    color: var(--textColor);
-}
-.itemExternalLinks.focuscontainer-x {
     color: transparent;
 }
-.itemExternalLinks.focuscontainer-x > .button-link {
+.itemExternalLinks > .button-link {
     color: var(--textColor);
     background-color: var(--selectorBackgroundColor);
     padding: 0.125em 0.5em;
     border-radius: var(--smallerRadius);
     margin-bottom: 0.5em;
 }
-.layout-mobile .itemExternalLinks.focuscontainer-x > .button-link:hover:not(:active) {
+.layout-mobile .itemExternalLinks > .button-link:hover:not(:active) {
     color: var(--textColor) !important;
 }
-.layout-desktop .itemExternalLinks.focuscontainer-x > a:hover,
-.itemExternalLinks.focuscontainer-x > a:active {
-    background-color: var(--activeColor) !important;
-    color: white !important;
+.layout-desktop .itemExternalLinks > a:hover,
+.itemExternalLinks > a:active {
+    background-color: var(--accentColor) !important;
+    color: #fff !important;
 }
-.layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="themoviedb.org"]:hover,
-.itemExternalLinks.focuscontainer-x > a[href*="themoviedb.org"]:active {
-    background-color: rgb(26, 183, 216) !important;
-    color: black !important;
+.layout-desktop .itemExternalLinks > a[href*="themoviedb.org"]:hover,
+.itemExternalLinks > a[href*="themoviedb.org"]:active {
+    background-color: #1ab7d8 !important;
+    color: #000 !important;
 }
-.layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="imdb.com"]:hover,
-.itemExternalLinks.focuscontainer-x > a[href*="imdb.com"]:active {
-    background-color: rgb(226, 182, 22) !important;
-    color: black !important;
+.layout-desktop .itemExternalLinks > a[href*="imdb.com"]:hover,
+.itemExternalLinks > a[href*="imdb.com"]:active {
+    background-color: #e2b616 !important;
+    color: #000 !important;
 }
-.layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="thetvdb.com"]:hover,
-.itemExternalLinks.focuscontainer-x > a[href*="thetvdb.com"]:active {
-    background-color: rgb(108, 213, 145) !important;
-    color: black !important;
+.layout-desktop .itemExternalLinks > a[href*="thetvdb.com"]:hover,
+.itemExternalLinks > a[href*="thetvdb.com"]:active {
+    background-color: #6cd591 !important;
+    color: #000 !important;
 }
-.layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="trakt.tv"]:hover,
-.itemExternalLinks.focuscontainer-x > a[href*="trakt.tv"]:active {
-    background-color: rgb(171, 58, 173) !important;
-    color: var(--textColor) !important;
+.layout-desktop .itemExternalLinks > a[href*="trakt.tv"]:hover,
+.itemExternalLinks > a[href*="trakt.tv"]:active {
+    background-color: #ab3aad !important;
+    color: #fff !important;
 }
-.layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="theaudiodb.com"]:hover,
-.itemExternalLinks.focuscontainer-x > a[href*="theaudiodb.com"]:active {
-    background-color: rgb(99, 153, 204) !important;
+.layout-desktop .itemExternalLinks > a[href*="theaudiodb.com"]:hover,
+.itemExternalLinks > a[href*="theaudiodb.com"]:active {
+    background-color: #6399cc !important;
     color: rgb(15, 22, 28) !important;
 }
-.layout-desktop .itemExternalLinks.focuscontainer-x > a[href*="musicbrainz.org"]:hover,
-.itemExternalLinks.focuscontainer-x > a[href*="musicbrainz.org"]:active {
-    background-color: rgb(186, 71, 143) !important;
-    color: var(--textColor) !important;
+.layout-desktop .itemExternalLinks > a[href*="musicbrainz.org"]:hover,
+.itemExternalLinks > a[href*="musicbrainz.org"]:active {
+    background-color: #ba478f !important;
+    color: #fff !important;
+}
+.layout-desktop .itemExternalLinks > a[href*="letterboxd.com"]:hover,
+.itemExternalLinks > a[href*="letterboxd.com"]:active {
+    background-color: #14181c !important;
+    color: #fff !important;
+}
+.layout-desktop .itemExternalLinks > a[title*="Radarr"]:hover,
+.itemExternalLinks > a[title*="Radarr"]:active {
+    background-color: #ffc230 !important;
+    color: #000 !important;
+}
+.layout-desktop .itemExternalLinks > a[title*="Sonarr"]:hover,
+.itemExternalLinks > a[title*="Sonarr"]:active {
+    background-color: #07bae9 !important;
+    color: #000 !important;
+}
+.layout-desktop .itemExternalLinks > a[title*="Bazarr"]:hover,
+.itemExternalLinks > a[title*="Bazarr"]:active {
+    background-color: var(--textColor) !important;
+    color: #000 !important;
 }
 .itemTags,
 .itemTags > a {
@@ -1541,8 +1638,11 @@ progress + span {
     color: transparent;
 }
 .overview-expand.emby-button:after {
-    content: "\e313";
-    font-family: "Material Icons";
+    content: "keyboard_arrow_down";
+    font-family:
+        var(--iconPack),
+        Material Icons;
+    font-feature-settings: "liga";
     background: var(--selectorBackgroundColor);
     border-radius: 50%;
     width: 1.5em;
@@ -1579,7 +1679,7 @@ progress + span {
 .innerCardFooter,
 .chapterThumbTextContainer {
     background: var(--cardFooterGradient);
-    text-shadow: 0.1em 0.1em 0px black;
+    text-shadow: var(--iconShadow);
     padding: 0em 2em 2em 2em;
     align-content: end;
     display: grid;
@@ -1593,13 +1693,16 @@ progress + span {
     height: auto;
 }
 .layout-mobile .innerCardFooter {
-    padding: 5em 1.5em 1.5em 1.5em;
+    padding: 5em 1em 1.25em 1em;
 }
 .layout-mobile .chapterCardImageContainer + .innerCardFooter {
     padding: 0em 0.5em 0.5em 0.5em;
 }
 .centerMessage {
     width: unset;
+}
+.noItemsMessage {
+    width: 90%;
 }
 .dialog {
     backdrop-filter: var(--blurDefault);
@@ -1646,6 +1749,8 @@ progress + span {
     background: var(--lighterGradientPoint);
     border-bottom: var(--defaultBorder);
     backdrop-filter: var(--blurLarge);
+    height: 3.5em;
+    padding-top: max(env(safe-area-inset-top), var(--safe-area-inset-top));
 }
 .selectionCommandsPanel > h1 {
     font-size: large;
@@ -1656,16 +1761,18 @@ progress + span {
 }
 .emby-checkbox:checked + span + .checkboxOutline {
     border-radius: var(--smallerRadius) !important;
-    box-shadow: inset 0em 7em 10em 20px rgba(0, 0, 0, 0.8);
     background: transparent;
-    border-color: white;
+    border-color: var(--fullContrastColor);
     border-style: solid;
     border-width: var(--borderWidthDouble);
     outline: none;
 }
+.emby-checkbox:checked + span + .multiSelectCheckboxOutline {
+    box-shadow: inset 0em 7em 10em 20px var(--multiSelectOverlayColor);
+}
 @supports (display: revert) {
     .emby-checkbox:checked + span + .checkboxOutline {
-        outline: solid var(--borderWidth) white;
+        outline: solid var(--borderWidth) #fff;
     }
 }
 .checkboxOutline {
@@ -1676,14 +1783,14 @@ progress + span {
 }
 .itemSelectionPanel .material-icons.check:before {
     font-size: 4em;
-    color: #ffffff;
+    color: var(--fullContrastColor);
     padding: 0.25em;
 }
 .cardText-first + .itemSelectionPanel > .checkboxContainer {
     height: calc(100% - 1.75em);
 }
 .overflowBackdropCard .cardText-first + .itemSelectionPanel > .checkboxContainer {
-    height: calc(100% - 0em);
+    height: 100%;
 }
 .checkboxContainer .emby-checkbox:checked + span + .checkboxOutline.multiSelectCheckboxOutline {
     border-radius: var(--largeRadius) !important;
@@ -1703,9 +1810,18 @@ progress + span {
 .cardText.cardTextCentered:not(.cardText-secondary, .cardText-first) + .itemSelectionPanel > .checkboxContainer {
     height: calc(100% - 3em);
 }
+.cardText-secondary,
+.fieldDescription,
+.guide-programNameCaret,
+.listItem .secondary,
+.nowPlayingBarSecondaryText,
+.programSecondaryTitle,
+.secondaryText {
+    color: var(--dimTextColor);
+}
 .cardFooter + .itemSelectionPanel > .checkboxContainer,
 .cardScalable + .itemSelectionPanel > .checkboxContainer {
-    height: calc(100% - 0em);
+    height: 100%;
 }
 .checkboxOutline.multiSelectCheckboxOutline {
     border-radius: var(--largeRadius);
@@ -1719,11 +1835,10 @@ progress + span {
 }
 .checkboxOutline:not(.multiSelectCheckboxOutline) {
     border: solid gray var(--borderWidth);
-    background-color: white;
+    background-color: #fff;
     transition: all 0.125s;
 }
 .emby-checkbox:checked + span + .checkboxOutline:not(.multiSelectCheckboxOutline) {
-    box-shadow: none;
     background: var(--checkboxCheckedBgColor);
     border: var(--defaultLighterBorder);
 }
@@ -1736,12 +1851,8 @@ progress + span {
     outline: none;
 }
 @supports (display: revert) {
-    .emby-checkbox:focus:not(:checked) + span + .checkboxOutline {
-        outline: var(--borderWidth) solid gray;
-        outline-offset: calc(-2.5 * var(--borderWidth));
-    }
     .emby-checkbox:focus + span + .checkboxOutline {
-        border-color: white !important;
+        border-color: #fff !important;
         outline: var(--borderWidth) solid var(--highlightOutlineColor);
     }
 }
@@ -1754,8 +1865,8 @@ progress + span {
     right: 0.5em;
 }
 .layout-mobile .cardIndicators {
-    top: 0.2em;
-    right: 0.2em;
+    top: 0.45em;
+    right: 0.5em;
 }
 .indicator {
     border: solid rgb(124 124 124 / 50%) var(--borderWidth);
@@ -1787,22 +1898,22 @@ progress + span {
     background: var(--cardBackgroundGradient);
 }
 div[data-type="Book"] .play_arrow:before {
-    content: "\f1c6";
+    content: "book";
     font-size: 85%;
 }
 div[data-type="Photo"] .play_arrow:before {
-    content: "\e5d0";
+    content: "photo";
 }
 div[data-type="PhotoAlbum"] .play_arrow:before {
-    content: "\e8eb";
+    content: "animated_images";
 }
 .emby-button.block,
 .button-alt,
 .raised,
-#btnDeleteImage,
+.raised:focus,
 .manageRecordingButton,
 .dashboardActionsContainer > .emby-button {
-    color: #fff;
+    color: var(--fullContrastColor);
     border-radius: var(--smallRadius);
     background: var(--lighterGradientPoint);
     border: var(--defaultBorder);
@@ -1816,7 +1927,7 @@ div[data-type="PhotoAlbum"] .play_arrow:before {
     margin-inline-end: 0.5em;
 }
 .fab {
-    color: #fff;
+    color: var(--fullContrastColor);
     background: var(--lighterGradientPoint);
     border: var(--defaultBorder);
 }
@@ -1824,29 +1935,18 @@ div[data-type="PhotoAlbum"] .play_arrow:before {
     background: var(--lighterGradientPoint) !important;
     filter: brightness(1.2);
 }
-.raised:focus {
-    background: inherit;
-    filter: brightness(1.2);
-}
 .raised:active,
 .fab:active,
 .emby-button:active {
-    filter: brightness(1.2) !important;
+    filter: brightness(1.05) !important;
     transform: scale(0.98);
 }
 .detailButton {
     border: var(--defaultLighterBorder);
     padding: 0.5em 0.5em !important;
 }
-.detailButton-icon {
-    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-}
 .cardScalable .material-icons.check:before {
-    font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 20;
     transform: scale(1.25);
-}
-.emby-button[title="Favorite"] .material-icons.favorite:before {
-    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 20;
 }
 .detailButton:not(.btnPlay) {
     color: var(--textColor);
@@ -1858,46 +1958,35 @@ div[data-type="PhotoAlbum"] .play_arrow:before {
     background: transparent;
 }
 .layout-desktop .detailButton:not(.btnPlay):hover {
-    color: white !important;
-    background: rgba(249, 115, 22, 0.3) !important;
-    box-shadow: 0 0 12px rgba(249, 115, 22, 0.5);
+    color: var(--zeroContrastColor);
+    background: var(--hoverBackgroundColor);
 }
 .detailButton:active {
-    color: black;
-    background: var(--textColor);
+    color: #fff;
+    background: var(--activeBackgroundColor);
 }
 .btnPlay.detailButton {
-    background: linear-gradient(135deg, #f97316, #f97316) !important;
-    color: white !important;
+    background-color: var(--btnPlayColor);
+    color: var(--zeroContrastColor);
     border-radius: 3em;
-    border: 2px solid rgba(251, 146, 60, 0.6) !important;
+    border-color: var(--btnPlayBorderColor);
     height: 3em;
     min-width: 10em;
     margin-right: 0.5em !important;
     flex-direction: row;
-    box-shadow: 0 0 15px rgba(249, 115, 22, 0.5);
-    transition: all 0.3s ease;
 }
-.btnPlay.detailButton:hover {
-    box-shadow: 0 0 25px rgba(249, 115, 22, 0.8);
-    transform: scale(1.02);
-}
-.btnPlay:not(.formDialogFooterItem):not(.play-button):after {
+.mainDetailButtons > .btnPlay:after {
     content: attr(title);
-    padding: 0 1ch;
+    padding-right: 1ch;
 }
 .btnPlay > .detailButton-content::after {
     padding: 0 1ch;
     place-content: center;
 }
 .btnPlay > .detailButton-content {
-    -webkit-align-items: unset;
     align-items: unset;
-    display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: unset;
     flex-direction: unset;
-    -webkit-justify-content: unset;
     align-content: unset;
     justify-content: flex-start;
 }
@@ -1905,15 +1994,12 @@ div[data-type="PhotoAlbum"] .play_arrow:before {
     content: "Read";
 }
 .mainDetailButtons:has(.detailButton[data-type="Book"]) .btnPlay .material-icons.play_arrow:before {
-    content: "\f1c6";
+    content: "book";
     padding-inline-end: 1ch;
 }
 .mainDetailButtons {
     justify-content: center;
     margin: 0;
-    padding: 0.5em;
-    border-radius: var(--largeRadius);
-    background: rgba(249, 115, 22, 0.08);
 }
 .layout-mobile [dir="ltr"] .mainDetailButtons {
     flex-wrap: wrap;
@@ -1927,33 +2013,44 @@ div[data-type="PhotoAlbum"] .play_arrow:before {
 }
 .localnav > .emby-button {
     background: var(--lighterGradientPoint) !important;
-    color: #fff;
+    color: var(--fullContrastColor);
     padding: 0.8em 0.8em;
 }
 div[data-role="controlgroup"] a.ui-btn-active {
     background: var(--selectorBackgroundColor) !important;
-    color: #fff !important;
+    color: var(--fullContrastColor) !important;
 }
 .guide-date-tab-button.emby-tab-button-active,
 .guide-date-tab-button:focus {
-    color: white;
+    color: var(--fullContrastColor);
 }
 #btnDeleteImage,
 .button-delete,
 .btnRevoke,
 #btnShutdown {
-    background: var(--btnDeleteColor);
+    background: var(--btnDeleteColor) !important;
     border: solid var(--btnDeleteBorderColor) var(--borderWidth);
+    color: #fff !important;
 }
-.button-submit {
+.button-submit,
+.upNextContainer .btnStartNow,
+.MuiButton-colorPrimary {
     background: var(--btnSubmitColor) !important;
     border: solid var(--btnSubmitBorderColor) var(--borderWidth) !important;
+    color: #fff !important;
+}
+.userPreferencesPage .button-submit {
+    position: sticky !important;
+    bottom: calc(1em + max(env(safe-area-inset-bottom), var(--safe-area-inset-bottom, 1px)));
+    box-shadow: 0 0.75em 2em 2em var(--darkerGradientPoint);
+    z-index: 2 !important;
 }
 .collapseContent,
 .formDialogFooter:not(.formDialogFooter-clear),
 .formDialogHeader:not(.formDialogHeader-clear) {
     background-color: var(--headerColor);
     backdrop-filter: var(--blurDefault);
+    color: var(--textColor);
 }
 .paperList {
     padding: 0.4em;
@@ -1972,6 +2069,7 @@ div[data-role="controlgroup"] a.ui-btn-active {
 }
 .listItemIcon:not(.listItemIcon-transparent) {
     background-color: var(--lighterGradientPoint) !important;
+    color: var(--textColor);
 }
 .listItemIcon.notification_important {
     background-color: var(--btnDeleteColor) !important;
@@ -1981,7 +2079,7 @@ div[data-role="controlgroup"] a.ui-btn-active {
 .listItemIcon.schedule:not(.listItemIcon-transparent),
 .listItemIcon.person:not(.listItemIcon-transparent),
 .listItemIcon.live_tv:not(.listItemIcon-transparent) {
-    background-color: rgb(41, 49, 83) !important;
+    background-color: var(--darkerGradientPoint) !important;
     border: var(--defaultBorder);
 }
 .readOnlyContent {
@@ -2021,7 +2119,7 @@ div[data-role="controlgroup"] a.ui-btn-active {
     margin: auto 1em;
 }
 .listItem[data-type="Audio"]:has(.playlistIndexIndicatorImage) .listItemBodyText {
-    color: white;
+    color: var(--fullContrastColor);
     font-weight: 600;
 }
 .listItem[data-type="Audio"]:has(.playlistIndexIndicatorImage):not(:hover) {
@@ -2040,7 +2138,7 @@ div[data-role="controlgroup"] a.ui-btn-active {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    color: var(--textColor);
+    color: inherit;
 }
 .listItem-overview {
     display: -webkit-box;
@@ -2067,7 +2165,8 @@ div[data-role="controlgroup"] a.ui-btn-active {
 }
 .listItem:active,
 .navMenuOption:active {
-    background: rgba(255, 255, 255, 0.125);
+    background: var(--activeBackgroundColor);
+    color: #fff;
 }
 .listItem-border {
     border-color: transparent !important;
@@ -2080,14 +2179,14 @@ div[data-role="controlgroup"] a.ui-btn-active {
 .MuiListItem-root > div {
     border: solid transparent var(--borderWidth);
     border-radius: 0.7em;
-    margin: 0.25 0.5em !important;
 }
 .Mui-selected {
-    background-color: var(--activeColor) !important;
+    background-color: var(--accentColor) !important;
+    color: #fff;
 }
 .actionsheetDivider {
     height: 2px;
-    background: rgb(255, 255, 255, 0.05);
+    background: var(--dividerColor);
 }
 .actionsheet-xlargeFont {
     line-height: normal;
@@ -2098,14 +2197,14 @@ div[data-role="controlgroup"] a.ui-btn-active {
 .actionSheetContent > h1 {
     font-size: unset;
 }
-[dir="ltr"] .actionsheetMenuItemIcon.check {
-    margin: 0 0.45em 0 0.45em !important;
+[dir="ltr"] .actionsheetMenuItemIcon {
+    margin: 0 0.2em 0 0.45em !important;
 }
 .actionSheetMenuItem:has(.listItemIcon.check) {
-    background-color: var(--activeColor);
+    background-color: var(--accentColor);
 }
 .actionSheetMenuItem:has(.listItemIcon.check) .listItemBodyText {
-    color: white;
+    color: var(--activeTextColor);
 }
 .actionSheetMenuItem:has(.listItemIcon.check) .listItemIcon.check {
     display: none;
@@ -2113,8 +2212,12 @@ div[data-role="controlgroup"] a.ui-btn-active {
 .actionSheetMenuItem:has(.listItemIcon.check[style*="hidden"]) {
     background-color: transparent;
 }
+.actionSheetMenuItem:has(.listItemIcon.check[style*="hidden"]) .listItemBodyText {
+    color: var(--fullContrastColor);
+    background-color: transparent;
+}
 .actionSheetMenuItem:has(.listItemIcon.check[style*="hidden"]):active {
-    background-color: rgba(255, 255, 255, 0.125);
+    background-color: var(--semiTransparentAccentColor);
 }
 .navMenuOption {
     border-radius: var(--smallRadius) !important;
@@ -2129,18 +2232,18 @@ div[data-role="controlgroup"] a.ui-btn-active {
     margin-right: 0.25em;
 }
 .navMenuOption-selected {
-    background-color: var(--activeColor) !important;
+    background-color: var(--accentColor) !important;
 }
 #itemDetailPage .detailSection {
     display: grid;
     row-gap: 1em;
     column-gap: 3em;
     max-width: unset !important;
-    grid-template-columns: 25% 1fr 1fr 1fr;
+    grid-template-columns: 1.3fr 0.7fr 1fr 1fr;
     margin-bottom: 1.5em;
 }
-.layout-mobile .detailSection {
-    grid-template-columns: 1fr;
+.tmdb-review-swipe-container {
+    max-width: 93vw;
 }
 .detailPageContent {
     gap: 1em;
@@ -2149,11 +2252,11 @@ div[data-role="controlgroup"] a.ui-btn-active {
     order: 3;
     max-width: unset !important;
     margin-top: 1em;
-    border: 1px solid rgba(249, 115, 22, 0.3);
+    border: var(--defaultBorder);
     border-radius: var(--smallRadius);
     padding: 1em;
     grid-column: 3 / 5;
-    background: rgba(249, 115, 22, 0.15);
+    background-color: var(--lighterGradientPointAlpha);
 }
 .layout-mobile .trackSelections {
     margin-top: 0;
@@ -2187,15 +2290,19 @@ div[data-role="controlgroup"] a.ui-btn-active {
 }
 .selectVideoContainer.trackSelectionFieldContainer > label {
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="%23d1d5db" viewBox="0 0 24 24"><g stroke-width="1.5"><path d="M2 12c0-4.7 0-7 1.5-8.5C4.9 2 7.3 2 12 2s7 0 8.5 1.5C22 4.9 22 7.3 22 12s0 7-1.5 8.5C19.1 22 16.7 22 12 22s-7 0-8.5-1.5C2 19.1 2 16.7 2 12Z"/><path stroke-linecap="round" d="M17 2.5v19M7 2.5v19M2.5 7H7m14.5 0H17M2.5 17H7m14.5 0H17M2 12h20"/></g></svg>');
+    filter: var(--svgIconFilter);
 }
 .selectAudioContainer.trackSelectionFieldContainer > label {
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="%23d1d5db" viewBox="0 0 24 24"><g stroke-width="1.5"><path d="M9 19a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM21 17a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM9 19V8M21 17V6"/><path stroke-linecap="round" d="m15.7 3.8-4 1.3c-1.3.4-2 .6-2.3 1.2C9 6.8 9 7.5 9 8.9V12l12-4v-.5c0-2.5 0-3.7-.8-4.3-.9-.6-2-.2-4.5.6Z"/></g></svg>');
+    filter: var(--svgIconFilter);
 }
 .selectSubtitlesContainer.trackSelectionFieldContainer > label {
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="%23d1d5db" viewBox="0 0 24 24"><g stroke-width="1.5"><path d="M2 12c0-3.8 0-5.7 1.2-6.8C4.3 4 6.2 4 10 4h4c3.8 0 5.7 0 6.8 1.2C22 6.3 22 8.2 22 12s0 5.7-1.2 6.8C19.7 20 17.8 20 14 20h-4c-3.8 0-5.7 0-6.8-1.2C2 17.7 2 15.8 2 12Z"/><path stroke-linecap="round" d="M10 16H6M14 13h4M14 16h-1.5M9.5 13h2M18 16h-1.5M6 13h1"/></g></svg>');
+    filter: var(--svgIconFilter);
 }
 .selectSourceContainer.trackSelectionFieldContainer > label {
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="%23d1d5db" d="m15.4 4.05-.5.56.5-.56Zm3.95 3.57-.5.55.5-.55Zm2.3 2.53-.68.3.68-.3ZM3.17 20.83l.53-.53-.53.53Zm17.66 0-.53-.53.53.53Zm-6.83.42h-4v1.5h4v-1.5ZM2.75 14v-4h-1.5v4h1.5Zm18.5-.44V14h1.5v-.44h-1.5Zm-6.36-8.95 3.96 3.56 1-1.11L15.9 3.5l-1 1.11Zm7.86 8.95c0-1.69.02-2.75-.41-3.71l-1.37.6c.26.6.28 1.3.28 3.11h1.5Zm-3.9-5.39c1.35 1.22 1.85 1.7 2.12 2.29l1.37-.61c-.43-.96-1.23-1.66-2.49-2.8l-1 1.12Zm-8.82-5.42c1.58 0 2.18.01 2.71.22l.54-1.4c-.85-.33-1.78-.32-3.25-.32v1.5Zm5.86.75c-1.08-.98-1.76-1.6-2.61-1.93l-.54 1.4c.53.2.98.59 2.15 1.64l1-1.11ZM10 21.25c-1.9 0-3.26 0-4.29-.14-1-.13-1.58-.39-2-.81l-1.07 1.06c.75.75 1.7 1.08 2.87 1.24 1.15.15 2.63.15 4.49.15v-1.5ZM1.25 14c0 1.86 0 3.34.15 4.49a4.71 4.71 0 0 0 1.24 2.87L3.7 20.3c-.42-.43-.67-1-.81-2.01A36 36 0 0 1 2.75 14h-1.5ZM14 22.75c1.86 0 3.34 0 4.49-.15a4.71 4.71 0 0 0 2.87-1.24L20.3 20.3c-.43.42-1 .68-2.01.81-1.03.14-2.38.14-4.29.14v1.5ZM21.25 14c0 1.9 0 3.26-.14 4.29-.13 1-.39 1.58-.81 2l1.06 1.07a4.71 4.71 0 0 0 1.24-2.87c.15-1.15.15-2.63.15-4.49h-1.5Zm-18.5-4c0-1.9 0-3.26.14-4.29.14-1 .39-1.58.81-2L2.64 2.63A4.71 4.71 0 0 0 1.4 5.51c-.15 1.15-.15 2.63-.15 4.49h1.5Zm7.28-8.75c-1.87 0-3.36 0-4.51.15a4.72 4.72 0 0 0-2.88 1.24L3.7 3.7c.42-.42 1-.67 2.02-.81 1.03-.14 2.4-.14 4.31-.14v-1.5Z"/><path stroke="%23d1d5db" stroke-width="1.5" d="M13 2.5V5c0 2.36 0 3.54.73 4.27.73.73 1.91.73 4.27.73h4"/></svg>');
+    filter: var(--svgIconFilter);
 }
 .detailSectionContent a:not(.overview-expand) {
     text-align: start;
@@ -2213,9 +2320,9 @@ div[data-role="controlgroup"] a.ui-btn-active {
     overflow: hidden;
     margin-top: 1em;
     border-radius: var(--smallRadius);
-    background: rgba(249, 115, 22, 0.15);
-    border: 1px solid rgba(249, 115, 22, 0.3);
-    box-shadow: none !important;
+    background-color: var(--lighterGradientPointAlpha);
+    border: none;
+    box-shadow: inset 0 0 0 0.06em var(--borderColor) !important;
     order: 2;
     grid-column: 1 / 3;
 }
@@ -2228,18 +2335,22 @@ div[data-role="controlgroup"] a.ui-btn-active {
     padding: 0.5em 0.9em;
     align-items: baseline;
 }
-.detailsGroupItem:not(:last-child) {
+.detailsGroupItem:not(:last-child),
+.itemDetailsGroup > div:not(:last-child) {
     border-bottom: var(--defaultBorder);
+}
+.itemDetailsGroup > div:empty {
+    border-bottom: none;
 }
 .detailsGroupItem > .label {
     font-weight: 600;
     flex-basis: 6em;
 }
-.detailsGroupItem > .content > a {
+.detailsGroupItem > .focuscontainer-x a {
     font-weight: 400;
     text-align: end;
 }
-.detailsGroupItem > .content {
+.detailsGroupItem > .focuscontainer-x {
     text-align: end;
     color: var(--dimTextColor);
 }
@@ -2276,8 +2387,16 @@ div[data-role="controlgroup"] a.ui-btn-active {
 .layout-tv .nextUpSection,
 .layout-tv .detailSection > #listChildrenCollapsible,
 .collectionItems,
-.programGuideSection {
+.programGuideSection,
+.series-episodes-section,
+.series-episodes-section ~ #listChildrenCollapsible {
     grid-column: 1 / -1;
+}
+.series-episodes-section {
+    order: 4;
+}
+.collectionItems {
+    order: 2;
 }
 .programGuideSection:not(.hide) {
     order: -1;
@@ -2301,22 +2420,17 @@ div[data-role="controlgroup"] a.ui-btn-active {
 .alphaPickerButton {
     font-family: monospace;
     margin: 0.15em;
-    color: rgba(251, 146, 60, 0.5);
-    transition: all 0.2s ease;
-}
-.alphaPickerButton:hover {
-    color: #fb923c !important;
-    text-shadow: 0 0 15px rgba(249, 115, 22, 0.9), 0 0 25px rgba(249, 115, 22, 0.5);
-    transform: scale(1.3);
+    color: var(--dimTextColor);
 }
 .alphaPickerButton-selected {
-    color: #fdba74 !important;
-    text-shadow: 0 0 20px rgba(251, 146, 60, 1), 0 0 35px rgba(249, 115, 22, 0.7);
-    transform: scale(1.4);
-    font-weight: bold;
+    background-color: var(--btnPlayColor);
+    color: var(--zeroContrastColor) !important;
 }
 .alphaPicker-vertical {
     height: 70%;
+}
+.layout-mobile .alphaPicker-vertical {
+    right: 0 !important;
 }
 .alphaPicker {
     justify-content: center;
@@ -2325,16 +2439,11 @@ div[data-role="controlgroup"] a.ui-btn-active {
     transition: transform 0.2s;
 }
 .alphaPickerButton-tv:focus {
-    background-color: var(--activeColor);
+    background-color: var(--highlightOutlineColor);
     transform: scale(1.75);
-    box-shadow: 0 0 12px rgba(249, 115, 22, 0.6);
 }
 .padded-right {
     padding-right: var(--sidePadding) !important;
-}
-.layout-mobile .padded-right-withalphapicker {
-    padding-left: 4.5%;
-    padding-right: 6.5%;
 }
 [dir="ltr"] .detailPageContent,
 .content-primary {
@@ -2348,11 +2457,14 @@ div[data-role="controlgroup"] a.ui-btn-active {
 #itemDetailPage .verticalSection .itemsContainer.padded-right {
     padding-right: 0 !important;
 }
+.vertical-list > .listGroupHeader {
+    padding-left: 0.5ch;
+}
 .listPaging > span {
     padding: 0 0.5em;
 }
 .layout-mobile #myPreferencesMenuPage {
-    padding-top: 3.75em !important;
+    padding-top: var(--appBarHeight) !important;
 }
 .headerUserButton {
     width: 2em;
@@ -2378,6 +2490,10 @@ div[data-role="controlgroup"] a.ui-btn-active {
 .jstree-default .jstree-wholerow-clicked {
     background: var(--selectorBackgroundColor) !important;
 }
+.verticalSection:not(:empty) {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
 .sectionTitleTextButton {
     padding: 0 0.5em;
 }
@@ -2385,11 +2501,11 @@ div[data-role="controlgroup"] a.ui-btn-active {
     background: transparent !important;
 }
 .sectionTitleTextButton:active {
-    color: white !important;
+    color: var(--fullContrastColor) !important;
 }
 .sectionTitleContainer-cards {
     padding-top: 0;
-    margin: 0.75em 0 -0.75em 0;
+    padding-bottom: 0.2em;
 }
 .sectionTitleTextButton > * {
     text-align: left;
@@ -2400,24 +2516,18 @@ div[data-role="controlgroup"] a.ui-btn-active {
     overflow: hidden;
     max-width: 88vw;
 }
-.layout-mobile :not(.sectionTitleContainer-cards) > .sectionTitle-cards {
-    margin: 0.75em 0 -0.75em 0;
-}
 .dashboardSection .sectionTitleTextButton > .material-icons,
 .sectionTitleTextButton > .material-icons,
 .dashboardSection .sectionTitleTextButton > .material-icons.material-icons {
     font-size: unset;
 }
-.sectionTitleTextButton > .material-icons::before {
-    display: none;
+.sectionTitleTextButton > .chevron_right {
+    --fill: 0;
+    --opsz: 48;
+    font-size: 1.5rem;
 }
-.sectionTitleTextButton > .material-icons.chevron_right {
-    margin-left: 0.5rem !important;
-    height: 1.5rem;
-    width: 1.5rem;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23D1D5DB' aria-hidden='true'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z'%3E%3C/path%3E%3C/svg%3E")
-        no-repeat center center;
-    background-size: contain;
+.sectionTitleTextButton > .chevron_right::before {
+    content: "arrow_circle_right";
 }
 .toast {
     border-radius: var(--smallRadius);
@@ -2431,10 +2541,6 @@ div[data-role="controlgroup"] a.ui-btn-active {
     box-sizing: border-box;
     max-width: 80vw;
 }
-.upNextContainer .btnStartNow {
-    background-color: var(--btnSubmitColor);
-    border-color: var(--btnSubmitBorderColor);
-}
 .upNextDialog-title {
     white-space: pre-wrap;
     width: unset;
@@ -2444,23 +2550,24 @@ div[data-role="controlgroup"] a.ui-btn-active {
     flex-wrap: wrap;
 }
 .upNextContainer .upNextDialog-countdownText {
-    color: white;
+    color: var(--fullContrastColor);
 }
 .skip-button-container {
-    bottom: 25%;
+    bottom: 9rem;
 }
 .skip-button {
-    background-color: whitesmoke;
+    background-color: var(--textColor);
     box-shadow: var(--shadow);
     margin-right: var(--sidePadding);
-    color: black;
+    border-radius: 3em;
+    color: var(--zeroContrastColor);
 }
 .layout-tv .skip-button {
     margin-right: auto;
     margin-left: var(--sidePadding);
 }
 .skip-button:hover {
-    background-color: white;
+    background-color: var(--fullContrastColor);
 }
 .skip-button:active {
     background-color: rgba(245, 245, 245, 0.7);
@@ -2468,6 +2575,7 @@ div[data-role="controlgroup"] a.ui-btn-active {
 }
 .toast,
 .upNextContainer {
+    color: var(--textColor);
     background: var(--headerColor) !important;
     border: var(--defaultBorder) !important;
     backdrop-filter: var(--blurDefault);
@@ -2475,17 +2583,11 @@ div[data-role="controlgroup"] a.ui-btn-active {
 .activeSession {
     width: 98% !important;
 }
-.emby-tab-button:hover {
-    color: var(--activeColor) !important;
-    text-shadow: 0 0 10px rgba(249, 115, 22, 0.6);
-}
 @media (hover: hover) and (pointer: fine) {
     .paper-icon-button-light:hover:not(:disabled) {
-        color: #fff;
-        background-color: rgb(255 255 255 / 5%);
-    }
-    .actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check[style*="hidden"]):hover {
-        background-color: rgba(255, 255, 255, 0.125);
+        color: var(--zeroContrastColor);
+        text-shadow: none !important;
+        background-color: var(--hoverBackgroundColor);
     }
     .emby-select-withcolor:hover:not(.emby-select[disabled], :focus),
     .emby-input:hover:not(:focus),
@@ -2498,21 +2600,34 @@ div[data-role="controlgroup"] a.ui-btn-active {
     }
     .button-flat:hover {
         background-color: rgba(255, 255, 255, 0.2);
-        color: white;
+        color: var(--fullContrastColor);
     }
     .btnPlay.detailButton:hover {
-        background-color: var(--textColor);
-        color: black;
+        background-color: var(--btnPlayColor);
+        filter: brightness(1.1);
+        color: var(--zeroContrastColor);
     }
     .alphaPickerButton:hover {
-        color: rgba(255, 255, 255, 1);
+        color: var(--fullContrastColor);
     }
-    .listItem:hover {
-        background: rgba(255, 255, 255, 0.125);
+    .listItem-largeImage:hover {
         backdrop-filter: var(--blurLargest);
     }
-    .navMenuOption:hover {
-        background: rgba(255, 255, 255, 0.125);
+    .listItem:not(.actionSheetMenuItem:has(.check)):hover {
+        color: var(--hoverTextColor) !important;
+        background: var(--activeBackgroundColor) !important;
+    }
+    .listItem:hover .listItemBodyText,
+    .listItem:hover .secondary {
+        color: var(--hoverTextColor) !important;
+    }
+    .navMenuOption:not(.navMenuOption-selected):hover {
+        color: var(--hoverTextColor) !important;
+        background: var(--activeBackgroundColor) !important;
+    }
+    .actionSheetMenuItem:has(.listItemIcon.check[style*="hidden"]):hover {
+        color: var(--hoverTextColor) !important;
+        background: var(--activeBackgroundColor) !important;
     }
     .searchfields-icon:hover,
     .inputContainer .emby-input-iconbutton:hover {
@@ -2523,16 +2638,25 @@ div[data-role="controlgroup"] a.ui-btn-active {
     }
     .sectionTitleTextButton:hover {
         background: transparent !important;
-        color: white !important;
+        color: var(--fullContrastColor) !important;
     }
     .button-link:hover {
-        color: rgb(243, 243, 243) !important;
+        color: var(--textColor) !important;
         text-decoration: none;
+    }
+    .sectionTabs .emby-tab-button:hover {
+        color: var(--zeroContrastColor);
+        background-color: var(--hoverTabBackgroundColor);
     }
 }
 .paper-icon-button-light:active:not(:disabled) {
-    color: #fff;
-    background-color: rgb(255 255 255 / 5%);
+    color: var(--zeroContrastColor);
+    text-shadow: none !important;
+    background-color: var(--hoverBackgroundColor);
+}
+.layout-mobile .cardOverlayButton-br:active > .cardOverlayButtonIcon {
+    color: var(--zeroContrastColor);
+    text-shadow: none;
 }
 .emby-textarea {
     font-family: consolas, monaco, monospace;
@@ -2545,21 +2669,15 @@ div[data-role="controlgroup"] a.ui-btn-active {
 .emby-select,
 .emby-input,
 .emby-textarea {
-    background: rgba(249, 115, 22, 0.12);
-    border: 1px solid rgba(249, 115, 22, 0.3);
+    background-color: var(--selectorBackgroundColor);
+    border: var(--defaultLighterBorder);
     border-radius: var(--smallRadius);
     padding: 0.5em !important;
-    color: var(--textColor);
-}
-.emby-select:hover,
-.emby-select-withcolor:hover {
-    border-color: var(--activeColor);
-    box-shadow: 0 0 8px rgba(249, 115, 22, 0.4);
 }
 .inputLabelFocused,
 .selectLabelFocused,
 .textareaLabelFocused {
-    color: #fff;
+    color: var(--fullContrastColor);
 }
 .emby-select-withcolor:focus,
 .emby-input:focus,
@@ -2573,23 +2691,12 @@ div[data-role="controlgroup"] a.ui-btn-active {
     .emby-textarea:focus {
         border-color: var(--highlightOutlineColor) !important;
         outline: thin solid var(--highlightOutlineColor) !important;
+        background-color: var(--textareaBackgroundColor);
     }
 }
-.emby-select-withcolor > option,
-.emby-select > option {
-    color: #e5e7eb !important;
-    background: #2e1500 !important;
-    padding: 0.5em;
-}
-.emby-select-withcolor > option:hover,
-.emby-select > option:hover {
-    background: #f97316 !important;
-    color: white !important;
-}
-.emby-select-withcolor > option:checked,
-.emby-select > option:checked {
-    background: #f97316 !important;
-    color: white !important;
+.emby-select-withcolor > option {
+    color: inherit;
+    background-color: var(--selectorBackgroundColor);
 }
 .inputContainer .emby-input-iconbutton {
     color: rgba(255, 255, 255, 0.5);
@@ -2624,7 +2731,7 @@ div[data-role="controlgroup"] a.ui-btn-active {
     font-size: 4em;
     white-space: pre-wrap;
     padding-bottom: 0.5ch;
-    color: white;
+    color: var(--fullContrastColor);
 }
 .nameContainer > h1.itemName,
 .nameContainer > h1.parentName,
@@ -2639,7 +2746,6 @@ div[data-role="controlgroup"] a.ui-btn-active {
     overflow: hidden;
     display: -webkit-box !important;
     -webkit-line-clamp: 3;
-    line-clamp: 3;
     -webkit-box-orient: vertical;
 }
 .layout-mobile .nameContainer > h1.itemName,
@@ -2680,7 +2786,7 @@ div[data-role="controlgroup"] a.ui-btn-active {
     display: none;
 }
 .programCell-active .guideProgramName {
-    background-color: rgba(255, 255, 255, 0.125);
+    background-color: var(--semiTransparentAccentColor);
 }
 .guideVerticalScroller {
     padding: 0;
@@ -2691,7 +2797,7 @@ div[data-role="controlgroup"] a.ui-btn-active {
     right: 0;
 }
 .guide-channelHeaderCell {
-    background-color: rgba(255, 255, 255, 0.125);
+    background-color: var(--semiTransparentAccentColor);
     margin: 0.35em 0.7em 0.7em 0.7em;
     width: auto;
     height: calc(4.42em - 0.7em);
@@ -2728,9 +2834,6 @@ div[data-role="controlgroup"] a.ui-btn-active {
     border-radius: var(--largeRadius) !important;
     border: var(--defaultBorder) !important;
 }
-.sliderBubbleText {
-    font-size: 1.5em;
-}
 fieldset {
     border-radius: var(--smallRadius);
     border: var(--defaultBorder);
@@ -2766,6 +2869,7 @@ table:not(.MuiTable-root.MuiTable-stickyHeader) {
 }
 .MuiList-root.MuiMenu-list {
     background-color: var(--drawerColor);
+    padding: 0.375em;
 }
 ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
     gap: 0.5rem;
@@ -2786,7 +2890,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
     border-color: var(--dimTextColor) !important;
 }
 .progressring-spiner {
-    border-color: var(--uiAccentColor);
+    border-color: var(--accentColor);
 }
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.semiTransparent.noHeaderRight {
     display: none;
@@ -2798,8 +2902,8 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
     min-height: 100vh;
     padding: 1em;
     overflow-y: auto;
-    background: linear-gradient(to bottom, var(--darkerGradientPointAlpha), var(--lighterGradientPoint)),
-        var(--loginPageBgUrl);
+    background:
+        linear-gradient(to bottom, var(--darkerGradientPointAlpha), var(--lighterGradientPoint)), var(--loginPageBgUrl);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2836,7 +2940,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
     margin-bottom: -1em;
     font-size: 1.875em;
     font-weight: 800;
-    color: white;
+    color: var(--fullContrastColor);
     text-align: center;
 }
 .manualLoginForm,
@@ -2858,6 +2962,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
 .runtime {
     width: 4.5em;
     box-sizing: border-box;
+    font-variant-numeric: tabular-nums;
 }
 .startTimeText {
     margin: 0 !important;
@@ -2882,7 +2987,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
     justify-content: right;
 }
 .filterIndicator {
-    background: var(--activeColor);
+    background: var(--accentColor);
 }
 .overflowBackdropCard[data-type="CollectionFolder"] .cardPadder-overflowBackdrop,
 .overflowBackdropCard[data-type="UserView"] .cardPadder-overflowBackdrop {
@@ -2901,7 +3006,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
     overflow: hidden;
 }
 .nowPlayingPageImageContainerNoAlbum .defaultCardBackground {
-    background: repeating-radial-gradient(black, transparent 10em);
+    background: repeating-radial-gradient(#000, transparent 10em);
 }
 .nowPlayingPageImageContainerNoAlbum .cardImageContainer .cardImageIcon {
     color: var(--borderColor);
@@ -2918,12 +3023,14 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
     background: var(--drawerColor);
     border-top: var(--defaultBorder);
     backdrop-filter: var(--blurSmallest);
+    color: var(--textColor);
     z-index: 1;
 }
 .layout-mobile .playlistSectionButton.playlistSectionButtonTransparent {
     background: transparent;
     border-top: var(--defaultBorder);
     border-color: transparent;
+    color: var(--textColor);
 }
 .layout-desktop .nowPlayingInfoContainer {
     position: -webkit-sticky;
@@ -2947,6 +3054,12 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
     border-radius: var(--smallRadius);
     object-fit: cover;
     aspect-ratio: 1 / 1;
+}
+.nowPlayingBar .playPauseButton {
+    font-size: 2em;
+}
+.nowPlayingInfoContainer .btnPlayPause {
+    font-size: 3em;
 }
 .nowPlayingBar .nowPlayingImage {
     background-size: cover;
@@ -3010,14 +3123,14 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
     min-width: 72px;
 }
 .MuiTabs-flexContainer > .MuiButtonBase-root.Mui-selected {
-    color: white;
+    color: var(--fullContrastColor);
     background-color: transparent !important;
 }
 .MuiToggleButtonGroup-grouped.Mui-selected {
-    color: white;
+    color: var(--fullContrastColor);
 }
 .MuiButtonBase-root.MuiIconButton-root:hover {
-    color: white;
+    color: var(--fullContrastColor);
     background-color: transparent;
 }
 #viewPanel .ui-panel-inner {
@@ -3033,10 +3146,23 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
     transition: transform 0.5s;
 }
 .skinHeader-blurred:not(.osdHeader):not(.semiTransparent) {
-    backdrop-filter: var(--blurLarge);
-    background: var(--headerColor);
-    border: var(--defaultBorder);
+    backdrop-filter: var(--appBarBlurStrength, none);
+    background-color: transparent;
+    background: var(--appBarColor, var(--headerBackground));
+    border: var(--appBarBorder, none);
     border-width: 0 0 var(--borderWidth) 0;
+}
+.skinHeader-blurred:not(.osdHeader):not(.semiTransparent)::after {
+    content: var(--appBarSeamlessBlur, "");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: var(--blurLargest);
+    -webkit-mask: var(--headerBlurMask);
+    mask: var(--headerBlurMask);
+    z-index: -1;
 }
 .layout-mobile .skinHeader-blurred:not(.osdHeader),
 .layout-mobile .withSectionTabs .headerTop {
@@ -3045,6 +3171,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
 .sectionTabs {
     display: inline-grid;
     height: var(--appBarHeight);
+    padding-bottom: var(--appBarTabsPadding, 1.5em);
 }
 .layout-mobile .sectionTabs {
     align-content: center;
@@ -3062,9 +3189,10 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
     background-color: transparent;
     border: none;
 }
-.skinHeader-withBackground.semiTransparent .headerButton,
-.skinHeader.headroom:not(.osdHeader, .noHomeButtonHeader):has(.pageTitle:empty) .headerButton {
-    text-shadow: 1px 1px 0 #00000080;
+.skinHeader-withBackground.semiTransparent .headerButton:not(:hover),
+.skinHeader.headroom:not(.osdHeader, .noHomeButtonHeader):has(.pageTitle:empty) .headerButton:not(:hover) {
+    text-shadow: var(--iconShadow);
+    color: #fff;
 }
 .headerTop {
     -webkit-align-items: center;
@@ -3086,22 +3214,29 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
     transform: translateY(calc(-1 * var(--appBarHeight) - var(--borderWidth)));
 }
 .noHomeButtonHeader .emby-tab-button[data-index="1"]:before {
-    content: "\e87d";
+    content: "favorite";
 }
 .noHomeButtonHeader .emby-tab-button[data-index="0"]:before {
-    content: "\e88a";
+    content: "home";
 }
 .noHomeButtonHeader .emby-tab-button:before {
-    font-family: "Material Icons Round";
-    padding-inline-end: 0.5ch;
+    --fill: 0;
+    font-family:
+        var(--iconPack),
+        Material Icons;
+    font-feature-settings: "liga";
     font-size: 1.2em;
-    font-variation-settings: "FILL" 0;
+    font-variation-settings:
+        "FILL" var(--fill),
+        "wght" var(--wght),
+        "GRAD" var(--grad),
+        "opsz" var(--opsz);
+    transition: font-variation-settings 0.25s;
 }
 .layout-tv .sectionTabs .emby-tabs.smoothScrollX {
     overflow: visible !important;
 }
-.sectionTabs .emby-tab-button,
-.headerTabs .emby-tab-button {
+.sectionTabs .emby-tab-button {
     display: inline-flex;
     margin: 0.25em 0.5em;
     padding: 0 1.25em;
@@ -3109,14 +3244,12 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
     color: var(--textColor);
     font-weight: 400;
     border-radius: var(--largeRadius);
-    background: rgba(249, 115, 22, 0.15);
-    border: 1px solid rgba(249, 115, 22, 0.2);
+    background-color: var(--darkerGradientPointAlpha);
 }
 .sectionTabs .emby-tab-button-active {
     margin: 0.25em 0.5em;
-    color: white !important;
-    background: linear-gradient(135deg, #f97316, #f97316) !important;
-    box-shadow: 0 0 12px rgba(249, 115, 22, 0.6);
+    color: var(--zeroContrastColor);
+    background-color: var(--btnPlayColor);
 }
 .libraryPage:not(.noSecondaryNavPage) {
     padding-top: calc(var(--appBarHeight) * 2 + 0.5em) !important;
@@ -3169,37 +3302,9 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
     overflow: unset;
     margin: 0em 0.6em;
 }
-#reactRoot > div:nth-child(3) {
-    container-name: skinHeader;
-    container-type: size;
-    height: var(--appBarHeight);
-}
-@container skinHeader (min-height: 4.9em) {
-    .skinHeader-blurred:not(.osdHeader):not(.semiTransparent) {
-        backdrop-filter: none;
-        background-color: transparent;
-        border: none;
-        background: var(--headerBackground);
-        padding: 0;
-    }
-    .skinHeader-blurred:not(.osdHeader):not(.semiTransparent)::after {
-        content: var(--headerBlurLayerVisibility);
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        backdrop-filter: var(--blurLargest);
-        -webkit-mask: var(--headerBlurMask);
-        mask: var(--headerBlurMask);
-        z-index: -1;
-    }
-    .sectionTabs {
-        padding-bottom: 1.5em;
-    }
-    .layout-mobile .sectionTabs {
-        align-content: center;
-    }
+.skinHeader {
+    padding-top: max(env(safe-area-inset-top), var(--safe-area-inset-top)) !important;
+    color: var(--textColor);
 }
 .nowPlayingPage {
     background: linear-gradient(var(--darkerGradientPointAlpha), transparent);
@@ -3219,7 +3324,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
     backdrop-filter: none;
 }
 .card.show-animation .cardBox {
-    transition: transform 0.05s ease-out, -webkit-transform 0.05s ease-out;
+    transition: transform 0.05s ease-out;
 }
 #slides-container {
     top: calc(-0.5 * var(--appBarHeight));
@@ -3246,5 +3351,250 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
 .detail-button:hover,
 .favorite-button:hover {
     background: var(--dimTextColor);
-    color: black;
+    color: var(--zeroContrastColor);
+}
+:root {
+    --emberVersion: "Ember v1.1 • github.com/kingchenc/JellyThemes";
+    --darkerGradientPoint: #0f0805;
+    --darkerGradientPointAlpha: rgba(15, 8, 5, 0.95);
+    --lighterGradientPoint: #1a100a;
+    --lighterGradientPointAlpha: rgba(26, 16, 10, 0.9);
+    --gradientPointAlpha: rgba(26, 16, 10, 0.3);
+    --headerColor: rgba(26, 16, 10, 0.9);
+    --drawerColor: rgba(15, 8, 5, 0.95);
+    --borderColor: rgba(249, 115, 22, 0.3);
+    --darkerBorderColor: rgba(249, 115, 22, 0.2);
+    --lighterBorderColor: rgba(251, 146, 60, 0.4);
+    --selectorBackgroundColor: rgba(16, 24, 40, 0.9);
+    --selectorBackgroundColorAlpha: rgba(16, 24, 40, 0.5);
+    --activeColorAlpha: rgba(249, 115, 22, 0.9);
+    --activeColor: #f97316;
+    --osdSeekBarPlayedColor: #fb923c;
+    --osdSeekBarBufferedColorAlpha: rgba(249, 115, 22, 0.3);
+    --osdSeekBarThumbColor: #fdba74;
+    --tableBodyColor: rgba(26, 16, 10, 1);
+    --uiAccentColor: #fb923c;
+    --btnMiniPlayColor: #f97316;
+    --btnMiniPlayBorderColor: #fb923c;
+    --btnDeleteColor: #dc2626;
+    --btnDeleteBorderColor: #f87171;
+    --btnSubmitColor: #f97316;
+    --btnSubmitBorderColor: #fb923c;
+    --checkboxCheckedBgColor: #f97316;
+    --highlightOutlineColor: #fb923c;
+    --headerColorGradient: linear-gradient(180deg, rgba(26, 16, 10, 0.95) 30%, 55%, transparent 90%);
+    --headerColorGradientAlt: linear-gradient(180deg, rgba(26, 16, 10, 1), 70%, transparent);
+    --overlayPlayButtonPosition: 50%;
+    --accentColor: var(--activeColor);
+    --accentHoverColor: var(--activeColorAlpha);
+    --cardHoverBorderColor: var(--activeColor);
+    --hoverTabBackgroundColor: rgba(249, 115, 22, 0.15);
+    --hoverBackgroundColor: rgba(255, 255, 255, 0.05);
+    --appBarSeamlessBlur: var(--headerBlurLayerVisibility, "");
+}
+#myPreferencesMenuPage > div:after,
+.dashboardFooter::after {
+    content: var(--emberVersion);
+    color: var(--activeColor);
+    text-shadow: 0 0 10px rgba(249, 115, 22, 0.5);
+}
+.headerRight button:hover,
+.headerLeft button:hover,
+.headerRight .paper-icon-button-light:hover,
+.headerLeft .paper-icon-button-light:hover {
+    color: var(--activeColor) !important;
+    text-shadow: 0 0 10px rgba(249, 115, 22, 0.6) !important;
+}
+.card-hoverable:hover .cardScalable,
+.card-hoverable:hover .visualCardBox {
+    border-color: var(--activeColor) !important;
+    box-shadow: 0 0 15px rgba(249, 115, 22, 0.6), 0 0 30px rgba(249, 115, 22, 0.3) !important;
+}
+.cardOverlayContainer > .cardOverlayFab-primary,
+.listItemImageButton,
+.layout-mobile .cardOverlayButton-br:not([data-action="menu"]) > .cardOverlayButtonIcon {
+    background: linear-gradient(135deg, #f97316, #f97316) !important;
+    border: 2px solid rgba(251, 146, 60, 0.6);
+    box-shadow: 0 0 12px rgba(249, 115, 22, 0.6);
+}
+.layout-desktop .detailPageWrapperContainer {
+    background: linear-gradient(180deg, transparent, 17vh, rgba(249, 115, 22, 0.08) 50vh);
+    border: 1px solid rgba(249, 115, 22, 0.1);
+    border-radius: var(--largeRadius);
+}
+.pageTitle,
+.pageTitleWithLogo,
+.pageTitleWithDefaultLogo {
+    height: 1.5em;
+    color: var(--activeColor) !important;
+    text-shadow: 0 0 10px rgba(249, 115, 22, 0.5);
+}
+.sectionTitle,
+.sectionTitle-cards,
+.sectionTitleTextButton {
+    color: var(--activeColor) !important;
+}
+.itemsViewSettingsContainer button:hover,
+.itemsViewSettingsContainer .paper-icon-button-light:hover {
+    color: var(--activeColor) !important;
+    background: rgba(249, 115, 22, 0.2) !important;
+    box-shadow: 0 0 10px rgba(249, 115, 22, 0.4);
+}
+.focuscontainer-x button:hover,
+.focuscontainer-x .paper-icon-button-light:hover,
+.focuscontainer-x .emby-button:hover {
+    color: var(--activeColor) !important;
+    background: rgba(249, 115, 22, 0.2) !important;
+    box-shadow: 0 0 10px rgba(249, 115, 22, 0.4);
+}
+.card:hover .cardText,
+.card:hover .cardFooter,
+.card:hover .innerCardFooter,
+.card:hover .textActionButton {
+    color: var(--activeColor) !important;
+}
+.emby-scrollbuttons,
+.emby-scrollbuttons-button,
+.sectionTitleTextButton > .material-icons.chevron_right,
+.sectionTitleTextButton > .chevron_right {
+    display: none !important;
+}
+.itemProgressBarForeground {
+    background: linear-gradient(90deg, #f97316, #fb923c) !important;
+    box-shadow: 0 0 8px rgba(249, 115, 22, 0.8);
+    opacity: 1;
+}
+.layout-desktop .detailButton:not(.btnPlay):hover {
+    color: white !important;
+    background: rgba(249, 115, 22, 0.3) !important;
+    box-shadow: 0 0 12px rgba(249, 115, 22, 0.5);
+}
+.btnPlay.detailButton {
+    background: linear-gradient(135deg, #f97316, #f97316) !important;
+    color: white !important;
+    border: 2px solid rgba(251, 146, 60, 0.6) !important;
+    box-shadow: 0 0 15px rgba(249, 115, 22, 0.5);
+    transition: all 0.3s ease;
+}
+.btnPlay.detailButton:hover {
+    box-shadow: 0 0 25px rgba(249, 115, 22, 0.8);
+    transform: scale(1.02);
+}
+.mainDetailButtons {
+    padding: 0.5em;
+    border-radius: var(--largeRadius);
+    background: rgba(249, 115, 22, 0.08);
+}
+.trackSelections {
+    border: 1px solid rgba(249, 115, 22, 0.3);
+    background: rgba(249, 115, 22, 0.15);
+}
+.itemDetailsGroup {
+    background: rgba(249, 115, 22, 0.15);
+    border: 1px solid rgba(249, 115, 22, 0.3);
+    box-shadow: none !important;
+}
+.alphaPickerButton {
+    color: rgba(251, 146, 60, 0.5);
+    transition: all 0.2s ease;
+}
+.alphaPickerButton:hover {
+    color: #fb923c !important;
+    text-shadow: 0 0 15px rgba(249, 115, 22, 0.9), 0 0 25px rgba(249, 115, 22, 0.5);
+    transform: scale(1.3);
+}
+.alphaPickerButton-selected {
+    color: #fdba74 !important;
+    text-shadow: 0 0 20px rgba(251, 146, 60, 1), 0 0 35px rgba(249, 115, 22, 0.7);
+    transform: scale(1.4);
+    font-weight: bold;
+    background-color: transparent;
+}
+.alphaPickerButton-tv:focus {
+    background-color: var(--activeColor);
+    box-shadow: 0 0 12px rgba(249, 115, 22, 0.6);
+}
+.emby-tab-button:hover {
+    color: var(--activeColor) !important;
+    text-shadow: 0 0 10px rgba(249, 115, 22, 0.6);
+}
+.emby-select-withcolor,
+.emby-select,
+.emby-input,
+.emby-textarea {
+    background: rgba(249, 115, 22, 0.12);
+    border: 1px solid rgba(249, 115, 22, 0.3);
+    color: var(--textColor);
+}
+.emby-select:hover,
+.emby-select-withcolor:hover {
+    border-color: var(--activeColor);
+    box-shadow: 0 0 8px rgba(249, 115, 22, 0.4);
+}
+.emby-select-withcolor > option,
+.emby-select > option {
+    color: #e5e7eb !important;
+    background: #2e1500 !important;
+    padding: 0.5em;
+}
+.emby-select-withcolor > option:hover,
+.emby-select > option:hover {
+    background: #f97316 !important;
+    color: white !important;
+}
+.emby-select-withcolor > option:checked,
+.emby-select > option:checked {
+    background: #f97316 !important;
+    color: white !important;
+}
+.sectionTabs .emby-tab-button,
+.headerTabs .emby-tab-button {
+    display: inline-flex;
+    margin: 0.25em 0.5em;
+    padding: 0 1.25em;
+    height: 2.5em;
+    color: var(--textColor);
+    font-weight: 400;
+    border-radius: var(--largeRadius);
+    background: rgba(249, 115, 22, 0.15);
+    border: 1px solid rgba(249, 115, 22, 0.2);
+}
+.sectionTabs .emby-tab-button-active {
+    color: white !important;
+    background: linear-gradient(135deg, #f97316, #f97316) !important;
+    box-shadow: 0 0 12px rgba(249, 115, 22, 0.6);
+}
+.mdl-radio__focus-circle,
+.mdl-radio.show-focus .mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__outer-circle,
+.mdl-radio.show-focus .mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__inner-circle {
+    background: var(--uiAccentColor);
+    color: var(--uiAccentColor);
+}
+.buttonActive,
+progress + span,
+.btnHeaderSave.button-flat {
+    color: var(--uiAccentColor) !important;
+}
+.playbackProgress > div {
+    background-color: var(--uiAccentColor);
+}
+::-moz-progress-bar {
+    background: var(--uiAccentColor) !important;
+}
+::-webkit-progress-value {
+    background: var(--uiAccentColor) !important;
+}
+.progressring-spiner {
+    border-color: var(--uiAccentColor);
+}
+@media (hover: hover) and (pointer: fine) {
+    .paper-icon-button-light:hover:not(:disabled) {
+        color: #fff;
+    }
+}
+.paper-icon-button-light:active:not(:disabled) {
+    color: #fff;
+}
+:root[data-theme="light"] {
+    color-scheme: dark;
 }
