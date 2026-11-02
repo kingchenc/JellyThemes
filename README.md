@@ -187,6 +187,6 @@ GPL-2.0, the same as ElegantFin. See [LICENSE](LICENSE) for details.
 
 <div align="center">
 
-Made with love for the Jellyfin community
+Made with 💜 for the Jellyfin community 🎬✨
 
 </div>
