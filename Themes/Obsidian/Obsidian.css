@@ -33,10 +33,10 @@ body{-webkit-font-smoothing: antialiased}
 ::selection{background: rgba(var(--jt-accent-rgb), 0.35);color: #fff}
 .skinHeader-withBackground,.skinHeader.semiTransparent,.MuiAppBar-root{background: var(--jt-header-bg) !important;-webkit-backdrop-filter: var(--jt-header-backdrop) !important;backdrop-filter: var(--jt-header-backdrop) !important;border-bottom: 1px solid var(--jt-line);box-shadow: none}
 .MuiAppBar-root + * .skinHeader,.skinHeader.semiTransparent{border-bottom-color: transparent}
-.libraryDocument .MuiAppBar-root,.libraryDocument .skinHeader:not(.osdHeader){top: var(--jt-header-gap) !important;left: var(--jt-header-gap) !important;right: var(--jt-header-gap) !important;width: auto !important;border: 1px solid var(--jt-line) !important;border-radius: var(--jt-header-radius)}
-.libraryDocument .MuiAppBar-root + div[aria-hidden="true"]{margin-bottom: var(--jt-header-gap)}
-.libraryDocument .mainAnimatedPages{padding-top: var(--jt-header-gap)}
-.libraryDocument .skinHeader.headroom--unpinned{-webkit-transform: translateY(calc(-100% - var(--jt-header-gap) - 2px));transform: translateY(calc(-100% - var(--jt-header-gap) - 2px))}
+html:not(.transparentDocument) .libraryDocument .MuiAppBar-root,html:not(.transparentDocument) .libraryDocument .skinHeader:not(.osdHeader){top: var(--jt-header-gap) !important;left: var(--jt-header-gap) !important;right: var(--jt-header-gap) !important;width: auto !important;border: 1px solid var(--jt-line) !important;border-radius: var(--jt-header-radius)}
+html:not(.transparentDocument) .libraryDocument .MuiAppBar-root + div[aria-hidden="true"]{margin-bottom: var(--jt-header-gap)}
+html:not(.transparentDocument) .libraryDocument .mainAnimatedPages{padding-top: var(--jt-header-gap)}
+html:not(.transparentDocument) .libraryDocument .skinHeader.headroom--unpinned{-webkit-transform: translateY(calc(-100% - var(--jt-header-gap) - 2px));transform: translateY(calc(-100% - var(--jt-header-gap) - 2px))}
 .MuiToolbar-root a[href="#/"] .MuiButton-startIcon img,.pageTitleWithDefaultLogo,#loginPage .visualLoginForm > h1{content: var(--jt-logo);object-fit: contain}
 .MuiToolbar-root a[href="#/"]{font-size: calc(0.93rem * var(--jt-server-name))}
 .MuiToolbar-root a[href="#/"] .MuiButton-startIcon img{width: auto;height: var(--jt-logo-height);max-width: none !important;max-height: none !important}
