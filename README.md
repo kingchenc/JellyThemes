@@ -35,7 +35,7 @@ Go to **Dashboard > Branding > Custom CSS** and paste one of these.
 On Jellyfin 10.10 and older, Custom CSS is under **Dashboard > General**.
 
 > [!NOTE]
-> On Jellyfin 12, set **User Settings > Display > Display Mode** to **Desktop (Legacy)** on desktop or **Mobile (Legacy)** on phones. The new layout is not supported yet.
+> Jellyfin 12 has a new **Experimental** interface that the themes do not support yet. Under **User Settings > Display > Display Mode**, pick **Auto**, **Desktop** or **Mobile** (called "Desktop (Legacy)" / "Mobile (Legacy)" on early 12.x versions), not **Experimental**. This setting is saved per browser and device.
 
 ### 🟣 Obsidian (Purple)
 
@@ -136,7 +136,7 @@ On Jellyfin 10.10 and older, Custom CSS is under **Dashboard > General**.
 
 ### Jellyfin
 - Jellyfin 10.11
-- Jellyfin 12 with the **Legacy** display mode (see the note under Quick Install)
+- Jellyfin 12 (tested on 12.4) with the classic interface; the new **Experimental** interface is not supported yet (see the note under Quick Install)
 
 ### Apps
 Custom CSS only works in apps that show the Jellyfin web interface:
