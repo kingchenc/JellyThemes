@@ -130,7 +130,8 @@ On Jellyfin 10.10 and older, Custom CSS is under **Dashboard > General**.
 ## Features
 
 - Dark design with one accent color per theme, also in the dashboard, menus and the new Jellyfin 12 interface
-- Glass top bar with blur, glowing cards and buttons on hover
+- Floating glass top bar with blur, glowing cards and buttons on hover
+- Login page as one glass card, with your own logo if you like
 - Play button in the middle of cards, accent progress bars, pill tabs
 - Item pages with a fading backdrop and a labelled Play / Resume button in your language
 - Small and fast: one file of about 28 KB, no extra downloads
@@ -153,6 +154,8 @@ Add a `:root { ... }` block **under** the `@import` line in Custom CSS and set w
 | Setting | Default | What it does |
 |---------|---------|--------------|
 | `--jt-header-backdrop` | `blur(14px) saturate(140%)` | Blur under the top bar. `none` turns it off |
+| `--jt-header-gap` | `0.6em` | Space around the floating top bar. `0` makes it full width again |
+| `--jt-header-radius` | `1em` | Corner radius of the top bar. Use `0` together with `--jt-header-gap: 0` |
 | `--jt-glow` | accent glow | Glow around hovered cards. `none` turns it off |
 | `--jt-glow-s` | accent glow | Glow of buttons. `none` turns it off |
 | `--jt-motion` | `0.2s` | Speed of hover animations. `0s` turns them off |
@@ -166,7 +169,23 @@ Add a `:root { ... }` block **under** the `@import` line in Custom CSS and set w
 | `--jt-footer` | `block` | Theme name, version and author at the end of each page. `none` hides it |
 | `--jt-login-text` | `""` | A heading on the login page, e.g. `"Welcome home"` |
 | `--jt-login-bg` | `none` | Background picture of the login page, e.g. `url("https://...")` |
+| `--jt-logo` | `normal` | Your own logo instead of Jellyfin's, in the top bar and on the login page, e.g. `url("https://...")`. See [Own logo](#own-logo) |
+| `--jt-logo-height` | `1.25em` | Height of your logo in the Jellyfin 12 top bar, e.g. `2em` for a logo with text |
+| `--jt-logo-banner` | `contain` | `0` hides Jellyfin's banner behind your logo in the classic layouts |
+| `--jt-server-name` | `1` | `0` hides the server name next to the logo in the Jellyfin 12 top bar |
 
+### Own logo
+
+Put your logo somewhere online (as a PNG or SVG with a transparent background) and add:
+
+```css
+:root {
+    --jt-logo: url("https://example.com/my-logo.png");
+    --jt-logo-banner: 0;
+}
+```
+
+If the logo already shows a name, also add `--jt-server-name: 0;` and make it bigger with `--jt-logo-height: 2em;`. The name next to the logo in Jellyfin 12 is your server name; you can change it under **Dashboard > General**.
 ### Faster on older TVs
 
 All effects are on by default, also on TVs (Jellyfin's TV display mode). If a TV feels slow (older Samsung and LG models), turn blur, glow and animations off there. This only changes the TV display mode:
