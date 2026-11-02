@@ -52,7 +52,7 @@ body{-webkit-font-smoothing: antialiased}
 .sectionTitleTextButton:hover,.sectionTitleTextButton:hover > h2{color: var(--jt-accent-2)}
 .emby-scrollbuttons,.sectionTitleTextButton > .material-icons,.sectionTitleTextButton > .chevron_right{display: none !important}
 .cardScalable,.visualCardBox,.cardImageContainer,.cardContent,.cardOverlayContainer,.blurhash-canvas,.cardBox:not(.visualCardBox) .cardPadder{border-radius: var(--jt-card-radius)}
-.cardScalable,.visualCardBox{border: 1px solid transparent;transition: border-color var(--jt-motion), box-shadow var(--jt-motion)}
+.cardScalable,.visualCardBox{border: 1px solid transparent;transition: box-shadow var(--jt-motion)}
 .cardBox:not(.visualCardBox) .cardPadder,.cardImageContainer.defaultCardBackground,.defaultCardBackground1,.defaultCardBackground2,.defaultCardBackground3,.defaultCardBackground4,.defaultCardBackground5{background-color: var(--jt-bg-2) !important;background-image: linear-gradient(135deg, var(--jt-accent-softer), rgba(0, 0, 0, 0.2))}
 .cardImageIcon,.cardPadder .cardImageIcon{color: rgba(var(--jt-accent-rgb), 0.45)}
 .card[data-type="UserView"] .cardFooter,.card[data-type="CollectionFolder"] .cardFooter,.card[data-type="UserView"] .cardBox > .cardText,.card[data-type="CollectionFolder"] .cardBox > .cardText{display: var(--jt-library-labels)}
@@ -63,10 +63,11 @@ body{-webkit-font-smoothing: antialiased}
 .cardText{color: var(--jt-text)}
 .cardText-secondary{color: var(--jt-text-3)}
 .cardOverlayContainer{background: linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.55))}
-.cardOverlayFab-primary{top: 50% !important;left: 50% !important;right: auto !important;bottom: auto !important;margin: 0 !important;transform: translate(-50%, -50%);width: 3em;height: 3em;background: var(--jt-gradient) !important;color: var(--jt-on-accent) !important;border: 2px solid rgba(var(--jt-accent-3-rgb), 0.7);border-radius: 50%;box-shadow: var(--jt-glow-s);transition: transform var(--jt-motion-fast)}
-.cardOverlayFab-primary:hover{transform: translate(-50%, -50%) scale(1.1)}
+.cardOverlayFab-primary{top: 50% !important;left: 50% !important;right: auto !important;bottom: auto !important;margin: -1.5em 0 0 -1.5em !important;box-sizing: border-box;width: 3em;height: 3em;background: var(--jt-gradient) !important;color: var(--jt-on-accent) !important;border: 2px solid rgba(var(--jt-accent-3-rgb), 0.7);border-radius: 50%;box-shadow: var(--jt-glow-s);transition: opacity var(--jt-motion), transform var(--jt-motion-fast)}
+.cardOverlayContainer > .cardOverlayFab-primary:hover{transform: scale(1.1)}
 .cardOverlayFab-primary .cardOverlayButtonIcon{color: inherit}
-.cardOverlayButton{border-radius: 50%}
+.cardOverlayButton{border-radius: 50%;transition-property: opacity, transform, background-color}
+.cardOverlayButton.cardOverlayFab-primary{transition-property: opacity, transform}
 .cardOverlayButton:hover,.cardOverlayButton-hover:hover{background: var(--jt-accent-soft);color: var(--jt-accent-2)}
 .layout-mobile .cardOverlayButton-br[data-action="play"]{display: var(--jt-card-mini-buttons)}
 .layout-mobile .cardOverlayButton-br[data-action="play"] > .cardOverlayButtonIcon{background: var(--jt-gradient);color: var(--jt-on-accent);box-shadow: var(--jt-glow-s)}
