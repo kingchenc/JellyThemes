@@ -368,6 +368,7 @@ calc(100em * (1 - var(--jt-badge-corner)))}
 .osdTitle,.osdTextContainer{color: var(--jt-text)}
 .upNextDialog-countdownText{color: var(--jt-accent-2)}
 .playstatebutton-icon-played,.ratingbutton-icon-withrating{color: var(--jt-accent-2)}
+.MuiIconButton-root > svg.MuiSvgIcon-colorError[data-testid="FavoriteIcon"],.MuiIconButton-root > svg.MuiSvgIcon-colorError[data-testid="CheckIcon"]{color: var(--jt-accent-2)}
 #loginPage{padding-top: 0.5em !important;background-image: var(--jt-login-bg);background-size: cover;background-position: center}
 #loginPage > .padded-left{position: relative;box-sizing: border-box;width: 100%;max-width: 44em;margin: calc(1em + 7.5em * var(--jt-mascot-login)) auto 2em;padding: 1.5em 1.5em 2em !important;background: rgba(var(--jt-bg-2-rgb), 0.72);-webkit-backdrop-filter: var(--jt-header-backdrop);backdrop-filter: var(--jt-header-backdrop);border: 1px solid var(--jt-accent-line);border-radius: 1.4em;box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5)}
 #loginPage > .padded-left::before{content: "";position: absolute;left: 50%;bottom: 100%;width: 7em;height: calc(9em * var(--jt-mascot-login));margin-left: -3.5em;margin-bottom: -0.6em;background: var(--jt-mascot) center bottom / contain no-repeat;filter: drop-shadow(0 0 18px rgba(var(--jt-accent-rgb), 0.45));pointer-events: none}
