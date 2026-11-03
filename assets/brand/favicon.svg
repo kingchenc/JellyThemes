@@ -6,6 +6,88 @@
     <linearGradient id="jttable" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#2a2140"/><stop offset="1" stop-color="#0e0c18"/></linearGradient>
     <filter id="jtglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="20"/></filter>
-    <filter id="jtsoft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter></defs>
-  <polygon points="32.0,2.0 58.0,17.0 44.5,24.8 32.0,17.6" fill="#a855f7"/><polygon points="58.0,17.0 58.0,47.0 44.5,39.2 44.5,24.8" fill="#06b6d4"/><polygon points="58.0,47.0 32.0,62.0 32.0,46.4 44.5,39.2" fill="#f59e0b"/><polygon points="32.0,62.0 6.0,47.0 19.5,39.2 32.0,46.4" fill="#f97316"/><polygon points="6.0,47.0 6.0,17.0 19.5,24.8 19.5,39.2" fill="#a1a1aa"/><polygon points="6.0,17.0 32.0,2.0 32.0,17.6 19.5,24.8" fill="#94a3b8"/><polygon points="32.0,17.6 44.5,24.8 44.5,39.2 32.0,46.4 19.5,39.2 19.5,24.8" fill="url(#jttable)"/><polygon points="32.0,2.0 58.0,17.0 58.0,47.0 32.0,62.0 6.0,47.0 6.0,17.0" fill="none" stroke="#fff" stroke-opacity="0.75" stroke-width="2.4" stroke-linejoin="round"/><polygon points="28.3,25.7 40.0,32.0 28.3,38.3" fill="#fff" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/>
+    <filter id="jtsoft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter>
+    <linearGradient id="mspectrum" x1="120" y1="0" x2="392" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#94a3b8"/>
+      <stop offset="0.2" stop-color="#a855f7"/>
+      <stop offset="0.4" stop-color="#06b6d4"/>
+      <stop offset="0.6" stop-color="#f59e0b"/>
+      <stop offset="0.8" stop-color="#f97316"/>
+      <stop offset="1" stop-color="#a1a1aa"/>
+    </linearGradient>
+    <linearGradient id="mshade" x1="0" y1="96" x2="0" y2="292" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.38"/>
+      <stop offset="0.45" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.38"/>
+    </linearGradient>
+    <linearGradient id="mt1" x1="0" y1="296" x2="0" y2="470" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#a855f7"/><stop offset="1" stop-color="#a855f7" stop-opacity="0"/></linearGradient>
+    <linearGradient id="mt2" x1="0" y1="296" x2="0" y2="482" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#06b6d4"/><stop offset="1" stop-color="#06b6d4" stop-opacity="0"/></linearGradient>
+    <linearGradient id="mt3" x1="0" y1="296" x2="0" y2="490" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
+    <linearGradient id="mt4" x1="0" y1="296" x2="0" y2="482" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f59e0b"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></linearGradient>
+    <linearGradient id="mt5" x1="0" y1="296" x2="0" y2="470" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f97316"/><stop offset="1" stop-color="#f97316" stop-opacity="0"/></linearGradient>
+    <filter id="mglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="msoft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+    <clipPath id="mbell">
+      <path id="mbellShape" d="M120 288 C120 168 182 96 256 96 C330 96 392 168 392 288
+               Q 369 306 346 288 Q 323 306 301 288 Q 278 306 256 288
+               Q 234 306 211 288 Q 189 306 166 288 Q 143 306 120 288 Z"/>
+    </clipPath>
+  </defs>
+  <g transform="translate(9.1 1.0) scale(0.1476) translate(-96 -72)">
+  
+
+  <!-- halo -->
+  <path d="M120 288 C120 168 182 96 256 96 C330 96 392 168 392 288 Z" fill="url(#mspectrum)" opacity="0.5" filter="url(#mglow)"/>
+
+  <!-- frills right under the bell -->
+  <g fill="none" stroke-linecap="round" stroke-width="3" opacity="0.7">
+    <path d="M140 296 C134 312 146 322 140 338" stroke="#a855f7"/>
+    <path d="M178 300 C172 318 186 330 178 348" stroke="#a855f7"/>
+    <path d="M232 302 C226 320 240 332 232 350" stroke="#06b6d4"/>
+    <path d="M280 302 C286 320 272 332 280 350" stroke="#f59e0b"/>
+    <path d="M334 300 C340 318 326 330 334 348" stroke="#f97316"/>
+    <path d="M372 296 C378 312 366 322 372 338" stroke="#f97316"/>
+  </g>
+
+  <!-- tentacles, fading out -->
+  <g fill="none" stroke-linecap="round" stroke-width="10">
+    <path d="M156 298 C144 336 172 356 156 396 C146 420 160 442 152 466" stroke="url(#mt1)"/>
+    <path d="M206 304 C196 350 228 370 210 414 C200 438 216 458 208 480" stroke="url(#mt2)"/>
+    <path d="M256 306 C246 354 280 380 258 428 C248 450 264 470 256 490" stroke="url(#mt3)"/>
+    <path d="M306 304 C316 350 284 370 302 414 C312 438 296 458 304 480" stroke="url(#mt4)"/>
+    <path d="M356 298 C368 336 340 356 356 396 C366 420 352 442 360 466" stroke="url(#mt5)"/>
+  </g>
+
+  <!-- the bell: a cut gem in the six theme colors -->
+  <g clip-path="url(#mbell)">
+    <rect x="110" y="90" width="292" height="230" fill="url(#mspectrum)"/>
+    <g fill="#ffffff">
+      <polygon points="256,96 120,300 166,300" opacity="0.10"/>
+      <polygon points="256,96 211,300 256,300" opacity="0.16"/>
+      <polygon points="256,96 301,300 346,300" opacity="0.08"/>
+    </g>
+    <g fill="#000000">
+      <polygon points="256,96 166,300 211,300" opacity="0.12"/>
+      <polygon points="256,96 256,300 301,300" opacity="0.06"/>
+      <polygon points="256,96 346,300 392,300" opacity="0.18"/>
+    </g>
+    <g stroke="#ffffff" stroke-opacity="0.28" stroke-width="2" fill="none">
+      <line x1="256" y1="96" x2="120" y2="300"/>
+      <line x1="256" y1="96" x2="166" y2="300"/>
+      <line x1="256" y1="96" x2="211" y2="300"/>
+      <line x1="256" y1="96" x2="256" y2="300"/>
+      <line x1="256" y1="96" x2="301" y2="300"/>
+      <line x1="256" y1="96" x2="346" y2="300"/>
+      <line x1="256" y1="96" x2="392" y2="300"/>
+      <path d="M126 236 C180 214 332 214 386 236"/>
+    </g>
+    <rect x="110" y="90" width="292" height="230" fill="url(#mshade)"/>
+    <ellipse cx="200" cy="150" rx="58" ry="26" transform="rotate(-28 200 150)" fill="#ffffff" opacity="0.32"/>
+  </g>
+  <use href="#mbellShape" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="3"/>
+
+  <!-- play -->
+  <path d="M236 168 C236 160 244 156 251 160 L298 188 C305 192 305 202 298 206 L251 234 C244 238 236 234 236 226 Z" fill="#ffffff" filter="url(#msoft)" opacity="0.6"/>
+  <path d="M236 168 C236 160 244 156 251 160 L298 188 C305 192 305 202 298 206 L251 234 C244 238 236 234 236 226 Z" fill="#ffffff"/>
+</g>
 </svg>
