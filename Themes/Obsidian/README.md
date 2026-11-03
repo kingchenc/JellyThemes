@@ -4,9 +4,9 @@ Deep space theme with elegant violet/purple accents.
 
 ## Preview
 
-<img src="assets/preview/home.png" alt="Obsidian Preview">
+<img src="assets/preview/Obsidian.png" alt="Obsidian Preview">
 
-<img src="assets/preview/details.png" alt="Obsidian item page">
+<img src="assets/preview/Obsidian-details.png" alt="Obsidian item page">
 
 ## Gallery
 

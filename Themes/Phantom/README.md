@@ -4,9 +4,9 @@ Ghostly slate theme with translucent cool tones.
 
 ## Preview
 
-<img src="assets/preview/home.png" alt="Phantom Preview">
+<img src="assets/preview/Phantom.png" alt="Phantom Preview">
 
-<img src="assets/preview/details.png" alt="Phantom item page">
+<img src="assets/preview/Phantom-details.png" alt="Phantom item page">
 
 ## Gallery
 

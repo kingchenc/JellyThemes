@@ -46,8 +46,8 @@ On Jellyfin 10.10 and older, Custom CSS is under **Dashboard > General**.
 <details>
 <summary>📸 Preview</summary>
 <br>
-<img src="Themes/Obsidian/assets/preview/home.png" alt="Obsidian home page">
-<img src="Themes/Obsidian/assets/preview/details.png" alt="Obsidian movie page">
+<img src="Themes/Obsidian/assets/preview/Obsidian.png" alt="Obsidian home page">
+<img src="Themes/Obsidian/assets/preview/Obsidian-details.png" alt="Obsidian movie page">
 </details>
 
 ---
@@ -61,8 +61,8 @@ On Jellyfin 10.10 and older, Custom CSS is under **Dashboard > General**.
 <details>
 <summary>📸 Preview</summary>
 <br>
-<img src="Themes/Solaris/assets/preview/home.png" alt="Solaris home page">
-<img src="Themes/Solaris/assets/preview/details.png" alt="Solaris movie page">
+<img src="Themes/Solaris/assets/preview/Solaris.png" alt="Solaris home page">
+<img src="Themes/Solaris/assets/preview/Solaris-details.png" alt="Solaris movie page">
 </details>
 
 ---
@@ -76,8 +76,8 @@ On Jellyfin 10.10 and older, Custom CSS is under **Dashboard > General**.
 <details>
 <summary>📸 Preview</summary>
 <br>
-<img src="Themes/Nebula/assets/preview/home.png" alt="Nebula home page">
-<img src="Themes/Nebula/assets/preview/details.png" alt="Nebula movie page">
+<img src="Themes/Nebula/assets/preview/Nebula.png" alt="Nebula home page">
+<img src="Themes/Nebula/assets/preview/Nebula-details.png" alt="Nebula movie page">
 </details>
 
 ---
@@ -91,8 +91,8 @@ On Jellyfin 10.10 and older, Custom CSS is under **Dashboard > General**.
 <details>
 <summary>📸 Preview</summary>
 <br>
-<img src="Themes/Ember/assets/preview/home.png" alt="Ember home page">
-<img src="Themes/Ember/assets/preview/details.png" alt="Ember movie page">
+<img src="Themes/Ember/assets/preview/Ember.png" alt="Ember home page">
+<img src="Themes/Ember/assets/preview/Ember-details.png" alt="Ember movie page">
 </details>
 
 ---
@@ -106,8 +106,8 @@ On Jellyfin 10.10 and older, Custom CSS is under **Dashboard > General**.
 <details>
 <summary>📸 Preview</summary>
 <br>
-<img src="Themes/Void/assets/preview/home.png" alt="Void home page">
-<img src="Themes/Void/assets/preview/details.png" alt="Void movie page">
+<img src="Themes/Void/assets/preview/Void.png" alt="Void home page">
+<img src="Themes/Void/assets/preview/Void-details.png" alt="Void movie page">
 </details>
 
 ---
@@ -121,8 +121,8 @@ On Jellyfin 10.10 and older, Custom CSS is under **Dashboard > General**.
 <details>
 <summary>📸 Preview</summary>
 <br>
-<img src="Themes/Phantom/assets/preview/home.png" alt="Phantom home page">
-<img src="Themes/Phantom/assets/preview/details.png" alt="Phantom movie page">
+<img src="Themes/Phantom/assets/preview/Phantom.png" alt="Phantom home page">
+<img src="Themes/Phantom/assets/preview/Phantom-details.png" alt="Phantom movie page">
 </details>
 
 ---

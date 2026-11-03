@@ -4,9 +4,9 @@ Golden sun theme with warm amber tones.
 
 ## Preview
 
-<img src="assets/preview/home.png" alt="Solaris Preview">
+<img src="assets/preview/Solaris.png" alt="Solaris Preview">
 
-<img src="assets/preview/details.png" alt="Solaris item page">
+<img src="assets/preview/Solaris-details.png" alt="Solaris item page">
 
 ## Gallery
 

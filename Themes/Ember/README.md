@@ -4,9 +4,9 @@ Fiery orange theme with warm blazing tones.
 
 ## Preview
 
-<img src="assets/preview/home.png" alt="Ember Preview">
+<img src="assets/preview/Ember.png" alt="Ember Preview">
 
-<img src="assets/preview/details.png" alt="Ember item page">
+<img src="assets/preview/Ember-details.png" alt="Ember item page">
 
 ## Gallery
 

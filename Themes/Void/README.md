@@ -4,9 +4,9 @@ Pure black minimal theme with subtle gray accents.
 
 ## Preview
 
-<img src="assets/preview/home.png" alt="Void Preview">
+<img src="assets/preview/Void.png" alt="Void Preview">
 
-<img src="assets/preview/details.png" alt="Void item page">
+<img src="assets/preview/Void-details.png" alt="Void item page">
 
 ## Gallery
 
