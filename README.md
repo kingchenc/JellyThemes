@@ -136,7 +136,7 @@ On Jellyfin 10.10 and older, Custom CSS is under **Dashboard > General**.
 - Item pages with a fading backdrop, a labelled Play / Resume button in your language and round photos of the cast
 - Episodes of a season as tiles
 - Your own colors, blur, speed and corners, see [Settings](#settings)
-- Small and fast: one file of about 34 KB (7 KB over the network), no extra downloads
+- Small and fast: one file of about 62 KB (11 KB over the network) plus the 3 KB logo, no web fonts, no `:has()`
 - Works in the browser, the desktop and mobile apps, on iOS and on TVs (Samsung, LG)
 - Everything is on by default; anything can be switched off, see [Settings](#settings)
 
