@@ -195,6 +195,8 @@ Add a `:root { ... }` block **under** the `@import` line in Custom CSS and set w
 | `--jt-footer` | `block` | Theme name, version and author. `none` hides it |
 | `--jt-mascot-login` | `1` | The jellyfish above the login card. `0` hides it |
 | `--jt-mascot-footer` | `1` | The small jellyfish in the footer. `0` hides it |
+| `--jt-mascot-empty` | `1` | The jellyfish on empty pages ("Nothing here"). `0` hides it |
+| `--jt-mascot-menu` | `1` | The jellyfish at the end of the menu drawer. `0` hides it |
 | `--jt-footer-fixed` | `1` | The footer as a slim bar at the bottom of the screen on every page. `0` puts it at the end of each page instead |
 | `--jt-login-text` | `""` | A heading on the login page, e.g. `"Welcome home"` |
 | `--jt-login-bg` | `none` | Background picture of the login page, e.g. `url("https://...")` |
