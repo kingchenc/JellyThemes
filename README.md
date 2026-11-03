@@ -129,7 +129,7 @@ On Jellyfin 10.10 and older, Custom CSS is under **Dashboard > General**.
 
 ## Gallery
 
-More pages, all with Solaris (every theme looks the same in its own color):
+More pages, all with Solaris. Every theme has its own gallery in its own color: [Obsidian](Themes/Obsidian/README.md), [Solaris](Themes/Solaris/README.md), [Nebula](Themes/Nebula/README.md), [Ember](Themes/Ember/README.md), [Void](Themes/Void/README.md), [Phantom](Themes/Phantom/README.md).
 
 | | |
 |---|---|
