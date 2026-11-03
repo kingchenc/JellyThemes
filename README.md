@@ -141,6 +141,14 @@ More pages, all with Solaris (every theme looks the same in its own color):
 | Menu | Media info |
 | <img src="assets/gallery/playlists.jpg" alt="Playlists"> | <img src="assets/gallery/settings.jpg" alt="User settings"> |
 | Playlists | Settings |
+| <img src="assets/gallery/sort.jpg" alt="Sort menu of a library"> | <img src="assets/gallery/filter.jpg" alt="Filter menu of a library"> |
+| Sort | Filter |
+| <img src="assets/gallery/user-menu.jpg" alt="User menu"> | <img src="assets/gallery/syncplay.jpg" alt="SyncPlay menu"> |
+| User menu | SyncPlay |
+| <img src="assets/gallery/edit-metadata.jpg" alt="Edit metadata dialog"> | <img src="assets/gallery/profile.jpg" alt="Profile"> |
+| Edit metadata | Profile |
+| <img src="assets/gallery/search.jpg" alt="Search"> | <img src="assets/gallery/login.jpg" alt="Login page"> |
+| Search | Login |
 
 ## Features
 
