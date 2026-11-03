@@ -246,6 +246,41 @@ calc(100em * (1 - var(--jt-badge-corner)))}
 .actionSheetMenuItem:hover,.actionSheetMenuItem:focus,.MuiMenuItem-root:hover,.MuiMenuItem-root.Mui-focusVisible{background: linear-gradient(90deg, rgba(var(--jt-accent-rgb), 0.28), rgba(var(--jt-accent-rgb), 0.08)) !important;color: #fff}
 .actionSheetMenuItem:hover .actionsheetMenuItemIcon,.actionSheetMenuItem:focus .actionsheetMenuItemIcon,.MuiMenuItem-root:hover .MuiListItemIcon-root{color: var(--jt-accent-3)}
 .MuiMenuItem-root.Mui-selected{background: var(--jt-accent-soft) !important;color: var(--jt-accent-2)}
+.MuiPopover-paper{min-width: 14em}
+.MuiPopover-paper > .MuiList-root,.MuiPopover-paper .MuiCollapse-root .MuiList-root{padding: 0.35em 0}
+.MuiPopover-paper .MuiMenuItem-root{min-height: 2.5em;padding: 0.35em 0.9em;border-radius: 0.75em;font-weight: 500}
+.MuiPopover-paper .MuiMenuItem-root:hover,.MuiPopover-paper .MuiMenuItem-root.Mui-focusVisible{box-shadow: inset 3px 0 0 var(--jt-accent)}
+.MuiPopover-paper .MuiListItemText-dense .MuiTypography-root{font-size: 0.95em}
+.MuiPopover-paper .MuiListSubheader-root{padding: 0.7em 1.3em 0.25em;font-size: 0.72em;font-weight: 800;line-height: 1.6;letter-spacing: 0.12em;text-transform: uppercase;color: var(--jt-accent-2);background: transparent}
+.MuiPopover-paper .MuiDivider-root{margin: 0.35em 0.9em;border-color: var(--jt-accent-line)}
+.MuiPopover-paper .MuiListItemIcon-root svg[data-testid="CheckIcon"],.MuiPopover-paper .MuiListItemIcon-root svg[data-testid="ArrowUpwardIcon"],.MuiPopover-paper .MuiListItemIcon-root svg[data-testid="ArrowDownwardIcon"]{box-sizing: border-box;width: 1.45em;height: 1.45em;padding: 0.2em;color: var(--jt-on-accent);background: var(--jt-gradient);border-radius: 50%;box-shadow: 0 0 10px rgba(var(--jt-accent-rgb), 0.45)}
+.MuiPopover-paper .MuiMenuItem-root .MuiIconButton-root{margin-left: 0.6em;padding: 0.35em;background: var(--jt-accent-softer);border: 1px solid var(--jt-accent-line)}
+.MuiPopover-paper .MuiMenuItem-root .MuiIconButton-root:hover{border-color: var(--jt-accent);box-shadow: var(--jt-glow)}
+.MuiPopover-paper .MuiSwitch-track{background: rgba(255, 255, 255, 0.22);opacity: 1}
+.MuiPopover-paper .MuiSwitch-thumb{color: #e7e5e4}
+.MuiPopover-paper .MuiSwitch-switchBase.Mui-checked .MuiSwitch-thumb{color: #fff;box-shadow: 0 0 8px rgba(var(--jt-accent-rgb), 0.8)}
+.MuiPopover-paper .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track{background: var(--jt-gradient);opacity: 1}
+.MuiPopover-paper .MuiAccordion-root{margin: 0.15em 0.4em;color: var(--jt-text);background: transparent;box-shadow: none}
+.MuiPopover-paper .MuiAccordion-root::before{display: none}
+.MuiPopover-paper .MuiAccordion-root:first-of-type{margin-top: 0.4em}
+.MuiPopover-paper .MuiAccordion-root:last-of-type{margin-bottom: 0.4em}
+.MuiPopover-paper .MuiAccordion-heading{margin: 0}
+.MuiPopover-paper .MuiAccordionSummary-root{min-height: 2.6em;padding: 0 0.6em 0 0.9em;border-radius: 0.75em}
+.MuiPopover-paper .MuiAccordionSummary-content,.MuiPopover-paper .MuiAccordionSummary-content.Mui-expanded{margin: 0.55em 0}
+.MuiPopover-paper .MuiAccordionSummary-content .MuiTypography-root{font-weight: 600}
+.MuiPopover-paper .MuiAccordionSummary-root:hover{background: linear-gradient(90deg, rgba(var(--jt-accent-rgb), 0.24), rgba(var(--jt-accent-rgb), 0.06));box-shadow: inset 3px 0 0 var(--jt-accent)}
+.MuiPopover-paper .MuiAccordionSummary-root.Mui-expanded{color: var(--jt-accent-2);background: var(--jt-accent-soft)}
+.MuiPopover-paper .MuiAccordionSummary-expandIconWrapper{display: -webkit-flex;display: flex;-webkit-align-items: center;align-items: center;-webkit-justify-content: center;justify-content: center;width: 1.6em;height: 1.6em;color: var(--jt-accent-2);background: var(--jt-accent-softer);border: 1px solid var(--jt-accent-line);border-radius: 50%}
+.MuiPopover-paper .MuiAccordionSummary-expandIconWrapper svg{font-size: 0.85em}
+.MuiPopover-paper .MuiAccordionSummary-expandIconWrapper.Mui-expanded{color: var(--jt-on-accent);background: var(--jt-gradient);border-color: transparent;box-shadow: 0 0 10px rgba(var(--jt-accent-rgb), 0.45)}
+.MuiPopover-paper .MuiAccordionDetails-root{padding: 0.3em 0.4em 0.5em 0.6em}
+.MuiPopover-paper .MuiFormControlLabel-root{margin: 0.05em 0;padding-right: 0.8em;border-radius: 0.6em}
+.MuiPopover-paper .MuiFormGroup-root .MuiFormControlLabel-root:hover{background: var(--jt-accent-softer)}
+.MuiPopover-paper .MuiCheckbox-root svg[data-testid="CheckBoxOutlineBlankIcon"],.MuiPopover-paper .MuiCheckbox-root svg[data-testid="CheckBoxIcon"]{color: transparent;-webkit-mask: var(--jt-check) center / 82% no-repeat;mask: var(--jt-check) center / 82% no-repeat}
+.MuiPopover-paper .MuiCheckbox-root svg[data-testid="CheckBoxOutlineBlankIcon"]{--jt-check: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2'%3E%3Crect x='3' y='3' width='18' height='18' rx='6'/%3E%3C/svg%3E");background: rgba(255, 255, 255, 0.5)}
+.MuiPopover-paper .MuiCheckbox-root:hover svg[data-testid="CheckBoxOutlineBlankIcon"]{background: var(--jt-accent-2)}
+.MuiPopover-paper .MuiCheckbox-root svg[data-testid="CheckBoxIcon"]{--jt-check: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill-rule='evenodd' d='M9 2h6a7 7 0 0 1 7 7v6a7 7 0 0 1-7 7H9a7 7 0 0 1-7-7V9a7 7 0 0 1 7-7zm7.6 6.3l-6.1 6.1-3.1-3.1-1.4 1.4 4.5 4.5 7.5-7.5z' fill='black'/%3E%3C/svg%3E");background: var(--jt-gradient);-webkit-filter: drop-shadow(0 0 6px rgba(var(--jt-accent-rgb), 0.6));filter: drop-shadow(0 0 6px rgba(var(--jt-accent-rgb), 0.6))}
+.MuiPopover-paper .MuiFormControlLabel-root .MuiTypography-root{font-size: 0.95em}
 .MuiPopover-paper svg[data-testid="PersonRemoveIcon"],.MuiPopover-paper svg[data-testid="PersonAddIcon"],.MuiPopover-paper svg[data-testid="GroupAddIcon"],.MuiPopover-paper svg[data-testid="TuneIcon"],.MuiPopover-paper svg[data-testid="SettingsIcon"],.MuiPopover-paper svg[data-testid="AccountCircleIcon"],.MuiPopover-paper svg[data-testid="DashboardIcon"],.MuiPopover-paper svg[data-testid="EditIcon"],.MuiPopover-paper svg[data-testid="PhonelinkLockIcon"],.MuiPopover-paper svg[data-testid="LogoutIcon"],.MuiPopover-paper svg[data-testid="SettingsRemoteIcon"],.MuiPopover-paper svg[data-testid="CloseIcon"],.MuiAvatar-root svg[data-testid="PersonIcon"]{color: transparent !important;background: var(--jt-gradient);-webkit-mask: var(--jt-icon) center / 88% no-repeat;mask: var(--jt-icon) center / 88% no-repeat}
 .MuiPopover-paper svg[data-testid="PersonRemoveIcon"]{--jt-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M9 2.8l3.3 1.9v3.8L9 10.4 5.7 8.5V4.7z' fill='black'/%3E%3Cpath d='M2.5 20c.7-3.8 3.3-5.8 6.5-5.8s5.8 2 6.5 5.8'/%3E%3Cpath d='M16.5 9h5'/%3E%3C/svg%3E")}
 .MuiPopover-paper svg[data-testid="PersonAddIcon"],.MuiPopover-paper svg[data-testid="GroupAddIcon"]{--jt-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M9 2.8l3.3 1.9v3.8L9 10.4 5.7 8.5V4.7z' fill='black'/%3E%3Cpath d='M2.5 20c.7-3.8 3.3-5.8 6.5-5.8s5.8 2 6.5 5.8'/%3E%3Cpath d='M19 6.5v5M16.5 9h5'/%3E%3C/svg%3E")}
