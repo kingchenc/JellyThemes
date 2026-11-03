@@ -181,6 +181,7 @@ Add a `:root { ... }` block **under** the `@import` line in Custom CSS and set w
 | `--jt-header-backdrop` | `blur(14px) saturate(140%)` | Blur under the top bar and behind the login card. Less blur: `blur(6px)`, none: `none` |
 | `--jt-header-gap` | `0.6em` | Space around the floating top bar. `0` makes it full width again |
 | `--jt-header-radius` | `1em` | Corner radius of the top bar. Use `0` together with `--jt-header-gap: 0` |
+| `--jt-header-width` | `93.4%` | Width of the top bar on desktop and TV, centered; the default lines it up with the page content. `100%` = full width. Phones always get the full width |
 | `--jt-glow` | accent glow | Glow around hovered cards. `none` turns it off |
 | `--jt-glow-s` | accent glow | Glow of buttons. `none` turns it off |
 | `--jt-motion` | `0.2s` | Speed of hover animations, e.g. `0.4s` for slower. `0s` turns them off |
