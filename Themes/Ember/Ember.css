@@ -94,8 +94,9 @@ html:not(.transparentDocument) .libraryDocument .skinHeader.headroom--unpinned{-
 .emby-scrollbuttons,.sectionTitleTextButton > .material-icons,.sectionTitleTextButton > .chevron_right{display: none !important}
 .cardScalable,.visualCardBox,.cardImageContainer,.cardContent,.cardOverlayContainer,.blurhash-canvas,.cardBox:not(.visualCardBox) .cardPadder{border-radius: var(--jt-card-radius)}
 .cardScalable,.visualCardBox{border: 1px solid transparent;transition: box-shadow var(--jt-motion)}
-.cardBox:not(.visualCardBox) .cardPadder,.cardImageContainer.defaultCardBackground,.defaultCardBackground1,.defaultCardBackground2,.defaultCardBackground3,.defaultCardBackground4,.defaultCardBackground5{background-color: var(--jt-bg-2) !important;background-image: linear-gradient(135deg, var(--jt-accent-softer), rgba(0, 0, 0, 0.2))}
-.cardImageIcon,.cardPadder .cardImageIcon{color: rgba(var(--jt-accent-rgb), 0.45)}
+.cardBox:not(.visualCardBox) .cardPadder,.cardImageContainer.defaultCardBackground,.defaultCardBackground1,.defaultCardBackground2,.defaultCardBackground3,.defaultCardBackground4,.defaultCardBackground5{background-color: var(--jt-bg-2) !important;background-image: radial-gradient(circle at 50% 42%, rgba(var(--jt-accent-rgb), 0.26), rgba(var(--jt-accent-rgb), 0) 62%),repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.028) 0, rgba(255, 255, 255, 0.028) 2px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0) 11px),linear-gradient(160deg, var(--jt-bg-3), var(--jt-bg-1))}
+.cardImageIcon,.cardPadder .cardImageIcon{color: transparent !important;background: var(--jt-gradient);-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 1.8l8.8 5.1v10.2L12 22.2l-8.8-5.1V6.9z' fill='none' stroke='black' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpath d='M12 5.6l5.5 3.2v6.4L12 18.4l-5.5-3.2V8.8z' fill='black' fill-opacity='0.22'/%3E%3Cpath d='M10.3 9.3v5.4l4.6-2.7z' fill='black'/%3E%3C/svg%3E") center / contain no-repeat;mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 1.8l8.8 5.1v10.2L12 22.2l-8.8-5.1V6.9z' fill='none' stroke='black' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpath d='M12 5.6l5.5 3.2v6.4L12 18.4l-5.5-3.2V8.8z' fill='black' fill-opacity='0.22'/%3E%3Cpath d='M10.3 9.3v5.4l4.6-2.7z' fill='black'/%3E%3C/svg%3E") center / contain no-repeat;opacity: 0.85}
+.cardDefaultText{color: #fff;font-weight: 700;letter-spacing: 0.01em;text-shadow: 0 0 18px rgba(var(--jt-accent-rgb), 0.55), 0 2px 6px rgba(0, 0, 0, 0.6)}
 .card[data-type="UserView"] .cardFooter,.card[data-type="CollectionFolder"] .cardFooter,.card[data-type="UserView"] .cardBox > .cardText,.card[data-type="CollectionFolder"] .cardBox > .cardText{display: var(--jt-library-labels)}
 .cardOverlayButton-br > [is="emby-playstatebutton"],.cardOverlayButton-br > [is="emby-ratingbutton"]{display: var(--jt-card-extra-buttons)}
 .visualCardBox{background: var(--jt-surface)}
@@ -246,6 +247,16 @@ calc(100em * (1 - var(--jt-badge-corner)))}
 .listItem:focus{background: var(--jt-accent-soft)}
 .listItem-border{border-color: var(--jt-line) !important}
 .listItemImageButton{background: var(--jt-gradient);color: var(--jt-on-accent);border-radius: 50%}
+.itemDetailPage .detailVerticalSection > .vertical-list{display: grid;grid-template-columns: repeat(auto-fill, minmax(17em, 1fr));grid-gap: 0.5em 0.6em;gap: 0.5em 0.6em}
+.itemDetailPage .detailVerticalSection > .vertical-list > :not(.listItem){grid-column: 1 / -1}
+.itemDetailPage .detailVerticalSection > .vertical-list > .listItem{box-sizing: border-box;min-width: 0;margin: 0;padding: 0.5em 0.8em;background: var(--jt-surface);border: 1px solid var(--jt-accent-line) !important;border-radius: var(--jt-radius);box-shadow: inset 3px 0 0 var(--jt-accent)}
+[dir="rtl"] .itemDetailPage .detailVerticalSection > .vertical-list > .listItem{box-shadow: inset -3px 0 0 var(--jt-accent)}
+.itemDetailPage .detailVerticalSection > .vertical-list > .listItem:hover{background: var(--jt-accent-soft)}
+.itemDetailPage .detailVerticalSection > .vertical-list > .listItem .listItemBody{padding-top: 0.1em;padding-bottom: 0.1em}
+.itemDetailPage .detailVerticalSection > .vertical-list > .listItem .listItemImage-channel{width: 2.2em;min-width: 2.2em;height: 2.2em;margin-right: 0.55em;border-radius: var(--jt-radius-s);background-size: contain}
+.itemDetailPage .detailVerticalSection > .vertical-list > .listItem .listItemBodyText:first-child{color: var(--jt-accent-2);font-size: 0.9em;font-weight: 600}
+.itemDetailPage .detailVerticalSection > .vertical-list > .listItem .listItemBodyText.secondary{color: var(--jt-text)}
+.itemDetailPage .detailVerticalSection > .vertical-list > .listItem .listItemBodyText{overflow: hidden;white-space: nowrap;text-overflow: ellipsis}
 .layout-desktop #childrenContent > .vertical-list{display: grid;grid-template-columns: repeat(auto-fill, minmax(calc(100% - (100% - 19em) * var(--jt-episode-tiles)), 1fr));column-gap: calc(1em * var(--jt-episode-tiles));row-gap: calc(0.6em * var(--jt-episode-tiles))}
 .layout-desktop #childrenContent > .vertical-list > .listItem:not(.listItem-largeImage){grid-column: 1 / -1;margin-bottom: calc(-0.6em * var(--jt-episode-tiles))}
 .layout-desktop #childrenContent .listItem-largeImage .listItem-content{flex-wrap: wrap}
