@@ -17,7 +17,7 @@
    ║                                                                           ║
    ╚═══════════════════════════════════════════════════════════════════════════╝ */
 :root{--jt-accent: #64748b;--jt-accent-rgb: 100, 116, 139;--jt-accent-ch: 100 116 139;--jt-accent-2: #94a3b8;--jt-accent-2-rgb: 148, 163, 184;--jt-accent-2-ch: 148 163 184;--jt-accent-3: #cbd5e1;--jt-accent-3-rgb: 203, 213, 225;--jt-accent-3-ch: 203 213 225;--jt-bg-1: #05080c;--jt-bg-1-rgb: 5, 8, 12;--jt-bg-1-ch: 5 8 12;--jt-bg-2: #0f1318;--jt-bg-2-rgb: 15, 19, 24;--jt-bg-2-ch: 15 19 24;--jt-bg-3: #1e2530;--jt-bg-3-rgb: 30, 37, 48;--jt-bg-3-ch: 30 37 48;--jt-on-accent: #05080c;--jt-on-accent-rgb: 5, 8, 12;--jt-on-accent-ch: 5 8 12;--jt-title: #94a3b8;--jt-title-rgb: 148, 163, 184;--jt-title-ch: 148 163 184;--jt-footer-text: "Phantom v2.0  •  made by kingchenc  •  github.com/kingchenc/JellyThemes"}
-:root{--jt-font: "Inter Variable", "Inter", "Noto Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;--jt-text: #f5f5f4;--jt-text-2: rgba(245, 245, 244, 0.72);--jt-text-3: rgba(245, 245, 244, 0.5);--jt-radius-s: 0.4em;--jt-radius: 0.65em;--jt-radius-l: 1em;--jt-card-radius: 0.6em;--jt-surface: rgba(255, 255, 255, 0.04);--jt-surface-2: rgba(255, 255, 255, 0.07);--jt-surface-3: rgba(255, 255, 255, 0.11);--jt-line: rgba(255, 255, 255, 0.08);--jt-accent-line: rgba(var(--jt-accent-rgb), 0.28);--jt-accent-soft: rgba(var(--jt-accent-rgb), 0.14);--jt-accent-softer: rgba(var(--jt-accent-rgb), 0.07);--jt-gradient: linear-gradient(135deg, var(--jt-accent-2), var(--jt-accent));--jt-page-bg: linear-gradient(180deg, var(--jt-bg-2) 0%, var(--jt-bg-1) 60%);--jt-header-bg: rgba(var(--jt-bg-1-rgb), 0.82);--jt-header-backdrop: blur(14px) saturate(140%);--jt-header-gap: 0.6em;--jt-header-radius: var(--jt-radius-l);--jt-logo: normal;--jt-logo-height: 1.25em;--jt-logo-banner: contain;--jt-server-name: 1;--jt-glow: 0 0 0 1px var(--jt-accent), 0 0 18px rgba(var(--jt-accent-rgb), 0.45);--jt-glow-s: 0 0 12px rgba(var(--jt-accent-rgb), 0.4);--jt-motion: 0.2s;--jt-motion-fast: 0.15s;--jt-tv-blur: blur(14px) saturate(140%);--jt-tv-glow: 0 0 0 3px var(--jt-accent), 0 0 22px rgba(var(--jt-accent-rgb), 0.55);--jt-tv-glow-s: 0 0 12px rgba(var(--jt-accent-rgb), 0.4);--jt-tv-motion: 0.2s;--jt-card-zoom: 1.04;--jt-progress-gap: 0.5em;--jt-badge-corner: 1;--jt-cast-round: 1;--jt-episode-tiles: 1;--jt-original-title: block;--jt-detail-logo: block;--jt-item-title: block;--jt-library-labels: block;--jt-card-extra-buttons: flex;--jt-card-mini-buttons: flex;--jt-footer: block;--jt-login-text: "";--jt-login-bg: none}
+:root{--jt-font: "Inter Variable", "Inter", "Noto Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;--jt-text: #f5f5f4;--jt-text-2: rgba(245, 245, 244, 0.72);--jt-text-3: rgba(245, 245, 244, 0.5);--jt-radius-s: 0.4em;--jt-radius: 0.65em;--jt-radius-l: 1em;--jt-card-radius: 0.6em;--jt-surface: rgba(255, 255, 255, 0.04);--jt-surface-2: rgba(255, 255, 255, 0.07);--jt-surface-3: rgba(255, 255, 255, 0.11);--jt-line: rgba(255, 255, 255, 0.08);--jt-accent-line: rgba(var(--jt-accent-rgb), 0.28);--jt-accent-soft: rgba(var(--jt-accent-rgb), 0.14);--jt-accent-softer: rgba(var(--jt-accent-rgb), 0.07);--jt-gradient: linear-gradient(135deg, var(--jt-accent-2), var(--jt-accent));--jt-page-bg: radial-gradient(70vw 55vh at 12% 0, rgba(var(--jt-accent-rgb), 0.16), rgba(var(--jt-accent-rgb), 0)),radial-gradient(55vw 45vh at 92% 0, rgba(var(--jt-accent-2-rgb), 0.08), rgba(var(--jt-accent-2-rgb), 0)),linear-gradient(180deg, var(--jt-bg-3) 0, var(--jt-bg-2) 40vh, var(--jt-bg-1) 100vh);--jt-header-bg: linear-gradient(100deg, rgba(var(--jt-accent-rgb), 0.18), rgba(var(--jt-bg-3-rgb), 0.78) 38%, rgba(var(--jt-bg-2-rgb), 0.8) 70%, rgba(var(--jt-accent-2-rgb), 0.12));--jt-header-backdrop: blur(14px) saturate(140%);--jt-header-gap: 0.6em;--jt-header-radius: var(--jt-radius-l);--jt-logo: url("../../assets/brand/jellythemes-logo.svg");--jt-logo-height: 1.6em;--jt-logo-banner: 0;--jt-server-name: 0;--jt-glow: 0 0 0 1px var(--jt-accent), 0 0 18px rgba(var(--jt-accent-rgb), 0.45);--jt-glow-s: 0 0 12px rgba(var(--jt-accent-rgb), 0.4);--jt-motion: 0.2s;--jt-motion-fast: 0.15s;--jt-tv-blur: blur(14px) saturate(140%);--jt-tv-glow: 0 0 0 3px var(--jt-accent), 0 0 22px rgba(var(--jt-accent-rgb), 0.55);--jt-tv-glow-s: 0 0 12px rgba(var(--jt-accent-rgb), 0.4);--jt-tv-motion: 0.2s;--jt-card-zoom: 1.04;--jt-backdrop-height: 58vh;--jt-progress-gap: 0.5em;--jt-badge-corner: 1;--jt-cast-round: 1;--jt-episode-tiles: 1;--jt-original-title: block;--jt-detail-logo: block;--jt-item-title: block;--jt-library-labels: block;--jt-card-extra-buttons: flex;--jt-card-mini-buttons: flex;--jt-footer: block;--jt-login-text: "";--jt-login-bg: none}
 :root,html[data-theme]{color-scheme: dark;--jf-palette-primary-main: var(--jt-accent);--jf-palette-primary-light: var(--jt-accent-2);--jf-palette-primary-dark: var(--jt-accent);--jf-palette-primary-contrastText: var(--jt-on-accent);--jf-palette-primary-mainChannel: var(--jt-accent-ch);--jf-palette-primary-lightChannel: var(--jt-accent-2-ch);--jf-palette-primary-darkChannel: var(--jt-accent-ch);--jf-palette-primary-contrastTextChannel: var(--jt-on-accent-ch);--jf-palette-secondary-main: var(--jt-accent-2);--jf-palette-secondary-light: var(--jt-accent-3);--jf-palette-secondary-dark: var(--jt-accent);--jf-palette-secondary-contrastText: var(--jt-on-accent);--jf-palette-secondary-mainChannel: var(--jt-accent-2-ch);--jf-palette-secondary-lightChannel: var(--jt-accent-3-ch);--jf-palette-secondary-darkChannel: var(--jt-accent-ch);--jf-palette-secondary-contrastTextChannel: var(--jt-on-accent-ch);--jf-palette-info-main: var(--jt-accent);--jf-palette-info-light: var(--jt-accent-2);--jf-palette-info-dark: var(--jt-accent);--jf-palette-info-contrastText: var(--jt-on-accent);--jf-palette-info-mainChannel: var(--jt-accent-ch);--jf-palette-info-lightChannel: var(--jt-accent-2-ch);--jf-palette-info-darkChannel: var(--jt-accent-ch);--jf-palette-Alert-infoColor: var(--jt-accent-2);--jf-palette-Alert-infoStandardBg: var(--jt-accent-softer);--jf-palette-Alert-infoFilledColor: var(--jt-text);--jf-palette-background-default: var(--jt-bg-1);--jf-palette-background-defaultChannel: var(--jt-bg-1-ch);--jf-palette-background-paper: var(--jt-bg-2);--jf-palette-background-paperChannel: var(--jt-bg-2-ch);--jf-palette-background-defaultImage: var(--jt-page-bg);--jf-palette-text-primary: var(--jt-text);--jf-palette-text-secondary: var(--jt-text-2);--jf-palette-text-disabled: var(--jt-text-3);--jf-palette-divider: var(--jt-line);--jf-palette-action-hover: var(--jt-accent-softer);--jf-palette-action-selected: var(--jt-accent-soft);--jf-palette-action-focus: var(--jt-accent-soft);--jf-palette-action-selectedOpacity: 0.16;--jf-palette-AppBar-defaultBg: var(--jt-header-bg);--jf-palette-AppBar-darkBg: var(--jt-header-bg);--jf-palette-AppBar-transparentBg: rgba(var(--jt-bg-1-rgb), 0.35);--jf-palette-AppBar-gradient: none;--jf-palette-FilledInput-bg: var(--jt-accent-softer);--jf-palette-FilledInput-hoverBg: var(--jt-accent-soft);--jf-palette-FilledInput-borderColor: var(--jt-accent-line);--jf-palette-Button-inheritContainedBg: var(--jt-surface-2);--jf-palette-Button-inheritContainedHoverBg: var(--jt-accent-soft);--jf-palette-LinearProgress-primaryBg: rgba(0, 0, 0, 0.45);--jf-palette-LinearProgress-secondaryBg: rgba(0, 0, 0, 0.45);--jf-palette-Slider-primaryTrack: rgba(var(--jt-accent-rgb), 0.3);--jf-palette-Tooltip-bg: var(--jt-bg-3);--jf-palette-SnackbarContent-bg: var(--jt-bg-3);--jf-palette-SnackbarContent-color: var(--jt-text);--jf-palette-Alert-infoFilledBg: var(--jt-bg-3);--jf-card-borderRadius: var(--jt-card-radius);--jf-shape-borderRadius: 8px}
 .MuiPaper-root{--Paper-overlay: none !important}
 html{color: var(--jt-text-2);background-color: var(--jt-bg-1);background-image: var(--jt-page-bg)}
@@ -43,21 +43,53 @@ html:not(.transparentDocument) .libraryDocument .skinHeader.headroom--unpinned{-
 .pageTitleWithDefaultLogo{background-size: var(--jt-logo-banner);object-position: left center}
 [dir="rtl"] .pageTitleWithDefaultLogo{object-position: right center}
 .pageTitle{color: var(--jt-title);font-weight: 600}
-.headerButton,.MuiAppBar-root .MuiIconButton-root,.MuiAppBar-root .MuiButton-root{color: var(--jt-text);border-radius: var(--jt-radius)}
-.headerLeft .headerButton:hover,.headerRight .headerButton:hover,.MuiAppBar-root .MuiIconButton-root:hover,.MuiAppBar-root .MuiButton-root:hover{color: var(--jt-accent-2);background: var(--jt-accent-soft);text-shadow: 0 0 10px rgba(var(--jt-accent-rgb), 0.6)}
+.headerButton,.MuiAppBar-root .MuiIconButton-root,.MuiAppBar-root .MuiButton-root{color: var(--jt-text);border-radius: var(--jt-radius);transition: transform var(--jt-motion)}
+.MuiAppBar-root .MuiToolbar-root > .MuiStack-root > .MuiButton-root:not([href="#/"]){-webkit-align-self: center;align-self: center;height: auto;min-height: 0;margin: 0 0.18em;padding: 0.28em 0.9em;line-height: 1.35;font-size: 0.875rem;font-weight: 600;letter-spacing: 0.01em;color: var(--jt-text-2);background: var(--jt-accent-softer);border: 1px solid var(--jt-accent-line);border-radius: 2em;transition: transform var(--jt-motion)}
+.MuiAppBar-root .MuiToolbar-root > .MuiStack-root > .MuiButton-root:not([href="#/"]) .MuiButton-startIcon{color: var(--jt-accent-2)}
+.MuiAppBar-root .MuiToolbar-root > .MuiStack-root > .MuiButton-root:not([href="#/"]):hover{transition: background-color var(--jt-motion), color var(--jt-motion), box-shadow var(--jt-motion), transform var(--jt-motion);color: #fff;background: var(--jt-accent-soft);border-color: var(--jt-accent);box-shadow: var(--jt-glow-s);transform: translateY(-1px)}
+.MuiAppBar-root .MuiToolbar-root > .MuiStack-root > .MuiButton-textPrimary:not([href="#/"]),.MuiAppBar-root .MuiToolbar-root > .MuiStack-root > .MuiButton-textPrimary:not([href="#/"]):hover{color: var(--jt-on-accent);background: var(--jt-gradient);border-color: transparent;box-shadow: var(--jt-glow-s)}
+.MuiAppBar-root .MuiToolbar-root > .MuiStack-root > .MuiButton-textPrimary:not([href="#/"]) .MuiButton-startIcon{color: inherit}
+.MuiAppBar-root .MuiToolbar-root a[href="#/"]:hover{background: transparent;filter: drop-shadow(0 0 8px rgba(var(--jt-accent-rgb), 0.6))}
+.MuiAppBar-root .MuiToolbar-root .MuiIconButton-root,.headerLeft .headerButton,.headerRight .headerButton{margin: 0 0.15em;color: var(--jt-accent-2);background: var(--jt-surface-2);border: 1px solid var(--jt-accent-line);border-radius: 50%;transition: transform var(--jt-motion)}
+.MuiAppBar-root .MuiToolbar-root .MuiIconButton-root{padding: 6px}
+.MuiAppBar-root .MuiToolbar-root .MuiIconButton-root .MuiSvgIcon-root{width: 22px;height: 22px}
+.MuiAppBar-root .MuiToolbar-root > .MuiBox-root:last-child .MuiIconButton-root{padding: 0}
+.MuiAppBar-root .MuiToolbar-root .MuiIconButton-root .MuiAvatar-root{width: 34px;height: 34px}
+.MuiAppBar-root .MuiToolbar-root .MuiIconButton-root .MuiAvatar-root{font-size: 15px}
+.MuiAppBar-root .MuiToolbar-root .MuiIconButton-root .MuiAvatar-root svg{width: 70%;height: 70%}
+.MuiAppBar-root .MuiToolbar-root .MuiIconButton-root:hover,.headerLeft .headerButton:hover,.headerRight .headerButton:hover{transition: background-color var(--jt-motion), color var(--jt-motion), box-shadow var(--jt-motion), transform var(--jt-motion);color: var(--jt-on-accent);background: var(--jt-gradient);border-color: transparent;box-shadow: var(--jt-glow-s);transform: scale(1.08)}
+.MuiToolbar-root .MuiIconButton-root svg[data-testid="GroupsIcon"],.MuiToolbar-root .MuiIconButton-root svg[data-testid="CastIcon"],.MuiToolbar-root .MuiIconButton-root svg[data-testid="CastConnectedIcon"],.MuiToolbar-root .MuiIconButton-root svg[data-testid="SearchIcon"],.MuiToolbar-root .MuiIconButton-root svg[data-testid="PersonIcon"],.headerSyncButton > .material-icons,.headerCastButton > .material-icons,.headerSearchButton > .material-icons,.headerUserButton > .material-icons{color: transparent !important;background: var(--jt-gradient);-webkit-mask: var(--jt-icon) center / 86% no-repeat;mask: var(--jt-icon) center / 86% no-repeat}
+.MuiToolbar-root .MuiIconButton-root svg[data-testid="GroupsIcon"],.headerSyncButton > .material-icons{--jt-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M3 4.5v9.5l7.5-4.75z'/%3E%3Cpath d='M10 10v9.5l7.5-4.75z' fill='black'/%3E%3Cpath d='M15.5 3.5a6.5 6.5 0 0 1 5.2 5.2'/%3E%3C/svg%3E")}
+.MuiToolbar-root .MuiIconButton-root svg[data-testid="CastIcon"],.MuiToolbar-root .MuiIconButton-root svg[data-testid="CastConnectedIcon"],.headerCastButton > .material-icons{--jt-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M3 8V6.2C3 5 4 4 5.2 4h13.6C20 4 21 5 21 6.2v11.6c0 1.2-1 2.2-2.2 2.2H13'/%3E%3Cpath d='M3 12a8 8 0 0 1 8 8'/%3E%3Cpath d='M3 16a4 4 0 0 1 4 4'/%3E%3Cpath d='M3.6 18.6l1.3.75v1.5l-1.3.75-1.3-.75v-1.5z' fill='black'/%3E%3C/svg%3E")}
+.MuiToolbar-root .MuiIconButton-root svg[data-testid="SearchIcon"],.headerSearchButton > .material-icons{--jt-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M10 2.6l5.7 3.3v6.6L10 15.8l-5.7-3.3V5.9z'/%3E%3Cpath d='M14.8 13.8L21 20'/%3E%3Cpath d='M10 6.4l2.4 1.4' stroke-width='1.6'/%3E%3C/svg%3E")}
+.MuiToolbar-root .MuiIconButton-root svg[data-testid="PersonIcon"],.headerUserButton > .material-icons{--jt-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M12 2.6l3.8 2.2v4.4L12 11.4 8.2 9.2V4.8z' fill='black'/%3E%3Cpath d='M4 21c.8-4.3 4-6.6 8-6.6s7.2 2.3 8 6.6'/%3E%3C/svg%3E")}
+.MuiToolbar-root .MuiIconButton-root:hover svg,.headerButton:hover > .material-icons,.headerButton.show-focus:focus > .material-icons,.MuiToolbar-root .MuiAvatar-root svg[data-testid="PersonIcon"]{background: var(--jt-on-accent)}
+.MuiAppBar-root .MuiToolbar-root .MuiIconButton-root .MuiAvatar-root,.headerUserButtonRound{box-shadow: 0 0 0 2px var(--jt-accent), 0 0 10px rgba(var(--jt-accent-rgb), 0.5)}
 .MuiAppBar-root .MuiButton-root.Mui-selected,.MuiAppBar-root .MuiButton-root[aria-current="page"]{color: var(--jt-accent-2)}
 .headerTabs .emby-tab-button,.sectionTabs .emby-tab-button{margin: 0.35em 0.3em;padding: 0.55em 1.2em;font-weight: 500;color: var(--jt-text-2);background: var(--jt-accent-softer);border: 1px solid var(--jt-accent-line);border-radius: 2em;transition: background-color var(--jt-motion), color var(--jt-motion)}
 .headerTabs .emby-tab-button:hover,.sectionTabs .emby-tab-button:hover,.emby-tab-button:hover{color: var(--jt-accent-2);background: var(--jt-accent-soft)}
 .headerTabs .emby-tab-button-active,.sectionTabs .emby-tab-button-active,.headerTabs .emby-tab-button-active:hover,.sectionTabs .emby-tab-button-active:hover{color: var(--jt-on-accent);background: var(--jt-gradient);border-color: transparent;box-shadow: var(--jt-glow-s)}
 .emby-tab-button.show-focus:focus{color: var(--jt-on-accent);background: var(--jt-accent) !important;transform: none !important}
-.mainDrawer,.MuiDrawer-paper{background: rgba(var(--jt-bg-1-rgb), 0.96) !important;border-right: 1px solid var(--jt-line) !important}
+.mainDrawer,.MuiDrawer-paper{background: rgba(var(--jt-bg-1-rgb), 0.96) !important;background-image: linear-gradient(170deg, rgba(var(--jt-accent-rgb), 0.16), rgba(var(--jt-accent-rgb), 0) 45%) !important;border-right: 1px solid var(--jt-accent-line) !important}
 .navMenuOption,.MuiDrawer-paper .MuiListItemButton-root{margin: 0.1em 0.6em;border-radius: var(--jt-radius);color: var(--jt-text)}
+.MuiDrawer-paper .MuiListItemIcon-root{color: var(--jt-accent-2)}
+.MuiDrawer-paper .MuiListSubheader-root{color: var(--jt-title);font-weight: 600;background: transparent}
+.MuiDrawer-paper .MuiListItemButton-root[href="#/"]{padding-top: 0.9em;padding-bottom: 0.9em}
+.MuiDrawer-paper .MuiListItemButton-root[href="#/"]:hover{background: transparent}
+.MuiDrawer-paper a[href="#/"] .MuiListItemIcon-root{min-width: 0}
+.MuiDrawer-paper a[href="#/"] .MuiListItemIcon-root img{content: var(--jt-logo);width: auto;height: calc(var(--jt-logo-height) * 1.35);max-width: none;max-height: none;object-fit: contain}
+.MuiDrawer-paper a[href="#/"] .MuiListItemText-root{max-width: calc(40em * var(--jt-server-name));margin-left: calc(0.8em * var(--jt-server-name));overflow: hidden;white-space: nowrap}
+.MuiToolbar-root > .MuiIconButton-root:first-child + .MuiBox-root::before{content: "";-webkit-align-self: center;align-self: center;margin-right: auto;margin-left: 0.4em;-webkit-flex: 0 1 calc(var(--jt-logo-height) * 4.5);flex: 0 1 calc(var(--jt-logo-height) * 4.5);min-width: 0;height: var(--jt-logo-height);background: var(--jt-logo) left center / contain no-repeat}
+.MuiAppBar-root .MuiToolbar-root{-webkit-flex-wrap: nowrap;flex-wrap: nowrap}
+@media all and (max-width: 30em){.MuiAppBar-root .MuiToolbar-root .MuiIconButton-root{margin: 0 0.05em}
+}
 .navMenuOption:hover,.MuiDrawer-paper .MuiListItemButton-root:hover{background: var(--jt-accent-soft);color: var(--jt-accent-2)}
 .navMenuOption-selected,.MuiDrawer-paper .MuiListItemButton-root.Mui-selected{background: var(--jt-gradient) !important;color: var(--jt-on-accent) !important}
 .MuiDrawer-paper .MuiListItemButton-root.Mui-selected .MuiListItemIcon-root{color: inherit}
 .sidebarHeader,.navMenuOptionIcon{color: var(--jt-accent-2)}
 .sidebarDivider{background: var(--jt-line)}
 .sectionTitle,.sectionTitle-cards,.sectionTitleTextButton,.sectionTitleTextButton > h2{color: var(--jt-title);font-weight: 600}
+.sectionTitleTextButton{transition: none}
 .sectionTitleTextButton:hover,.sectionTitleTextButton:hover > h2{color: var(--jt-accent-2)}
 .emby-scrollbuttons,.sectionTitleTextButton > .material-icons,.sectionTitleTextButton > .chevron_right{display: none !important}
 .cardScalable,.visualCardBox,.cardImageContainer,.cardContent,.cardOverlayContainer,.blurhash-canvas,.cardBox:not(.visualCardBox) .cardPadder{border-radius: var(--jt-card-radius)}
@@ -82,6 +114,8 @@ html:not(.transparentDocument) .libraryDocument .skinHeader.headroom--unpinned{-
 .layout-mobile .cardOverlayButton-br[data-action="play"] > .cardOverlayButtonIcon{background: var(--jt-gradient);color: var(--jt-on-accent);box-shadow: var(--jt-glow-s)}
 .card-hoverable .cardBox{transition: transform var(--jt-motion)}
 .card-hoverable:hover .cardBox,.card:focus .cardBox{transform: scale(var(--jt-card-zoom))}
+[dir="ltr"] .itemsContainer > .card:first-child .cardBox{transform-origin: left center}
+[dir="rtl"] .itemsContainer > .card:first-child .cardBox{transform-origin: right center}
 .playedIndicator,.countIndicator,.mediaSourceIndicator,.fullSyncIndicator{background: var(--jt-gradient);color: var(--jt-on-accent)}
 .cardIndicators{top: calc(0.225em * (1 - var(--jt-badge-corner)))}
 [dir="ltr"] .cardIndicators{right: calc(0.225em * (1 - var(--jt-badge-corner)))}
@@ -118,8 +152,13 @@ calc(100em * (1 - var(--jt-badge-corner)))}
 ::-moz-progress-bar{background: var(--jt-accent-2)}
 .MuiLinearProgress-bar{background: var(--jt-gradient) !important}
 .emby-button{border-radius: var(--jt-radius)}
-.raised,.fab,a[data-role="button"]{color: var(--jt-text);background: var(--jt-surface-2);border: 1px solid var(--jt-line);transition: background-color var(--jt-motion), border-color var(--jt-motion)}
-.raised:hover,.fab:hover,a[data-role="button"]:hover{background: var(--jt-accent-soft);border-color: var(--jt-accent-line)}
+.raised,.fab,a[data-role="button"]{color: var(--jt-text);background: var(--jt-surface-2);border: 1px solid var(--jt-line);transition: none}
+.emby-button.raised{transition: none}
+.raised:hover,.fab:hover,a[data-role="button"]:hover{transition: background-color var(--jt-motion), border-color var(--jt-motion);background: var(--jt-accent-soft);border-color: var(--jt-accent-line)}
+.MuiButtonGroup-contained{box-shadow: none}
+.MuiButtonGroup-contained > .MuiButtonGroup-grouped{border-radius: 2em !important;border-right-color: transparent !important}
+[dir="ltr"] .MuiButtonGroup-contained > .MuiButtonGroup-grouped:not(:last-child){margin-right: 0.5em}
+[dir="rtl"] .MuiButtonGroup-contained > .MuiButtonGroup-grouped:not(:last-child){margin-left: 0.5em}
 .button-submit,.MuiButton-containedPrimary{color: var(--jt-on-accent) !important;background: var(--jt-gradient) !important;border-color: transparent;font-weight: 600}
 .button-submit:hover,.MuiButton-containedPrimary:hover{box-shadow: var(--jt-glow-s)}
 .button-delete{background: #dc2626;color: #fff}
@@ -146,10 +185,25 @@ calc(100em * (1 - var(--jt-badge-corner)))}
 .dialog,.actionSheet,.MuiMenu-paper,.MuiPopover-paper,.MuiDialog-paper{background: var(--jt-bg-2) !important;border: 1px solid var(--jt-accent-line);color: var(--jt-text)}
 .dialog:not(.dialog-fullscreen),.actionSheet:not(.actionsheet-fullscreen),.MuiMenu-paper,.MuiPopover-paper,.MuiDialog-paper{border-radius: var(--jt-radius-l) !important;box-shadow: 0 18px 50px rgba(0, 0, 0, 0.6)}
 .dialogBackdropOpened{background: rgba(0, 0, 0, 0.6);opacity: 1}
-.formDialogHeader:not(.formDialogHeader-clear),.formDialogFooter:not(.formDialogFooter-clear){background: var(--jt-bg-2);border-color: var(--jt-line)}
-.actionSheetMenuItem,.MuiMenuItem-root{margin: 0 0.35em;border-radius: var(--jt-radius-s);width: auto}
-.actionSheetMenuItem:hover,.actionSheetMenuItem:focus,.MuiMenuItem-root:hover,.MuiMenuItem-root.Mui-focusVisible{background: var(--jt-accent-soft) !important;color: var(--jt-accent-2)}
-.actionSheetMenuItem:hover .actionsheetMenuItemIcon,.MuiMenuItem-root:hover .MuiListItemIcon-root{color: var(--jt-accent-2)}
+.formDialogHeader:not(.formDialogHeader-clear),.formDialogFooter:not(.formDialogFooter-clear){background: var(--jt-bg-2)}
+.actionSheet:not(.actionsheet-fullscreen),.MuiMenu-paper,.MuiPopover-paper{background: rgba(var(--jt-bg-2-rgb), 0.92) !important;background-image: linear-gradient(160deg, rgba(var(--jt-accent-rgb), 0.1), rgba(var(--jt-accent-rgb), 0) 55%) !important;-webkit-backdrop-filter: var(--jt-header-backdrop);backdrop-filter: var(--jt-header-backdrop);box-shadow: 0 18px 50px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(var(--jt-accent-rgb), 0.12) inset}
+.actionSheetContent{padding: 0.35em 0}
+.actionSheetTitle{color: var(--jt-title);font-weight: 600}
+.actionSheetMenuItem,.MuiMenuItem-root{margin: 0.1em 0.4em;border-radius: var(--jt-radius-s);width: auto;transition: background-color var(--jt-motion-fast), color var(--jt-motion-fast)}
+.actionsheetMenuItemIcon,.MuiMenu-paper .MuiListItemIcon-root{color: var(--jt-accent-2)}
+.actionsheetListItemBody,.actionSheetItemText{font-weight: 500}
+.actionSheetMenuItem:hover,.actionSheetMenuItem:focus,.MuiMenuItem-root:hover,.MuiMenuItem-root.Mui-focusVisible{background: linear-gradient(90deg, rgba(var(--jt-accent-rgb), 0.28), rgba(var(--jt-accent-rgb), 0.08)) !important;color: #fff}
+.actionSheetMenuItem:hover .actionsheetMenuItemIcon,.actionSheetMenuItem:focus .actionsheetMenuItemIcon,.MuiMenuItem-root:hover .MuiListItemIcon-root{color: var(--jt-accent-3)}
+.MuiMenuItem-root.Mui-selected{background: var(--jt-accent-soft) !important;color: var(--jt-accent-2)}
+.formDialogHeader:not(.formDialogHeader-clear){background: linear-gradient(90deg, rgba(var(--jt-accent-rgb), 0.16), rgba(var(--jt-accent-rgb), 0.02)) !important;border-bottom: 1px solid var(--jt-accent-line)}
+.formDialogHeaderTitle{color: var(--jt-title);font-weight: 600}
+.formDialogFooter:not(.formDialogFooter-clear){border-top: 1px solid var(--jt-accent-line)}
+.mediaInfoSource{line-height: 1.75}
+.mediaInfoSource > div:first-child > h2,.mediaInfoSource > h2{color: var(--jt-title)}
+.mediaInfoStream{box-sizing: border-box;display: inline-block;vertical-align: top;min-width: 17em;margin: 0.9em 0.9em 0 0;padding: 0.8em 1.1em 0.9em;background: var(--jt-surface);border: 1px solid var(--jt-accent-line);border-radius: var(--jt-radius)}
+.mediaInfoStreamType{margin: 0 0 0.45em;padding-bottom: 0.35em;font-size: 1.05em;color: var(--jt-accent-2);border-bottom: 1px solid var(--jt-line)}
+.mediaInfoLabel{display: inline-block;min-width: 11.5em;padding-right: 0.6em;color: var(--jt-text-3);font-weight: 500}
+.mediaInfoAttribute{color: var(--jt-text);word-break: break-word}
 .actionsheetDivider,.MuiDivider-root{background: var(--jt-line);border-color: var(--jt-line)}
 .paperList,.collapseContent{background: var(--jt-surface);border: 1px solid var(--jt-line);border-radius: var(--jt-radius)}
 .listItem{border-radius: var(--jt-radius-s)}
@@ -168,8 +222,16 @@ calc(100em * (1 - var(--jt-badge-corner)))}
 .layout-desktop #childrenContent .listItem-largeImage .listItem-overview{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: calc(3 + 997 * (1 - var(--jt-episode-tiles)));overflow: hidden;box-sizing: border-box;min-height: calc(4.8em * var(--jt-episode-tiles));max-height: calc(1000em * (1 - var(--jt-episode-tiles)) + 4.8em * var(--jt-episode-tiles))}
 .toast{background: var(--jt-bg-3);color: var(--jt-text);border: 1px solid var(--jt-accent-line);border-radius: var(--jt-radius)}
 .infoBanner{background: var(--jt-bg-3);color: var(--jt-text);border: 1px solid var(--jt-accent-line);border-radius: var(--jt-radius)}
+@media all and (min-width: 50.01em){.layout-desktop .itemBackdrop{height: var(--jt-backdrop-height)}
+}
+@media all and (max-width: 50em){.layout-desktop .detailImageContainer .card{width: 31vw;max-width: 31vw}
+.layout-desktop .itemDetailPage .detailRibbon,.layout-desktop .itemDetailPage .detailPagePrimaryContent{box-sizing: border-box;width: 100%;padding-left: calc(3.3% + 31vw + 1.2em) !important}
+.layout-desktop .itemDetailPage .detailRibbon{-webkit-flex-wrap: wrap;flex-wrap: wrap;height: auto}
+.layout-desktop .itemDetailPage .detailRibbon > .infoWrapper{min-width: 12em}
+.layout-desktop .itemDetailPage .detailRibbon .itemName{white-space: normal}
+}
 .layout-desktop .detailPageWrapperContainer{background: var(--jt-bg-1)}
-.noBackdropTransparency .detailPageWrapperContainer{background: var(--jt-bg-1);background-image: var(--jt-page-bg)}
+.noBackdropTransparency .detailPageWrapperContainer{background: var(--jt-bg-1)}
 .detailRibbon{background: transparent !important}
 .itemBackdrop::after{content: "";position: absolute;left: 0;right: 0;bottom: 0;height: 65%;background: linear-gradient(180deg, rgba(var(--jt-bg-1-rgb), 0), var(--jt-bg-1));pointer-events: none}
 .detailImageContainer .card .cardScalable,.itemDetailImage{border-radius: var(--jt-radius);box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55)}
@@ -184,8 +246,11 @@ calc(100em * (1 - var(--jt-badge-corner)))}
 .layout-desktop .detailButton:not(.btnPlay):hover{color: #fff;background: rgba(var(--jt-accent-rgb), 0.28);box-shadow: var(--jt-glow-s)}
 .btnPlay.detailButton,.layout-mobile .btnPlay.detailButton{color: var(--jt-on-accent);background: var(--jt-gradient);box-shadow: var(--jt-glow-s)}
 .btnPlay.detailButton:hover{transform: scale(1.04);box-shadow: 0 0 22px rgba(var(--jt-accent-rgb), 0.7)}
-.layout-desktop .mainDetailButtons .btnPlay{display: -webkit-inline-box;display: -webkit-inline-flex;display: inline-flex;-webkit-flex-direction: row;flex-direction: row;-webkit-align-items: center;align-items: center;padding-left: 1.1em;padding-right: 1.3em}
+@media all and (min-width: 50.01em){.layout-desktop .mainDetailButtons .btnPlay{display: -webkit-inline-box;display: -webkit-inline-flex;display: inline-flex;-webkit-flex-direction: row;flex-direction: row;-webkit-align-items: center;align-items: center;padding-left: 1.1em;padding-right: 1.3em}
 .layout-desktop .mainDetailButtons .btnPlay::after{content: attr(title);margin-left: 0.35em;font-weight: 600;font-size: 1.05em}
+}
+[dir="ltr"] .mainDetailButtons .btnPlay.detailButton{margin-right: 0.5em !important}
+[dir="rtl"] .mainDetailButtons .btnPlay.detailButton{margin-left: 0.5em !important}
 .itemDetailsGroup,.trackSelections{padding: 0.6em 0.9em;background: var(--jt-accent-softer);border: 1px solid var(--jt-accent-line);border-radius: var(--jt-radius)}
 .trackSelections .selectContainer{margin: 0.35em 0}
 .itemDetailsGroup .label{color: var(--jt-accent-2)}
@@ -233,7 +298,6 @@ calc(100em * (1 - var(--jt-badge-corner)))}
 .layout-mobile .mainDetailButtons{background: transparent;padding: 0}
 .layout-mobile .headerTabs .emby-tab-button,.layout-mobile .sectionTabs .emby-tab-button{padding: 0.5em 0.95em;margin: 0.3em 0.2em}
 @media all and (max-width: 50em){.layout-desktop .mainDetailButtons{background: transparent;padding: 0}
-.layout-desktop .mainDetailButtons .btnPlay::after{content: none}
 }
 .layout-tv{--jt-header-backdrop: var(--jt-tv-blur);--jt-glow: var(--jt-tv-glow);--jt-glow-s: var(--jt-tv-glow-s);--jt-motion: var(--jt-tv-motion);--jt-motion-fast: var(--jt-tv-motion)}
 html.layout-tv:not(.transparentDocument) .libraryDocument .mainAnimatedPage{margin-top: calc(var(--jt-header-gap) + 2px)}
