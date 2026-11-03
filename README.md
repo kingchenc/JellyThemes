@@ -127,6 +127,21 @@ On Jellyfin 10.10 and older, Custom CSS is under **Dashboard > General**.
 
 ---
 
+## Gallery
+
+More pages, all with Solaris (every theme looks the same in its own color):
+
+| | |
+|---|---|
+| <img src="assets/gallery/live-tv.jpg" alt="Live TV programs"> | <img src="assets/gallery/guide.jpg" alt="Live TV guide"> |
+| Live TV | TV guide |
+| <img src="assets/gallery/season.jpg" alt="Season with episode tiles"> | <img src="assets/gallery/upcoming.jpg" alt="Upcoming on TV as compact tiles"> |
+| Episodes as tiles | Upcoming on TV |
+| <img src="assets/gallery/menu.jpg" alt="Item menu"> | <img src="assets/gallery/media-info.jpg" alt="Media info"> |
+| Menu | Media info |
+| <img src="assets/gallery/playlists.jpg" alt="Playlists"> | <img src="assets/gallery/settings.jpg" alt="User settings"> |
+| Playlists | Settings |
+
 ## Features
 
 - Dark design with one accent color per theme, in the new Jellyfin 12 interface, its menus and Live TV, and in the dashboard of Jellyfin 10.10 / 10.11
@@ -136,7 +151,7 @@ On Jellyfin 10.10 and older, Custom CSS is under **Dashboard > General**.
 - Item pages with a fading backdrop, a labelled Play / Resume button in your language and round photos of the cast
 - Episodes of a season as tiles
 - Your own colors, blur, speed and corners, see [Settings](#settings)
-- Small and fast: one file of about 62 KB (11 KB over the network) plus the 3 KB logo, no web fonts, no `:has()`
+- Small and fast: one file of about 65 KB (12 KB over the network) plus the 3 KB logo, no web fonts, no `:has()`
 - Works in the browser, the desktop and mobile apps, on iOS and on TVs (Samsung, LG)
 - Everything is on by default; anything can be switched off, see [Settings](#settings)
 

@@ -232,6 +232,19 @@ calc(100em * (1 - var(--jt-badge-corner)))}
 .MuiListSubheader-root .MuiIconButton-root{background: var(--jt-surface-2);border: 1px solid var(--jt-accent-line)}
 .MuiListSubheader-root .MuiIconButton-root:hover{background: var(--jt-gradient);border-color: transparent;box-shadow: var(--jt-glow-s)}
 .MuiListSubheader-root .MuiIconButton-root:hover svg{background: var(--jt-on-accent)}
+.userPreferencesPage .readOnlyContent > .verticalSection{display: grid;grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));grid-gap: 0.6em;gap: 0.6em}
+.userPreferencesPage .readOnlyContent > .verticalSection > .sectionTitle{grid-column: 1 / -1;margin-bottom: 0.1em}
+.userPreferencesPage .readOnlyContent > .verticalSection > a.listItem-border{display: block;margin: 0;padding: 0.35em 0.5em;background: var(--jt-surface);border: 1px solid var(--jt-accent-line) !important;border-radius: var(--jt-radius);transition: none}
+.userPreferencesPage .readOnlyContent > .verticalSection > a.listItem-border:hover{transition: background-color var(--jt-motion), box-shadow var(--jt-motion), transform var(--jt-motion);background: var(--jt-accent-soft);border-color: var(--jt-accent) !important;box-shadow: var(--jt-glow-s);transform: translateY(-2px)}
+.userPreferencesPage .readOnlyContent > .verticalSection > a.listItem-border .listItem{padding-top: 0.6em;padding-bottom: 0.6em}
+.userPreferencesPage .readOnlyContent > .verticalSection > a.listItem-border .listItem:hover{background: transparent}
+.userPreferencesPage .readOnlyContent > .verticalSection > a.listItem-border .listItemIcon{color: var(--jt-accent-2);background: var(--jt-accent-soft);border-radius: 50%;padding: 0.3em}
+.userPreferencesPage .readOnlyContent > .verticalSection > a.listItem-border .listItemBodyText{color: var(--jt-text);font-weight: 600}
+.userPreferencesPage form .verticalSection,.userPreferencesPage form > .detailSection,.userPasswordPage .passwordSection > .detailSection{padding: 1em 1.3em 1.2em;margin-bottom: 1em;background: var(--jt-surface);border: 1px solid var(--jt-accent-line);border-radius: var(--jt-radius-l)}
+.userPasswordPage .imagePlaceHolder > div{border-radius: 50%;box-shadow: 0 0 0 3px var(--jt-accent), 0 0 24px rgba(var(--jt-accent-rgb), 0.45)}
+.userPasswordPage .imagePlaceHolder > div[style*="avatar.png"]{position: relative;background-color: var(--jt-bg-3) !important;background-image: linear-gradient(160deg, rgba(var(--jt-accent-rgb), 0.25), rgba(var(--jt-accent-rgb), 0.05)) !important}
+.userPasswordPage .imagePlaceHolder > div[style*="avatar.png"]::before{content: "";position: absolute;left: 22%;top: 22%;width: 56%;height: 56%;background: var(--jt-gradient);-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M12 2.6l3.8 2.2v4.4L12 11.4 8.2 9.2V4.8z' fill='black'/%3E%3Cpath d='M4 21c.8-4.3 4-6.6 8-6.6s7.2 2.3 8 6.6'/%3E%3C/svg%3E") center / contain no-repeat;mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M12 2.6l3.8 2.2v4.4L12 11.4 8.2 9.2V4.8z' fill='black'/%3E%3Cpath d='M4 21c.8-4.3 4-6.6 8-6.6s7.2 2.3 8 6.6'/%3E%3C/svg%3E") center / contain no-repeat}
+.userPasswordPage .username{color: var(--jt-title);font-weight: 700}
 .formDialogHeader:not(.formDialogHeader-clear){background: linear-gradient(90deg, rgba(var(--jt-accent-rgb), 0.16), rgba(var(--jt-accent-rgb), 0.02)) !important;border-bottom: 1px solid var(--jt-accent-line)}
 .formDialogHeaderTitle{color: var(--jt-title);font-weight: 600}
 .formDialogFooter:not(.formDialogFooter-clear){border-top: 1px solid var(--jt-accent-line)}
