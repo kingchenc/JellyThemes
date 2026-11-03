@@ -177,7 +177,8 @@ Add a `:root { ... }` block **under** the `@import` line in Custom CSS and set w
 | `--jt-original-title` | `block` | Original title on item pages. `none` hides it |
 | `--jt-detail-logo` | `block` | Logo on item pages. `none` hides it |
 | `--jt-item-title` | `block` | Title on item pages. `none` hides it |
-| `--jt-footer` | `block` | Theme name, version and author at the end of each page. `none` hides it |
+| `--jt-footer` | `block` | Theme name, version and author. `none` hides it |
+| `--jt-footer-fixed` | `1` | The footer as a slim bar at the bottom of the screen on every page. `0` puts it at the end of each page instead |
 | `--jt-login-text` | `""` | A heading on the login page, e.g. `"Welcome home"` |
 | `--jt-login-bg` | `none` | Background picture of the login page, e.g. `url("https://...")` |
 | `--jt-logo` | `normal` | Your own logo instead of Jellyfin's, in the top bar and on the login page, e.g. `url("https://...")`. See [Own logo](#own-logo) |
