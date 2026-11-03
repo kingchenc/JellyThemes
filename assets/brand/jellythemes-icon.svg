@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <title>JellyThemes</title>
+  <defs><linearGradient id="jtspec" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#94a3b8"/><stop offset="0.2" stop-color="#a855f7"/><stop offset="0.4" stop-color="#06b6d4"/>
+      <stop offset="0.6" stop-color="#f59e0b"/><stop offset="0.8" stop-color="#f97316"/><stop offset="1" stop-color="#a1a1aa"/></linearGradient>
+    <linearGradient id="jttable" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2a2140"/><stop offset="1" stop-color="#0e0c18"/></linearGradient>
+    <filter id="jtglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="20"/></filter>
+    <filter id="jtsoft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter><radialGradient id="jtbg" cx="256" cy="210" r="330" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1d1530"/><stop offset="0.55" stop-color="#0c0b14"/><stop offset="1" stop-color="#050508"/></radialGradient>
+    <linearGradient id="jtrim" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a855f7" stop-opacity="0.9"/><stop offset="0.5" stop-color="#06b6d4" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0.9"/></linearGradient></defs>
+  <rect x="8" y="8" width="496" height="496" rx="112" fill="url(#jtbg)"/>
+  <g fill="#fff"><path d="M86 112 l5 -15 l5 15 l15 5 l-15 5 l-5 15 l-5 -15 l-15 -5 z" opacity="0.65"/>
+    <path d="M430 418 l4 -12 l4 12 l12 4 l-12 4 l-4 12 l-4 -12 l-12 -4 z" opacity="0.5"/>
+    <circle cx="420" cy="110" r="3" opacity="0.5"/><circle cx="96" cy="400" r="2.5" opacity="0.5"/></g>
+  <polygon points="256.0,80.0 408.4,168.0 408.4,344.0 256.0,432.0 103.6,344.0 103.6,168.0" fill="url(#jtspec)" opacity="0.5" filter="url(#jtglow)"/><polygon points="256.0,80.0 408.4,168.0 329.2,213.8 256.0,171.5" fill="#a855f7"/><polygon points="256.0,80.0 408.4,168.0 329.2,213.8 256.0,171.5" fill="#fff" opacity="0.18"/><polygon points="408.4,168.0 408.4,344.0 329.2,298.2 329.2,213.8" fill="#06b6d4"/><polygon points="408.4,168.0 408.4,344.0 329.2,298.2 329.2,213.8" fill="#000" opacity="0.14"/><polygon points="408.4,344.0 256.0,432.0 256.0,340.5 329.2,298.2" fill="#f59e0b"/><polygon points="408.4,344.0 256.0,432.0 256.0,340.5 329.2,298.2" fill="#000" opacity="0.18"/><polygon points="256.0,432.0 103.6,344.0 182.8,298.2 256.0,340.5" fill="#f97316"/><polygon points="256.0,432.0 103.6,344.0 182.8,298.2 256.0,340.5" fill="#000" opacity="0.22"/><polygon points="103.6,344.0 103.6,168.0 182.8,213.8 182.8,298.2" fill="#a1a1aa"/><polygon points="103.6,344.0 103.6,168.0 182.8,213.8 182.8,298.2" fill="#000" opacity="0.26"/><polygon points="103.6,168.0 256.0,80.0 256.0,171.5 182.8,213.8" fill="#94a3b8"/><polygon points="103.6,168.0 256.0,80.0 256.0,171.5 182.8,213.8" fill="#fff" opacity="0.18"/><polygon points="256.0,171.5 329.2,213.8 329.2,298.2 256.0,340.5 182.8,298.2 182.8,213.8" fill="url(#jttable)"/><g stroke="#fff" stroke-opacity="0.45" stroke-width="2.5" fill="none"><line x1="256.0" y1="80.0" x2="256.0" y2="171.5"/><line x1="408.4" y1="168.0" x2="329.2" y2="213.8"/><line x1="408.4" y1="344.0" x2="329.2" y2="298.2"/><line x1="256.0" y1="432.0" x2="256.0" y2="340.5"/><line x1="103.6" y1="344.0" x2="182.8" y2="298.2"/><line x1="103.6" y1="168.0" x2="182.8" y2="213.8"/><polygon points="256.0,171.5 329.2,213.8 329.2,298.2 256.0,340.5 182.8,298.2 182.8,213.8"/></g><polygon points="256.0,80.0 408.4,168.0 408.4,344.0 256.0,432.0 103.6,344.0 103.6,168.0" fill="none" stroke="#fff" stroke-opacity="0.75" stroke-width="4.0" stroke-linejoin="round"/><polygon points="234.1,219.0 302.8,256.0 234.1,293.0" fill="#fff" stroke="#fff" stroke-width="10.3" stroke-linejoin="round" filter="url(#jtsoft)" opacity="0.6"/><polygon points="234.1,219.0 302.8,256.0 234.1,293.0" fill="#fff" stroke="#fff" stroke-width="10.3" stroke-linejoin="round"/>
+  <rect x="8" y="8" width="496" height="496" rx="112" fill="none" stroke="url(#jtrim)" stroke-width="4"/>
+</svg>
