@@ -4,9 +4,9 @@ Cosmic cyan theme with cool galactic vibes.
 
 ## Preview
 
-<img src="assets/preview/Nebula.png" alt="Nebula Preview">
+<img src="assets/preview/home.png" alt="Nebula Preview">
 
-<img src="assets/preview/Nebula-details.png" alt="Nebula item page">
+<img src="assets/preview/details.png" alt="Nebula item page">
 
 ## Gallery
 

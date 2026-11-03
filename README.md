@@ -46,8 +46,8 @@ On Jellyfin 10.10 and older, Custom CSS is under **Dashboard > General**.
 <details>
 <summary>📸 Preview</summary>
 <br>
-<img src="Themes/Obsidian/assets/preview/Obsidian.png" alt="Obsidian home page">
-<img src="Themes/Obsidian/assets/preview/Obsidian-details.png" alt="Obsidian movie page">
+<img src="Themes/Obsidian/assets/preview/home.png" alt="Obsidian home page">
+<img src="Themes/Obsidian/assets/preview/details.png" alt="Obsidian movie page">
 </details>
 
 ---
@@ -61,8 +61,8 @@ On Jellyfin 10.10 and older, Custom CSS is under **Dashboard > General**.
 <details>
 <summary>📸 Preview</summary>
 <br>
-<img src="Themes/Solaris/assets/preview/Solaris.png" alt="Solaris home page">
-<img src="Themes/Solaris/assets/preview/Solaris-details.png" alt="Solaris movie page">
+<img src="Themes/Solaris/assets/preview/home.png" alt="Solaris home page">
+<img src="Themes/Solaris/assets/preview/details.png" alt="Solaris movie page">
 </details>
 
 ---
@@ -76,8 +76,8 @@ On Jellyfin 10.10 and older, Custom CSS is under **Dashboard > General**.
 <details>
 <summary>📸 Preview</summary>
 <br>
-<img src="Themes/Nebula/assets/preview/Nebula.png" alt="Nebula home page">
-<img src="Themes/Nebula/assets/preview/Nebula-details.png" alt="Nebula movie page">
+<img src="Themes/Nebula/assets/preview/home.png" alt="Nebula home page">
+<img src="Themes/Nebula/assets/preview/details.png" alt="Nebula movie page">
 </details>
 
 ---
@@ -91,8 +91,8 @@ On Jellyfin 10.10 and older, Custom CSS is under **Dashboard > General**.
 <details>
 <summary>📸 Preview</summary>
 <br>
-<img src="Themes/Ember/assets/preview/Ember.png" alt="Ember home page">
-<img src="Themes/Ember/assets/preview/Ember-details.png" alt="Ember movie page">
+<img src="Themes/Ember/assets/preview/home.png" alt="Ember home page">
+<img src="Themes/Ember/assets/preview/details.png" alt="Ember movie page">
 </details>
 
 ---
@@ -106,8 +106,8 @@ On Jellyfin 10.10 and older, Custom CSS is under **Dashboard > General**.
 <details>
 <summary>📸 Preview</summary>
 <br>
-<img src="Themes/Void/assets/preview/Void.png" alt="Void home page">
-<img src="Themes/Void/assets/preview/Void-details.png" alt="Void movie page">
+<img src="Themes/Void/assets/preview/home.png" alt="Void home page">
+<img src="Themes/Void/assets/preview/details.png" alt="Void movie page">
 </details>
 
 ---
@@ -121,8 +121,8 @@ On Jellyfin 10.10 and older, Custom CSS is under **Dashboard > General**.
 <details>
 <summary>📸 Preview</summary>
 <br>
-<img src="Themes/Phantom/assets/preview/Phantom.png" alt="Phantom home page">
-<img src="Themes/Phantom/assets/preview/Phantom-details.png" alt="Phantom movie page">
+<img src="Themes/Phantom/assets/preview/home.png" alt="Phantom home page">
+<img src="Themes/Phantom/assets/preview/details.png" alt="Phantom movie page">
 </details>
 
 ---
@@ -213,10 +213,10 @@ While a page loads, a floating jellyfish replaces Jellyfin's spinning circle.
 | `--jt-footer-fixed` | `1` | The footer as a slim bar at the bottom of the screen on every page. `0` puts it at the end of each page instead |
 | `--jt-login-text` | `""` | A heading on the login page, e.g. `"Welcome home"` |
 | `--jt-login-bg` | `none` | Background picture of the login page, e.g. `url("https://...")` |
-| `--jt-logo` | `normal` | Your own logo instead of Jellyfin's, in the top bar and on the login page, e.g. `url("https://...")`. See [Own logo](#own-logo) |
-| `--jt-logo-height` | `1.25em` | Height of your logo in the Jellyfin 12 top bar, e.g. `2em` for a logo with text |
-| `--jt-logo-banner` | `contain` | `0` hides Jellyfin's banner behind your logo in the classic layouts |
-| `--jt-server-name` | `1` | `0` hides the server name next to the logo in the Jellyfin 12 top bar |
+| `--jt-logo` | JellyThemes logo | Logo in the top bar and on the login page. Your own: `url("https://...")`, Jellyfin's: `normal`. See [Own logo](#own-logo) |
+| `--jt-logo-height` | `1.6em` | Height of your logo in the Jellyfin 12 top bar, e.g. `2em` for a logo with text |
+| `--jt-logo-banner` | `0` | `contain` shows Jellyfin's banner behind the logo in the classic layouts |
+| `--jt-server-name` | `0` | `1` shows the server name next to the logo in the Jellyfin 12 top bar |
 
 ### Own logo
 
@@ -229,9 +229,9 @@ Put your logo somewhere online (as a PNG or SVG with a transparent background) a
 }
 ```
 
-To try it with the JellyThemes logo: `--jt-logo: url("https://cdn.jsdelivr.net/gh/kingchenc/JellyThemes@master/assets/brand/jellythemes-logo.svg");`
+Jellyfin's own logo back: `--jt-logo: normal; --jt-logo-banner: contain; --jt-server-name: 1;`
 
-If the logo already shows a name, also add `--jt-server-name: 0;` and make it bigger with `--jt-logo-height: 2em;`. The name next to the logo in Jellyfin 12 is your server name; you can change it under **Dashboard > General**.
+Make your logo bigger or smaller with `--jt-logo-height`. With `--jt-server-name: 1` the Jellyfin 12 top bar also shows your server name next to the logo; you can change it under **Dashboard > General**.
 
 ### Own colors
 
