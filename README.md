@@ -169,6 +169,8 @@ Add a `:root { ... }` block **under** the `@import` line in Custom CSS and set w
 | `--jt-badge-corner` | `1` | Watched and count badges sit in the corner of cards. `0` gives Jellyfin's round badges |
 | `--jt-cast-round` | `1` | Round photos for cast and crew. `0` gives Jellyfin's tall photos |
 | `--jt-episode-tiles` | `1` | Episodes of a season as tiles (desktop). `0` gives Jellyfin's list |
+| `--jt-compact-lists` | `1` | "Upcoming on TV" and similar lists on item pages as compact tiles. `0` gives one row per entry |
+| `--jt-backdrop-height` | `58vh` | Height of the backdrop picture on item pages in wide windows. Jellyfin's own: `40vh` |
 | `--jt-card-extra-buttons` | `flex` | Watched and favourite buttons on hovered cards. `none` hides them |
 | `--jt-card-mini-buttons` | `flex` | Small play button on cards on phones. `none` hides it |
 | `--jt-library-labels` | `block` | Names under the library cards on the home page. `none` hides them |
