@@ -197,6 +197,9 @@ Add a `:root { ... }` block **under** the `@import` line in Custom CSS and set w
 | `--jt-mascot-footer` | `1` | The small jellyfish in the footer. `0` hides it |
 | `--jt-mascot-empty` | `1` | The jellyfish on empty pages ("Nothing here"). `0` hides it |
 | `--jt-mascot-menu` | `1` | The jellyfish at the end of the menu drawer. `0` hides it |
+| `--jt-mascot-bg` | `1` | A large, faint jellyfish in the background of every page. `0` hides it |
+
+While a page loads, a floating jellyfish replaces Jellyfin's spinning circle.
 | `--jt-footer-fixed` | `1` | The footer as a slim bar at the bottom of the screen on every page. `0` puts it at the end of each page instead |
 | `--jt-login-text` | `""` | A heading on the login page, e.g. `"Welcome home"` |
 | `--jt-login-bg` | `none` | Background picture of the login page, e.g. `url("https://...")` |
