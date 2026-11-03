@@ -8,13 +8,6 @@ Pure black minimal theme with subtle gray accents.
 
 <img src="assets/preview/Void-details.png" alt="Void item page">
 
-| Color | Hex |
-|-------|-----|
-| Primary | `#71717a` |
-| Secondary | `#a1a1aa` |
-| Accent | `#d4d4d8` |
-| Background | `#000000` / `#0a0a0a` |
-
 ## Gallery
 
 | | |
@@ -25,6 +18,15 @@ Pure black minimal theme with subtle gray accents.
 | Menu | Media info |
 | <img src="assets/gallery/user-menu.jpg" alt="User menu"> | <img src="assets/gallery/login.jpg" alt="Login page"> |
 | User menu | Login |
+
+## Colors
+
+| Color | Hex |
+|-------|-----|
+| Primary | `#71717a` |
+| Secondary | `#a1a1aa` |
+| Accent | `#d4d4d8` |
+| Background | `#000000` / `#0a0a0a` |
 
 ## Installation
 

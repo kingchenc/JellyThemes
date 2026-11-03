@@ -8,13 +8,6 @@ Golden sun theme with warm amber tones.
 
 <img src="assets/preview/Solaris-details.png" alt="Solaris item page">
 
-| Color | Hex |
-|-------|-----|
-| Primary | `#f59e0b` |
-| Secondary | `#fbbf24` |
-| Accent | `#fcd34d` |
-| Background | `#0f0a05` / `#1a1408` |
-
 ## Gallery
 
 | | |
@@ -25,6 +18,15 @@ Golden sun theme with warm amber tones.
 | Menu | Media info |
 | <img src="assets/gallery/user-menu.jpg" alt="User menu"> | <img src="assets/gallery/login.jpg" alt="Login page"> |
 | User menu | Login |
+
+## Colors
+
+| Color | Hex |
+|-------|-----|
+| Primary | `#f59e0b` |
+| Secondary | `#fbbf24` |
+| Accent | `#fcd34d` |
+| Background | `#0f0a05` / `#1a1408` |
 
 ## Installation
 

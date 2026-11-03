@@ -8,13 +8,6 @@ Cosmic cyan theme with cool galactic vibes.
 
 <img src="assets/preview/Nebula-details.png" alt="Nebula item page">
 
-| Color | Hex |
-|-------|-----|
-| Primary | `#06b6d4` |
-| Secondary | `#22d3ee` |
-| Accent | `#67e8f9` |
-| Background | `#050a0f` / `#0a141a` |
-
 ## Gallery
 
 | | |
@@ -25,6 +18,15 @@ Cosmic cyan theme with cool galactic vibes.
 | Menu | Media info |
 | <img src="assets/gallery/user-menu.jpg" alt="User menu"> | <img src="assets/gallery/login.jpg" alt="Login page"> |
 | User menu | Login |
+
+## Colors
+
+| Color | Hex |
+|-------|-----|
+| Primary | `#06b6d4` |
+| Secondary | `#22d3ee` |
+| Accent | `#67e8f9` |
+| Background | `#050a0f` / `#0a141a` |
 
 ## Installation
 

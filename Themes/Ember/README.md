@@ -8,13 +8,6 @@ Fiery orange theme with warm blazing tones.
 
 <img src="assets/preview/Ember-details.png" alt="Ember item page">
 
-| Color | Hex |
-|-------|-----|
-| Primary | `#f97316` |
-| Secondary | `#fb923c` |
-| Accent | `#fdba74` |
-| Background | `#0f0805` / `#1a100a` |
-
 ## Gallery
 
 | | |
@@ -25,6 +18,15 @@ Fiery orange theme with warm blazing tones.
 | Menu | Media info |
 | <img src="assets/gallery/user-menu.jpg" alt="User menu"> | <img src="assets/gallery/login.jpg" alt="Login page"> |
 | User menu | Login |
+
+## Colors
+
+| Color | Hex |
+|-------|-----|
+| Primary | `#f97316` |
+| Secondary | `#fb923c` |
+| Accent | `#fdba74` |
+| Background | `#0f0805` / `#1a100a` |
 
 ## Installation
 

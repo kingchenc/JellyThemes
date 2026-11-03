@@ -8,13 +8,6 @@ Ghostly slate theme with translucent cool tones.
 
 <img src="assets/preview/Phantom-details.png" alt="Phantom item page">
 
-| Color | Hex |
-|-------|-----|
-| Primary | `#64748b` |
-| Secondary | `#94a3b8` |
-| Accent | `#cbd5e1` |
-| Background | `#05080c` / `#0f1318` |
-
 ## Gallery
 
 | | |
@@ -25,6 +18,15 @@ Ghostly slate theme with translucent cool tones.
 | Menu | Media info |
 | <img src="assets/gallery/user-menu.jpg" alt="User menu"> | <img src="assets/gallery/login.jpg" alt="Login page"> |
 | User menu | Login |
+
+## Colors
+
+| Color | Hex |
+|-------|-----|
+| Primary | `#64748b` |
+| Secondary | `#94a3b8` |
+| Accent | `#cbd5e1` |
+| Background | `#05080c` / `#0f1318` |
 
 ## Installation
 

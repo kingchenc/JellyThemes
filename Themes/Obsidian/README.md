@@ -8,13 +8,6 @@ Deep space theme with elegant violet/purple accents.
 
 <img src="assets/preview/Obsidian-details.png" alt="Obsidian item page">
 
-| Color | Hex |
-|-------|-----|
-| Primary | `#9333ea` |
-| Secondary | `#a855f7` |
-| Accent | `#c084fc` |
-| Background | `#05080f` / `#0a0f1a` |
-
 ## Gallery
 
 | | |
@@ -25,6 +18,15 @@ Deep space theme with elegant violet/purple accents.
 | Menu | Media info |
 | <img src="assets/gallery/user-menu.jpg" alt="User menu"> | <img src="assets/gallery/login.jpg" alt="Login page"> |
 | User menu | Login |
+
+## Colors
+
+| Color | Hex |
+|-------|-----|
+| Primary | `#9333ea` |
+| Secondary | `#a855f7` |
+| Accent | `#c084fc` |
+| Background | `#05080f` / `#0a0f1a` |
 
 ## Installation
 
