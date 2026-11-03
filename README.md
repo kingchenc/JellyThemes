@@ -189,6 +189,7 @@ Add a `:root { ... }` block **under** the `@import` line in Custom CSS and set w
 | `--jt-card-extra-buttons` | `flex` | Watched and favourite buttons on hovered cards. `none` hides them |
 | `--jt-card-mini-buttons` | `flex` | Small play button on cards on phones. `none` hides it |
 | `--jt-library-labels` | `block` | Names under the library cards on the home page. `none` hides them |
+| `--jt-library-style` | `0` | `1` shows the library cards on the home page as the theme's banner with the name in the middle in the theme's style, instead of Jellyfin's pictures with the name in plain white |
 | `--jt-original-title` | `block` | Original title on item pages. `none` hides it |
 | `--jt-detail-logo` | `block` | Logo on item pages. `none` hides it |
 | `--jt-item-title` | `block` | Title on item pages. `none` hides it |
