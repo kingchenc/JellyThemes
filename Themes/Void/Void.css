@@ -13,7 +13,7 @@
    ║                                                                           ║
    ║   Created by: kingchenc                                                   ║
    ║   Repository: https://github.com/kingchenc/JellyThemes                    ║
-   ║   License: GPL-2.0                                                        ║
+   ║   License: GPL-3.0                                                        ║
    ║                                                                           ║
    ╚═══════════════════════════════════════════════════════════════════════════╝ */
 :root{--jt-accent: #71717a;--jt-accent-rgb: 113, 113, 122;--jt-accent-ch: 113 113 122;--jt-accent-2: #a1a1aa;--jt-accent-2-rgb: 161, 161, 170;--jt-accent-2-ch: 161 161 170;--jt-accent-3: #d4d4d8;--jt-accent-3-rgb: 212, 212, 216;--jt-accent-3-ch: 212 212 216;--jt-bg-1: #000000;--jt-bg-1-rgb: 0, 0, 0;--jt-bg-1-ch: 0 0 0;--jt-bg-2: #0a0a0a;--jt-bg-2-rgb: 10, 10, 10;--jt-bg-2-ch: 10 10 10;--jt-bg-3: #1a1a1a;--jt-bg-3-rgb: 26, 26, 26;--jt-bg-3-ch: 26 26 26;--jt-on-accent: #0a0a0a;--jt-on-accent-rgb: 10, 10, 10;--jt-on-accent-ch: 10 10 10;--jt-title: #a1a1aa;--jt-title-rgb: 161, 161, 170;--jt-title-ch: 161 161 170;--jt-footer-text: "Void v2.0  •  made with \2665  by kingchenc  •  github.com/kingchenc/JellyThemes"}
@@ -351,6 +351,9 @@ calc(100em * (1 - var(--jt-badge-corner)))}
 #loginPage{background-image: var(--jt-login-bg);background-size: cover;background-position: center}
 #loginPage > .padded-left{position: relative;box-sizing: border-box;width: 100%;max-width: 44em;margin: calc(2em + 7.5em * var(--jt-mascot-login)) auto 2em;padding: 1.5em 1.5em 2em !important;background: rgba(var(--jt-bg-2-rgb), 0.72);-webkit-backdrop-filter: var(--jt-header-backdrop);backdrop-filter: var(--jt-header-backdrop);border: 1px solid var(--jt-accent-line);border-radius: 1.4em;box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5)}
 #loginPage > .padded-left::before{content: "";position: absolute;left: 50%;bottom: 100%;width: 7em;height: calc(9em * var(--jt-mascot-login));margin-left: -3.5em;margin-bottom: -0.6em;background: var(--jt-mascot) center bottom / contain no-repeat;filter: drop-shadow(0 0 18px rgba(var(--jt-accent-rgb), 0.45));pointer-events: none}
+@media all and (max-width: 40em){#loginPage > .padded-left{margin-top: calc(2em + 8.5em * var(--jt-mascot-login))}
+#loginPage > .padded-left::before{margin-bottom: -0.25em}
+}
 #loginPage .readOnlyContent:empty{display: none}
 #loginPage .visualLoginForm > h1{max-width: 100%;max-height: 5em;margin-left: auto;margin-right: auto}
 #loginPage #divUsers .card{width: 30%;max-width: 9em}
