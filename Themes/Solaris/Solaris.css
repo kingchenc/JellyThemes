@@ -247,7 +247,7 @@ calc(100em * (1 - var(--jt-badge-corner)))}
 .listItem:focus{background: var(--jt-accent-soft)}
 .listItem-border{border-color: var(--jt-line) !important}
 .listItemImageButton{background: var(--jt-gradient);color: var(--jt-on-accent);border-radius: 50%}
-.itemDetailPage .detailVerticalSection > .vertical-list{display: grid;grid-template-columns: repeat(auto-fill, minmax(17em, 1fr));grid-gap: 0.5em 0.6em;gap: 0.5em 0.6em}
+.itemDetailPage .detailVerticalSection > .vertical-list{display: grid;grid-template-columns: repeat(auto-fill, minmax(19.5em, 1fr));grid-gap: 0.5em 0.6em;gap: 0.5em 0.6em}
 .itemDetailPage .detailVerticalSection > .vertical-list > :not(.listItem){grid-column: 1 / -1}
 .itemDetailPage .detailVerticalSection > .vertical-list > .listItem{box-sizing: border-box;min-width: 0;margin: 0;padding: 0.5em 0.8em;background: var(--jt-surface);border: 1px solid var(--jt-accent-line) !important;border-radius: var(--jt-radius);box-shadow: inset 3px 0 0 var(--jt-accent)}
 [dir="rtl"] .itemDetailPage .detailVerticalSection > .vertical-list > .listItem{box-shadow: inset -3px 0 0 var(--jt-accent)}
