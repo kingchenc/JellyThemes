@@ -161,10 +161,11 @@ calc(100em * (1 - var(--jt-badge-corner)))}
 .layout-desktop #childrenContent > .vertical-list > .listItem:not(.listItem-largeImage){grid-column: 1 / -1;margin-bottom: calc(-0.6em * var(--jt-episode-tiles))}
 .layout-desktop #childrenContent .listItem-largeImage .listItem-content{flex-wrap: wrap}
 .layout-desktop #childrenContent .listItemImage-large{min-width: calc(100% * var(--jt-episode-tiles));max-height: calc(1000em * (1 - var(--jt-episode-tiles)) + 11.5em * var(--jt-episode-tiles));margin-right: calc(0.75em * (1 - var(--jt-episode-tiles)));margin-bottom: calc(0.5em * var(--jt-episode-tiles));border-radius: calc(var(--jt-radius-s) * var(--jt-episode-tiles))}
+.layout-desktop #childrenContent .listItem-largeImage .listItemImageButton{margin: auto}
 .layout-desktop #childrenContent .listItem-largeImage .listItemBody{box-sizing: border-box;flex-basis: 0;min-width: calc(100% * var(--jt-episode-tiles))}
 [dir="ltr"] .layout-desktop #childrenContent .listItem-largeImage .listViewUserDataButtons{margin-left: auto}
 [dir="rtl"] .layout-desktop #childrenContent .listItem-largeImage .listViewUserDataButtons{margin-right: auto}
-.layout-desktop #childrenContent .listItem-largeImage .listItem-overview{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: calc(3 + 997 * (1 - var(--jt-episode-tiles)));overflow: hidden}
+.layout-desktop #childrenContent .listItem-largeImage .listItem-overview{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: calc(3 + 997 * (1 - var(--jt-episode-tiles)));overflow: hidden;box-sizing: border-box;min-height: calc(4.8em * var(--jt-episode-tiles));max-height: calc(1000em * (1 - var(--jt-episode-tiles)) + 4.8em * var(--jt-episode-tiles))}
 .toast{background: var(--jt-bg-3);color: var(--jt-text);border: 1px solid var(--jt-accent-line);border-radius: var(--jt-radius)}
 .infoBanner{background: var(--jt-bg-3);color: var(--jt-text);border: 1px solid var(--jt-accent-line);border-radius: var(--jt-radius)}
 .layout-desktop .detailPageWrapperContainer{background: var(--jt-bg-1)}
