@@ -10,7 +10,7 @@
 [![jsDelivr Hits](https://img.shields.io/jsdelivr/gh/hm/kingchenc/JellyThemes?style=for-the-badge&logo=jsdelivr&label=jsdelivr%20Hits&color=ff5627)](https://www.jsdelivr.com/package/gh/kingchenc/JellyThemes)
 [![License](https://img.shields.io/badge/License-GPL--3.0-blue?style=for-the-badge)](LICENSE)
 
-**Version 2.2** · Jellyfin 10.10, 10.11 and 12
+**Version 2.3** · Jellyfin 10.10, 10.11 and 12
 
 </div>
 
@@ -210,7 +210,7 @@ Add a `:root { ... }` block **under** the `@import` line in Custom CSS and set w
 | `--jt-mascot-bg` | `1` | A large, faint jellyfish in the background of every page. `0` hides it |
 
 While a page loads, a floating jellyfish replaces Jellyfin's spinning circle.
-| `--jt-footer-fixed` | `1` | The footer as a slim bar at the bottom of the screen on every page. `0` puts it at the end of each page instead. On TVs and phones it is at the end of each page by default; `1` puts the bar there too |
+| `--jt-footer-fixed` | `1` | The footer as a slim bar at the bottom of the screen on every page. `0` puts it at the end of each page instead |
 | `--jt-login-text` | `""` | A heading on the login page, e.g. `"Welcome home"` |
 | `--jt-login-bg` | `none` | Background picture of the login page, e.g. `url("https://...")` |
 | `--jt-logo` | JellyThemes logo | Logo in the top bar and on the login page. Your own: `url("https://...")`, Jellyfin's: `normal`. See [Own logo](#own-logo) |
