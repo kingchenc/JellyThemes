@@ -9,7 +9,7 @@
    ║                                                                           ║
    ║   Ghost Slate Theme for Jellyfin Media Server                             ║
    ║   Version 2.1                                                             ║
-   ║   Last update: 03.11.2026                                                 ║
+   ║   Last update: 05.11.2026                                                 ║
    ║                                                                           ║
    ║   Created by: kingchenc                                                   ║
    ║   Repository: https://github.com/kingchenc/JellyThemes                    ║
@@ -70,7 +70,9 @@ html:not(.transparentDocument) .libraryDocument .skinHeader.headroom--unpinned{-
 .MuiToolbar-root .MuiIconButton-root svg[data-testid="CastIcon"],.MuiToolbar-root .MuiIconButton-root svg[data-testid="CastConnectedIcon"],.headerCastButton > .material-icons{--jt-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M3 8V6.2C3 5 4 4 5.2 4h13.6C20 4 21 5 21 6.2v11.6c0 1.2-1 2.2-2.2 2.2H13'/%3E%3Cpath d='M3 12a8 8 0 0 1 8 8'/%3E%3Cpath d='M3 16a4 4 0 0 1 4 4'/%3E%3Cpath d='M3.6 18.6l1.3.75v1.5l-1.3.75-1.3-.75v-1.5z' fill='black'/%3E%3C/svg%3E")}
 .MuiToolbar-root .MuiIconButton-root svg[data-testid="SearchIcon"],.headerSearchButton > .material-icons{--jt-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M10 2.6l5.7 3.3v6.6L10 15.8l-5.7-3.3V5.9z'/%3E%3Cpath d='M14.8 13.8L21 20'/%3E%3Cpath d='M10 6.4l2.4 1.4' stroke-width='1.6'/%3E%3C/svg%3E")}
 .MuiToolbar-root .MuiIconButton-root svg[data-testid="PersonIcon"],.headerUserButton > .material-icons{--jt-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M12 2.6l3.8 2.2v4.4L12 11.4 8.2 9.2V4.8z' fill='black'/%3E%3Cpath d='M4 21c.8-4.3 4-6.6 8-6.6s7.2 2.3 8 6.6'/%3E%3C/svg%3E")}
-.MuiToolbar-root .MuiIconButton-root:hover svg,.headerButton:hover > .material-icons,.headerButton.show-focus:focus > .material-icons,.MuiToolbar-root .MuiAvatar-root svg[data-testid="PersonIcon"]{background: var(--jt-on-accent)}
+.MuiToolbar-root .MuiIconButton-root:hover svg,.headerSyncButton:hover > .material-icons,.headerCastButton:hover > .material-icons,.headerSearchButton:hover > .material-icons,.headerUserButton:hover > .material-icons,.headerSyncButton.show-focus:focus > .material-icons,.headerCastButton.show-focus:focus > .material-icons,.headerSearchButton.show-focus:focus > .material-icons,.headerUserButton.show-focus:focus > .material-icons,.MuiToolbar-root .MuiAvatar-root svg[data-testid="PersonIcon"]{background: var(--jt-on-accent)}
+.headerLeft .headerButton.show-focus:focus,.headerRight .headerButton.show-focus:focus{color: var(--jt-on-accent);background: var(--jt-gradient);border-color: transparent;box-shadow: var(--jt-glow-s);-webkit-transform: none;transform: none}
+.headerRight .headerUserButtonRound div{margin: 0;background-color: transparent;background-position: 50%;background-size: cover;background-repeat: no-repeat;border: 0;box-shadow: none}
 .MuiAppBar-root .MuiToolbar-root .MuiIconButton-root .MuiAvatar-root,.headerUserButtonRound{box-shadow: 0 0 0 2px var(--jt-accent), 0 0 10px rgba(var(--jt-accent-rgb), 0.5)}
 .MuiAppBar-root .MuiButton-root.Mui-selected,.MuiAppBar-root .MuiButton-root[aria-current="page"]{color: var(--jt-accent-2)}
 .headerTabs .emby-tab-button,.sectionTabs .emby-tab-button{margin: 0.35em 0.3em;padding: 0.55em 1.2em;font-weight: 500;color: var(--jt-text-2);background: var(--jt-accent-softer);border: 1px solid var(--jt-accent-line);border-radius: 2em;transition: background-color var(--jt-motion), color var(--jt-motion)}
@@ -164,6 +166,12 @@ calc(100em * (1 - var(--jt-badge-corner)))}
 .personCard .cardPadder-overflowPortrait{padding-bottom: calc(150% - 50% * var(--jt-cast-round))}
 .personCard .cardImageContainer{background-position: center calc(50% - 30% * var(--jt-cast-round))}
 .playedIndicator > svg,.countIndicator > svg{fill: var(--jt-on-accent)}
+.indicator > svg.indicatorIcon{width: 1em;height: 1em;-webkit-flex-shrink: 0;flex-shrink: 0}
+.cardIndicators > .mediaSourceIndicator{position: static;-webkit-flex-shrink: 0;flex-shrink: 0;margin-top: calc(0.225em * var(--jt-badge-corner))}
+[dir="ltr"] .cardIndicators > .mediaSourceIndicator{margin-right: 0.25em}
+[dir="rtl"] .cardIndicators > .mediaSourceIndicator{margin-left: 0.25em}
+[dir="ltr"] .cardIndicators > .mediaSourceIndicator:last-child{margin-right: calc(0.225em * var(--jt-badge-corner))}
+[dir="rtl"] .cardIndicators > .mediaSourceIndicator:last-child{margin-left: calc(0.225em * var(--jt-badge-corner))}
 .itemProgressBar{background: rgba(0, 0, 0, 0.45);border-radius: 1em;overflow: hidden}
 .innerCardFooter.fullInnerCardFooter,.cardImageContainer > .itemLinearProgress{left: var(--jt-progress-gap);right: var(--jt-progress-gap);bottom: var(--jt-progress-gap);border-radius: 1em}
 .cardImageContainer > .itemLinearProgress{width: auto}
@@ -198,6 +206,12 @@ calc(100em * (1 - var(--jt-badge-corner)))}
 .MuiAppBar-root .MuiToolbar-root > .MuiButton-root.MuiButton-sizeLarge:hover{background: linear-gradient(100deg, rgba(var(--jt-accent-rgb), 0.28), rgba(var(--jt-accent-rgb), 0.08));border-color: var(--jt-accent);box-shadow: var(--jt-glow)}
 .MuiAppBar-root .MuiToolbar-root .MuiChip-root{height: 1.75em;font-weight: 800;color: var(--jt-on-accent);background: var(--jt-gradient);border-radius: 2em;box-shadow: 0 0 12px rgba(var(--jt-accent-rgb), 0.4)}
 .MuiAppBar-root .MuiToolbar-root .MuiChip-label{padding: 0 0.75em}
+html:not(.transparentDocument) .libraryDocument .MuiAppBar-root > .MuiToolbar-root + .MuiToolbar-root{-webkit-flex-wrap: wrap;flex-wrap: wrap}
+.MuiAppBar-root .MuiToolbar-root > .MuiButton-root.MuiButton-sizeLarge{min-width: 0;max-width: 100%}
+.MuiAppBar-root .MuiToolbar-root > .MuiButton-root.MuiButton-sizeLarge > .MuiTypography-root{min-width: 0;overflow: hidden;white-space: nowrap;text-overflow: ellipsis}
+@media all and (max-width: 37.5em){html:not(.transparentDocument) .libraryDocument .MuiAppBar-root > .MuiToolbar-root + .MuiToolbar-root{padding-top: 0.4em;padding-bottom: 0.4em}
+.MuiAppBar-root .MuiToolbar-root + .MuiToolbar-root > .MuiStack-root{width: 100%;margin-top: 0.4em}
+}
 .MuiButtonGroup-root svg[data-testid="FilterAltIcon"],.MuiButtonGroup-root svg[data-testid="SortByAlphaIcon"],.MuiButtonGroup-root svg[data-testid="ViewModuleIcon"],.MuiButtonGroup-root svg[data-testid="NavigateBeforeIcon"],.MuiButtonGroup-root svg[data-testid="NavigateNextIcon"],.MuiButtonGroup-root svg[data-testid="ShuffleIcon"],.btnFilter > .material-icons,.btnSort > .material-icons,.btnSelectView > .material-icons,.btnPreviousPage > .material-icons,.btnNextPage > .material-icons,.btnShuffle .material-icons{color: transparent !important;background: var(--jt-gradient);-webkit-mask: var(--jt-icon) center / 86% no-repeat;mask: var(--jt-icon) center / 86% no-repeat}
 .MuiButtonGroup-root svg[data-testid="FilterAltIcon"],.btnFilter > .material-icons{--jt-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M3.5 5h17l-6.5 7.4V19l-4-2.2v-4.4z'/%3E%3Cpath d='M17.5 2.2l1.1.65v1.3l-1.1.65-1.1-.65v-1.3z' fill='black'/%3E%3C/svg%3E")}
 .MuiButtonGroup-root svg[data-testid="SortByAlphaIcon"],.btnSort > .material-icons{--jt-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.1' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M3.5 6.5h9.5M3.5 12h6.5M3.5 17.5h3.5'/%3E%3Cpath d='M17.5 4.5v15M14.5 16.5l3 3 3-3'/%3E%3C/svg%3E")}
@@ -205,7 +219,9 @@ calc(100em * (1 - var(--jt-badge-corner)))}
 .MuiButtonGroup-root svg[data-testid="NavigateBeforeIcon"],.btnPreviousPage > .material-icons{--jt-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.6' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M14.5 5.5L8 12l6.5 6.5'/%3E%3C/svg%3E")}
 .MuiButtonGroup-root svg[data-testid="NavigateNextIcon"],.btnNextPage > .material-icons{--jt-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.6' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M9.5 5.5L16 12l-6.5 6.5'/%3E%3C/svg%3E")}
 .MuiButtonGroup-root svg[data-testid="ShuffleIcon"],.btnShuffle .material-icons{--jt-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M3.5 7h3.2c4.6 0 5.6 10 10.2 10h3.6M3.5 17h3.2c1.6 0 2.7-1.2 3.6-2.8M13.5 9.8c.9-1.6 2-2.8 3.6-2.8h3.4M18 4.5L20.5 7 18 9.5M18 14.5l2.5 2.5-2.5 2.5'/%3E%3C/svg%3E")}
-.MuiButtonGroup-root .MuiButton-root:hover svg,.MuiButton-contained svg[data-testid="ShuffleIcon"],.paper-icon-button-light:hover > .material-icons,.layout-desktop .mainDetailButtons .detailButton:hover .material-icons{background: var(--jt-on-accent)}
+.MuiButtonGroup-root .MuiButton-root:hover svg,.MuiButton-contained svg[data-testid="ShuffleIcon"],.btnFilter:hover > .material-icons,.btnSort:hover > .material-icons,.btnSelectView:hover > .material-icons,.btnPreviousPage:hover > .material-icons,.btnNextPage:hover > .material-icons,.btnShuffle:hover .material-icons,.btnFilter.show-focus:focus > .material-icons,.btnSort.show-focus:focus > .material-icons,.btnSelectView.show-focus:focus > .material-icons,.btnPreviousPage.show-focus:focus > .material-icons,.btnNextPage.show-focus:focus > .material-icons,.btnShuffle.show-focus:focus .material-icons,.layout-desktop .mainDetailButtons .detailButton:hover .material-icons{background: var(--jt-on-accent)}
+.btnFilter.paper-icon-button-light.show-focus:focus,.btnSort.paper-icon-button-light.show-focus:focus,.btnSelectView.paper-icon-button-light.show-focus:focus,.btnPreviousPage.paper-icon-button-light.show-focus:focus,.btnNextPage.paper-icon-button-light.show-focus:focus,.btnShuffle.paper-icon-button-light.show-focus:focus,.btnPlay.paper-icon-button-light.show-focus:focus{color: var(--jt-on-accent);background: var(--jt-gradient);border-color: transparent !important;box-shadow: var(--jt-glow-s);-webkit-transform: none;transform: none}
+.paper-icon-button-light.show-focus:focus{color: var(--jt-accent-2)}
 .MuiButtonGroup-contained{box-shadow: none}
 .MuiButtonGroup-contained > .MuiButtonGroup-grouped{border-radius: 2em !important;border-right-color: transparent !important}
 [dir="ltr"] .MuiButtonGroup-contained > .MuiButtonGroup-grouped:not(:last-child){margin-right: 0.5em}
@@ -297,10 +313,13 @@ calc(100em * (1 - var(--jt-badge-corner)))}
 .MuiListSubheader-root .MuiIconButton-root{background: var(--jt-surface-2);border: 1px solid var(--jt-accent-line)}
 .MuiListSubheader-root .MuiIconButton-root:hover{background: var(--jt-gradient);border-color: transparent;box-shadow: var(--jt-glow-s)}
 .MuiListSubheader-root .MuiIconButton-root:hover svg{background: var(--jt-on-accent)}
-.userPreferencesPage .readOnlyContent > .verticalSection{display: grid;grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));grid-gap: 0.6em;gap: 0.6em}
-.userPreferencesPage .readOnlyContent > .verticalSection > .sectionTitle{grid-column: 1 / -1;margin-bottom: 0.1em}
+.userPreferencesPage .readOnlyContent > .verticalSection{display: grid;grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));grid-gap: 0.6em;gap: 0.6em;-webkit-align-items: start;align-items: start}
+.userPreferencesPage .readOnlyContent > .verticalSection > :not(a){grid-column: 1 / -1}
+.userPreferencesPage .readOnlyContent > .verticalSection > .sectionTitle{margin-bottom: 0.1em}
 .userPreferencesPage .readOnlyContent > .verticalSection > a.listItem-border{display: block;margin: 0;padding: 0.35em 0.5em;background: var(--jt-surface);border: 1px solid var(--jt-accent-line) !important;border-radius: var(--jt-radius);transition: none}
 .userPreferencesPage .readOnlyContent > .verticalSection > a.listItem-border:hover{transition: background-color var(--jt-motion), box-shadow var(--jt-motion), transform var(--jt-motion);background: var(--jt-accent-soft);border-color: var(--jt-accent) !important;box-shadow: var(--jt-glow-s);transform: translateY(-2px)}
+.userPreferencesPage .readOnlyContent > .verticalSection > a.listItem-border.show-focus:focus{background: var(--jt-gradient);border-color: transparent !important;box-shadow: var(--jt-glow-s)}
+.userPreferencesPage .readOnlyContent > .verticalSection > a.listItem-border.show-focus:focus .listItemIcon,.userPreferencesPage .readOnlyContent > .verticalSection > a.listItem-border.show-focus:focus .listItemBodyText{color: var(--jt-on-accent)}
 .userPreferencesPage .readOnlyContent > .verticalSection > a.listItem-border .listItem{padding-top: 0.6em;padding-bottom: 0.6em}
 .userPreferencesPage .readOnlyContent > .verticalSection > a.listItem-border .listItem:hover{background: transparent}
 .userPreferencesPage .readOnlyContent > .verticalSection > a.listItem-border .listItemIcon{color: var(--jt-accent-2);font-size: 1.25em}
@@ -417,7 +436,7 @@ calc(100em * (1 - var(--jt-badge-corner)))}
 @keyframes jt-float{0%, 100%{-webkit-transform: translateY(0) scale(1);transform: translateY(0) scale(1)}
 50%{-webkit-transform: translateY(-1.6vh) scale(1.04);transform: translateY(-1.6vh) scale(1.04)}
 }
-.backgroundContainer::after{content: "";position: absolute;right: 3vw;bottom: 5vh;width: 30vh;height: 40vh;background: var(--jt-mascot) center / contain no-repeat;opacity: calc(0.11 * var(--jt-mascot-bg));pointer-events: none}
+.backgroundContainer::after{content: "";position: absolute;right: 3vw;bottom: 5vh;width: calc(30vh * var(--jt-mascot-bg));height: calc(40vh * var(--jt-mascot-bg));background: var(--jt-mascot) center / contain no-repeat;opacity: 0.11;pointer-events: none}
 html.transparentDocument .backgroundContainer::after{display: none}
 .noItemsMessage::before{content: "";display: block;width: 7.5em;height: calc(9.5em * var(--jt-mascot-empty));margin: 1em auto 0.4em;background: var(--jt-mascot) center / contain no-repeat;filter: drop-shadow(0 0 22px rgba(var(--jt-accent-rgb), 0.45));opacity: 0.92}
 .MuiDrawer-paper::after,.mainDrawer-scrollContainer::after{content: "";display: block;-webkit-flex-shrink: 0;flex-shrink: 0;width: 4.5em;height: calc(6em * var(--jt-mascot-menu));margin: 1.5em auto 1em;background: var(--jt-mascot) center / contain no-repeat;filter: drop-shadow(0 0 14px rgba(var(--jt-accent-rgb), 0.4));opacity: 0.85}
@@ -427,6 +446,10 @@ html.transparentDocument .backgroundContainer::after{display: none}
 #loginPage .padded-left.padded-right > h1,#loginPage .sectionTitle{color: var(--jt-accent)}
 #loginPage::before{content: var(--jt-login-text);display: block;text-align: center;font-size: 2em;font-weight: 700;color: var(--jt-title)}
 body::after{content: var(--jt-footer-text);display: var(--jt-footer);position: fixed;left: 50%;bottom: 0.4em;z-index: 5;box-sizing: border-box;width: -webkit-max-content;width: max-content;max-width: calc(100vw - 1em);padding: 0.3em 1.1em 0.35em;text-align: center;font-size: 0.72em;letter-spacing: 0.03em;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;color: rgba(var(--jt-accent-2-rgb), 0.9);text-shadow: 0 0 10px rgba(var(--jt-accent-rgb), 0.4);padding-left: calc(1.1em + 1.3em * var(--jt-mascot-footer));background: var(--jt-mascot) 0.75em center / auto calc(1.5em * var(--jt-mascot-footer)) no-repeat, rgba(var(--jt-bg-2-rgb), 0.82);-webkit-backdrop-filter: var(--jt-header-backdrop);backdrop-filter: var(--jt-header-backdrop);border: 1px solid var(--jt-accent-line);border-radius: 2em;box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);pointer-events: none;opacity: var(--jt-footer-fixed);-webkit-transform: translate(-50%, calc(160% * (1 - var(--jt-footer-fixed))));transform: translate(-50%, calc(160% * (1 - var(--jt-footer-fixed))))}
+body::after{bottom: calc(0.4em + env(safe-area-inset-bottom))}
+.layout-tv{--jt-footer-fixed: 0}
+@media all and (max-width: 50em), all and (max-height: 30em){:root{--jt-footer-fixed: 0}
+}
 .mainAnimatedPage{padding-bottom: calc(2.2em * var(--jt-footer-fixed))}
 html.transparentDocument body::after{display: none}
 .mainAnimatedPage::after{content: var(--jt-footer-text);display: var(--jt-footer);clear: both;overflow: hidden;max-height: calc(8em * (1 - var(--jt-footer-fixed)));padding: calc(2.5em * (1 - var(--jt-footer-fixed))) 1em calc(1.5em * (1 - var(--jt-footer-fixed)));text-align: center;font-size: 0.8em;letter-spacing: 0.02em;color: rgba(var(--jt-accent-2-rgb), 0.8);text-shadow: 0 0 10px rgba(var(--jt-accent-rgb), 0.4);pointer-events: none}
@@ -447,6 +470,29 @@ html.transparentDocument body::after{display: none}
 }
 .layout-tv{--jt-header-backdrop: var(--jt-tv-blur);--jt-glow: var(--jt-tv-glow);--jt-glow-s: var(--jt-tv-glow-s);--jt-motion: var(--jt-tv-motion);--jt-motion-fast: var(--jt-tv-motion)}
 html.layout-tv:not(.transparentDocument) .libraryDocument .mainAnimatedPage{margin-top: calc(var(--jt-header-gap) + 2px)}
+html.layout-tv:not(.transparentDocument) .libraryDocument .skinHeader:not(.osdHeader){position: fixed;-webkit-backdrop-filter: none !important;backdrop-filter: none !important}
+@supports (display: contents){html.layout-tv:not(.transparentDocument) .libraryDocument .skinHeader:not(.osdHeader){-webkit-flex-direction: row;flex-direction: row;-webkit-align-items: center;align-items: center;padding-top: 0.54em;padding-bottom: 0.54em}
+html.layout-tv:not(.transparentDocument) .libraryDocument .skinHeader:not(.osdHeader) > .headerTop{display: contents}
+html.layout-tv:not(.transparentDocument) .libraryDocument .skinHeader:not(.osdHeader) .headerLeft{-webkit-flex: 0 0 auto;flex: 0 0 auto;max-width: 40%}
+html.layout-tv:not(.transparentDocument) .libraryDocument .skinHeader:not(.osdHeader) .headerRight{-webkit-order: 2;order: 2;-webkit-flex: 0 0 auto;flex: 0 0 auto;-webkit-margin-start: auto;margin-inline-start: auto}
+html.layout-tv:not(.transparentDocument) .libraryDocument .skinHeader:not(.osdHeader) .headerTabs{-webkit-order: 1;order: 1;-webkit-flex: 1 1 auto;flex: 1 1 auto;min-width: 0;width: auto;margin: 0 0.4em;-webkit-align-self: center;align-self: center;-webkit-justify-content: center;justify-content: center}
+html.layout-tv:not(.transparentDocument) .libraryDocument .skinHeader:not(.osdHeader) .headerTabs > .emby-tabs{min-width: 0;max-width: 100%;margin: -0.6em 0;padding: 0.6em 0;-webkit-mask-image: linear-gradient(90deg, transparent, #000 1.4em, #000 calc(100% - 1.4em), transparent);mask-image: linear-gradient(90deg, transparent, #000 1.4em, #000 calc(100% - 1.4em), transparent)}
+html.layout-tv:not(.transparentDocument) .libraryDocument .skinHeader:not(.osdHeader) .headerTabs .emby-tab-button:first-child{-webkit-margin-start: 1.4em;margin-inline-start: 1.4em}
+html.layout-tv:not(.transparentDocument) .libraryDocument .skinHeader:not(.osdHeader) .headerTabs .emby-tab-button:last-child{-webkit-margin-end: 1.4em;margin-inline-end: 1.4em}
+html.layout-tv:not(.transparentDocument) .libraryDocument .libraryPage:not(.noSecondaryNavPage){padding-top: 4.6em !important}
+html.layout-tv:not(.transparentDocument) .libraryDocument .pageWithAbsoluteTabs:not(.noSecondaryNavPage){padding-top: 6.7em !important}
+}
+@media all and (min-width: 100em){@supports (display: contents){html.layout-tv:not(.transparentDocument) .libraryDocument .skinHeader:not(.osdHeader){padding: 0.8em}
+}
+}
+@supports not (display: contents){@media all and (max-width: 100em){html.layout-tv:not(.transparentDocument) .libraryDocument .skinHeader:not(.osdHeader) .headerTabs{position: absolute;top: 0;bottom: 0;left: 0;right: 0;display: -webkit-flex;display: flex;-webkit-align-items: center;align-items: center;-webkit-justify-content: center;justify-content: center;width: auto;margin: 0;pointer-events: none}
+html.layout-tv:not(.transparentDocument) .libraryDocument .skinHeader:not(.osdHeader) .headerTabs .emby-tab-button{pointer-events: auto}
+html.layout-tv:not(.transparentDocument) .libraryDocument .withSectionTabs .headerTop{padding-bottom: 0.54em}
+html.layout-tv:not(.transparentDocument) .libraryDocument .libraryPage:not(.noSecondaryNavPage){padding-top: 4.6em !important}
+html.layout-tv:not(.transparentDocument) .libraryDocument .pageWithAbsoluteTabs:not(.noSecondaryNavPage){padding-top: 6.7em !important}
+}
+}
+.layout-tv{--jt-header-bg: linear-gradient(100deg, rgba(var(--jt-accent-rgb), 0.12), rgba(var(--jt-accent-rgb), 0) 38%, rgba(var(--jt-accent-2-rgb), 0) 70%, rgba(var(--jt-accent-2-rgb), 0.08)), rgb(var(--jt-bg-2-rgb))}
 .layout-tv .skinHeader-blurred,.layout-tv .mainDrawer,.layout-tv .dialog{-webkit-backdrop-filter: var(--jt-tv-blur) !important;backdrop-filter: var(--jt-tv-blur) !important}
 .layout-tv .itemProgressBarForeground{box-shadow: var(--jt-tv-glow-s)}
 .layout-tv .alphaPickerButton-selected{text-shadow: var(--jt-tv-glow-s);transform: none}

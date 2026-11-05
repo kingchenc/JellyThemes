@@ -210,7 +210,7 @@ Add a `:root { ... }` block **under** the `@import` line in Custom CSS and set w
 | `--jt-mascot-bg` | `1` | A large, faint jellyfish in the background of every page. `0` hides it |
 
 While a page loads, a floating jellyfish replaces Jellyfin's spinning circle.
-| `--jt-footer-fixed` | `1` | The footer as a slim bar at the bottom of the screen on every page. `0` puts it at the end of each page instead |
+| `--jt-footer-fixed` | `1` | The footer as a slim bar at the bottom of the screen on every page. `0` puts it at the end of each page instead. On TVs and phones it is at the end of each page by default; `1` puts the bar there too |
 | `--jt-login-text` | `""` | A heading on the login page, e.g. `"Welcome home"` |
 | `--jt-login-bg` | `none` | Background picture of the login page, e.g. `url("https://...")` |
 | `--jt-logo` | JellyThemes logo | Logo in the top bar and on the login page. Your own: `url("https://...")`, Jellyfin's: `normal`. See [Own logo](#own-logo) |
@@ -263,6 +263,8 @@ All effects are on by default, also on TVs (Jellyfin's TV display mode). If a TV
     --jt-tv-motion: 0s;
 }
 ```
+
+In the TV display mode the top bar stays at the top while you scroll (Jellyfin lets it scroll away there). It is opaque and has no blur, so it costs a TV nothing while scrolling.
 
 ### Inter font
 
