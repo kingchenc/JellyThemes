@@ -10,7 +10,7 @@
 [![jsDelivr Hits](https://img.shields.io/jsdelivr/gh/hm/kingchenc/JellyThemes?style=for-the-badge&logo=jsdelivr&label=jsdelivr%20Hits&color=ff5627)](https://www.jsdelivr.com/package/gh/kingchenc/JellyThemes)
 [![License](https://img.shields.io/badge/License-GPL--3.0-blue?style=for-the-badge)](LICENSE)
 
-**Version 2.3** · Jellyfin 10.10, 10.11 and 12
+**Version 2.4** · Jellyfin 10.10, 10.11 and 12
 
 </div>
 
@@ -20,8 +20,8 @@
 
 | Theme | Color | Description |
 |-------|-------|-------------|
-| [Obsidian](Themes/Obsidian/) | Purple/Violet | Deep space with elegant violet accents |
 | [Solaris](Themes/Solaris/) | Gold/Amber | Warm golden sun tones |
+| [Obsidian](Themes/Obsidian/) | Purple/Violet | Deep space with elegant violet accents |
 | [Nebula](Themes/Nebula/) | Cyan/Cosmic | Cool cosmic cyan vibes |
 | [Ember](Themes/Ember/) | Orange/Fire | Fiery orange warmth |
 | [Void](Themes/Void/) | Gray/Minimal | Pure black minimalism |
@@ -37,21 +37,6 @@ On Jellyfin 10.10 and older, Custom CSS is under **Dashboard > General**.
 > [!NOTE]
 > The themes work with every display mode of Jellyfin 12: **Auto** (the new interface), **Desktop**, **Mobile** and **TV**. You find it under **User Settings > Display > Display Mode**.
 
-### 🟣 Obsidian (Purple)
-
-```css
-@import url("https://cdn.jsdelivr.net/gh/kingchenc/JellyThemes@master/Themes/Obsidian/Obsidian.css");
-```
-
-<details>
-<summary>📸 Preview</summary>
-<br>
-<img src="Themes/Obsidian/assets/preview/Obsidian.png" alt="Obsidian home page">
-<img src="Themes/Obsidian/assets/preview/Obsidian-details.png" alt="Obsidian movie page">
-</details>
-
----
-
 ### 🟡 Solaris (Gold)
 
 ```css
@@ -63,6 +48,21 @@ On Jellyfin 10.10 and older, Custom CSS is under **Dashboard > General**.
 <br>
 <img src="Themes/Solaris/assets/preview/Solaris.png" alt="Solaris home page">
 <img src="Themes/Solaris/assets/preview/Solaris-details.png" alt="Solaris movie page">
+</details>
+
+---
+
+### 🟣 Obsidian (Purple)
+
+```css
+@import url("https://cdn.jsdelivr.net/gh/kingchenc/JellyThemes@master/Themes/Obsidian/Obsidian.css");
+```
+
+<details>
+<summary>📸 Preview</summary>
+<br>
+<img src="Themes/Obsidian/assets/preview/Obsidian.png" alt="Obsidian home page">
+<img src="Themes/Obsidian/assets/preview/Obsidian-details.png" alt="Obsidian movie page">
 </details>
 
 ---
